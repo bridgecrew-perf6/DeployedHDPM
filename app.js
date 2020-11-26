@@ -62,5 +62,8 @@ app.get('/', (req, res)=> {
 });
 // start server
 
-app.listen(port, () => { console.log('Server started on port '+ port);
+app.all('*', (req, res) => {
+    res.status(200).sendFile(__dirname + '/public/index.html');
 });
+
+app.listen(port);
