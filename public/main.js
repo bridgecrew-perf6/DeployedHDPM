@@ -1671,7 +1671,7 @@ class PatientService {
         return this.http.post(`/patients/add`, pCurrent);
     }
     updatePatient(id, pCurrent = new _patientClass__WEBPACK_IMPORTED_MODULE_1__["PatientObj"]()) {
-        return this.http.post(`$/patients/update/${id}`, pCurrent);
+        return this.http.post(`/patients/update/${id}`, pCurrent);
     }
     deletePatient(id) {
         return this.http.get(`/patients/delete/${id}`);

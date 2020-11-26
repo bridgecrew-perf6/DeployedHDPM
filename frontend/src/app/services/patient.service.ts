@@ -38,7 +38,7 @@ export class PatientService {
     return this.http.post(`/patients/add`,pCurrent);
   }
   updatePatient(id:any, pCurrent = new PatientObj()) {
-    return this.http.post(`$/patients/update/${id}`,pCurrent);
+    return this.http.post(`/patients/update/${id}`,pCurrent);
   }
   deletePatient(id: any) {
     return this.http.get(`/patients/delete/${id}`);
