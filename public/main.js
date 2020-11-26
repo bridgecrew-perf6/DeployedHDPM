@@ -5945,12 +5945,9 @@ class UpdatepatientComponent {
                 this.updatedP.HepBVDate = this.updateForm.controls.HepBVDate.value;
                 this.updatedP.InfV = this.updateForm.controls.InfV.value;
                 this.updatedP.InfVDate = this.updateForm.controls.InfVDate.value;
-                console.log(this.updateForm.controls.fullName.value);
                 this._snackBar.open("Medical record updated successfully", "", { duration: 4000, panelClass: ['green-snackbar']
                 });
-                console.log(this.updatedP.n_ID);
-                console.log(this.updatedP.prevTrGS);
-                this.pService.updatePatient(this.id, this.updatedP).subscribe(res => console.log(""));
+                this.pService.updatePatient(this.id, this.updatedP).subscribe(res => console.log(res));
                 this.router.navigate(['/list']);
             }
         });
