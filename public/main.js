@@ -6470,7 +6470,7 @@ class UserslistComponent {
                 }
                 else {
                     this.users = null;
-                    this.singleUser = data;
+                    this.singleUser = data[0];
                 }
             });
         }
