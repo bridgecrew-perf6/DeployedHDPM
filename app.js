@@ -32,7 +32,7 @@ app.use(cors());
 
 const __dirname = path.resolve();
 //Set static folder
-app.use(express.static(path.join(__dirname ,'public')));
+app.use(express.static(path.join(__dirname ,'public/index.html')));
 
 // body parser middleware
 
