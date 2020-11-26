@@ -5565,7 +5565,7 @@ class UpdatepatientComponent {
         this.updatedP = new _patientClass__WEBPACK_IMPORTED_MODULE_2__["PatientObj"]();
         this.countryList = [
             "Saudi",
-            "Non-saudi"
+            "Non-Saudi"
         ];
         this.currUser = this.authService.getLoggedUser();
         this.updateForm = this.fb.group({
