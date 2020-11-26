@@ -1,0 +1,155 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.red-snackbar {
+    background-color: rgba(233, 10, 10, 0.781);
+}
+.green-snackbar {
+    background-color: rgba(41, 196, 41, 0.692);
+}
+.input-border {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #d3d3d336;
+    width: 100%;
+    border: 0;
+    margin: 0 0 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.input-form{
+    width:auto;
+    display: block;
+}
+.shadow{
+    margin-top: 50px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.main-btn{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    display: inline;
+    outline: none;
+    background: #088156;
+    color: white;
+    border: none;
+    margin-right: 20px;
+    color: hsl(#ffffffad);
+    font-size: 10px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.main-btn:enabled:hover {
+    background: #077750;
+}
+.main-btn:disabled {
+    background: #044d3291;
+    color: #707070;
+}
+.main-btn:focus{
+    border: none;
+    outline: none;
+}
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    /*whatever width you want*/
+  }
+.ablogo{
+    width:300 px;
+    height: 150px;
+}
+.minlogo{
+    width: 150px;
+    height: 110px;
+    margin:auto;
+    margin-left: 0%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+
+}
+.visionlogo{
+    width: 140px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 1.5%;
+    margin-right: 8.5%;
+}
+.txtlogo{
+    max-width: 400px;
+    min-width: 300px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    color: #04462f;
+    margin:auto;
+    margin-right: 0.3%;
+    margin-bottom: 2%;
+}
+.center-text{
+    text-align: center;
+    margin:auto;
+}
+#background{
+    background-image: url('\assets\ablogo.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 0%;
+}
+#table-bg{
+    background-image: url('\assets\minlogogrey.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    
+}
+#usertable-bg{
+    background-image: url('\assets\minlogogrey.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 310px;
+    
+}
+
+#form-bg{
+    background-image: url('\assets\minlogogrey.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+    background-attachment: fixed;
+}
+#loginform-bg{
+    background-image: url('\assets\minlogogrey.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
+    background-size: 150px;
+}
+#profileform-bg{
+    background-image: url('\assets\minlogogrey.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
+    background-size: 170px;
+}

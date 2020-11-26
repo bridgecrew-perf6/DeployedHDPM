@@ -1,0 +1,17 @@
+.main-btn:disabled{
+    background: #044d3291;
+    color: #707070;
+}
+.main-btn{
+    margin-left: 20px;
+}
+.form-margins{
+    margin-right: 60%;
+}
+.card-width{
+    width: 1920px;
+}
+
+#table-bg{
+    background-position-x: center;
+}

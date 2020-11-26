@@ -1,0 +1,22 @@
+<div class="d-flex justify-content-center">
+  <div id="loginform-bg" class="shadow rounded login-container">
+    <form [formGroup]="loginForm" class="form">
+      <div *ngIf="this.alert" class="alert alert-danger alert-dismissible fade show alert-pop" role="alert">
+        Wrong credentials or user does not exist
+        <button type="button" class="close" (click)="dismissAlert()" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <mat-form-field class="input-border login-input p-1">
+        <input matInput placeholder="Email" formControlName="Email" #Email>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="input-border login-input p-1">
+        <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" formControlName="Password" #Password>
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </mat-form-field>
+      <br>
+      <button class="main-btn login-btn" type="button" mat-button (click)="loginUser()">Login</button>
+    </form>
+  </div>
+</div>

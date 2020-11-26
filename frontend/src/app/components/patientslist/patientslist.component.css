@@ -1,0 +1,69 @@
+.search-card{
+    width: 50%;
+    inline-size: 50%;
+}
+
+.search-field{
+    width: 40%;
+    margin-right: 20px;
+}
+.search-criteria{
+    color: #088156;
+    width: 20%;
+}
+.table-primary{
+    color: #DAD2B9;
+    width: 75%;
+    font-size: small;
+}
+.th-primary{
+    background-color: #088156;
+}
+.table-element{
+    background-color: white;
+    color: black;
+    font-weight: lighter;
+}
+
+.option-button {
+    font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  display: inline;
+  outline: 0;
+  background: #088156;
+  color: rgb(255, 255, 255);
+  width: 30%;
+  border: 0;
+  margin-right: 20px;
+  color: hsl(#ffffffad);
+  font-size: 10px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.option-button:enabled:hover {
+    background: #077750;
+}
+.search-button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #088156;
+    color: white;
+    width: 10%;
+    border: 0;
+    margin-left: 10px;
+    color: hsl(#ffffffad);
+    font-size: 10px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+
+}
+.option-button:disabled{
+    background: #044d3291;
+    color: #707070;
+}
+.patient-pagination /deep/ .ngx-pagination .current{
+    background-color: #088156;
+}

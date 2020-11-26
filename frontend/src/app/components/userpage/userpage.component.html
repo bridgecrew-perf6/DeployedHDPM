@@ -1,0 +1,31 @@
+<div class="d-flex justify-content-center">
+    <mat-card id="profileform-bg" class=" info-box shadow">
+        <h1 class="d-flex justify-content-center">Profile Details</h1>
+        <h3>First Name</h3>
+        <div class="d-flex justify-content-center">
+            <mat-label class=" p-6 input-border">{{this.currUser.firstName}}</mat-label>
+        </div>
+        <h3>Last Name</h3>
+        <div class="d-flex justify-content-center">
+            <mat-label class=" p-6 input-border">{{this.currUser.lastName}}</mat-label>
+        </div>
+        <h3>Hospital</h3>
+        <div class="d-flex justify-content-center">
+            <mat-label class=" p-6 input-border">{{this.currUser.Hospital}}</mat-label>
+        </div>
+        <h3>Contact Number</h3>
+        <div class="d-flex justify-content-center">
+            <mat-label class=" p-6 input-border">{{this.currUser.contactInfo}}</mat-label>
+        </div>
+        <h3>Role</h3>
+        <div class="d-flex justify-content-center">
+            <mat-label class=" p-6 input-border">{{this.currUser.isAdmin? 'Administrator' : 'User' }}</mat-label>
+        </div>
+
+
+
+
+
+
+    </mat-card>
+</div>

@@ -1,0 +1,28 @@
+<div *ngIf="this.currUser.isAdmin">
+    <mat-card class="shadow">
+        <div class="d-flex justify-content-center">
+            <mat-form-field class="p-1 input-border form-field-width">
+                <mat-select [(value)]="selectedHosp" placeholder="Select Hospital for user" required>
+                    <mat-option *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">{{hospital.hospitalName}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <button mat-button class="main-btn btn-margin btn-height" *ngIf="this.selectedHosp" type="submit"
+                (click)="addinvT_Admin()">Generate
+                Administrator</button>
+            <button mat-button class="main-btn btn-height" *ngIf="this.selectedHosp" type="submit" (click)="addinvT()">Generate
+                User</button>
+        </div>
+
+        <br><br>
+        <h1 class="d-flex justify-content-center"*ngIf="this.currinvT.token">
+            Registration link
+        </h1>
+        <div class="d-flex justify-content-center" *ngIf="this.currinvT.token">
+            <mat-label class="label-width input-border">localhost:4200/register/{{this.currinvT.token}}</mat-label>
+            <button mat-button class="main-btn btn-height" (click)="copyMessage('localhost:4200/register/'+ this.currinvT.token)" value="click to copy" >Copy to Clipboard</button>
+        </div>
+    </mat-card>
+</div>
