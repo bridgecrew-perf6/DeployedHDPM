@@ -47,7 +47,7 @@ export class UpdatepatientComponent implements OnInit {
   hospList: hospitalObj[];
  countryList: String[] = [
    "Saudi",
-   "Non-saudi"
+   "Non-Saudi"
  ]
   hospitalList: String[];
   currUser: userObj;
