@@ -4,8 +4,8 @@ import bodyparser from 'body-parser';
 import cors from 'cors';
 import passport from 'passport';
 import mongoose from 'mongoose';
-import { database } from '/config/db.js';
-import  { passportdo } from '/config/passport.js';
+import { database } from './config/db.js';
+import  { passportdo } from './config/passport.js';
 
 mongoose.connect(database,{useNewUrlParser:true, useUnifiedTopology:true, useCreateIndex:true});
 
@@ -18,13 +18,13 @@ mongoose.connection.on('error',(err) => {
 });
 const app = express();
 
-import users from '/routes/userRoutes.js';
+import users from './routes/userRoutes.js';
 
-import patients from '/routes/patientRoutes.js';
+import patients from './routes/patientRoutes.js';
 
-import tokens from '/routes/invitationTokenRoutes.js';
+import tokens from './routes/invitationTokenRoutes.js';
 
-import hospitals from '/routes/hospRoutes.js';
+import hospitals from './routes/hospRoutes.js';
 
 const port = process.env.PORT || 8080;
 
