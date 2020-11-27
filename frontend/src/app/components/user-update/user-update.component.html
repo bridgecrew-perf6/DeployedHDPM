@@ -3,7 +3,6 @@
         <mat-tab-group mat-align-tabs="center">
             <mat-tab label="User Details Update">
                 <form [formGroup]="updatedUserForm" class="input-form d-flex flex-column form-width">
-                    <h1 style="text-align: center;">User Update</h1>
                     <mat-form-field class="input-border p-3 form-dim">
                         <input matInput placeholder="First Name" formControlName="firstName" #firstName>
                     </mat-form-field>
@@ -37,7 +36,6 @@
             </mat-tab>
             <mat-tab label="Change Password">
                 <form [formGroup]="updatedPassForm" class="input-form form-width">
-                    <h1 style="text-align: center;">Change Password</h1>
                     <mat-form-field class="input-border p-3">
                         <input matInput placeholder="New Password" [type]="hide ? 'password' : 'text'"
                             formControlName="password" #password>

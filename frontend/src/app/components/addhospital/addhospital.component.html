@@ -1,9 +1,8 @@
 <div class="d-flex justify-content-center">
-    <mat-tab-group mat-align-tabs="center">
-        <mat-card id="table-bg" class="shadow card-width">
+    <mat-card id="table-bg" class="shadow card-width">
+        <mat-tab-group mat-align-tabs="center">
             <mat-tab label="Add a hospital">
                 <form [formGroup]="hospAddForm" class="form-margins">
-                    <h1>Add hospital</h1>
                     <mat-form-field>
                         <input matInput formControlName="hospName" placeholder="Hospital Name" #hospName>
                     </mat-form-field>
@@ -13,8 +12,7 @@
                 </form>
             </mat-tab>
             <mat-tab label="Remove a hospital">
-                <form [formGroup]="hospRemoveForm" class="justify-content-center">
-                    <h1>Remove hospital</h1>
+                <form [formGroup]="hospRemoveForm" class="form-margins">
                     <mat-form-field>
                         <mat-select placeholder="Hospital Name" formControlName="hospName" #hospName>
                             <mat-option *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">
@@ -27,6 +25,6 @@
                         Remove</button>
                 </form>
             </mat-tab>
-        </mat-card>
-    </mat-tab-group>
+        </mat-tab-group>
+    </mat-card>
 </div>

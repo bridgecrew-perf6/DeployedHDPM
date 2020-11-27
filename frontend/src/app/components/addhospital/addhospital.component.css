@@ -9,7 +9,7 @@
     margin-right: 60%;
 }
 .card-width{
-    width: 1920px;
+    max-width: 800px;
 }
 
 #table-bg{
