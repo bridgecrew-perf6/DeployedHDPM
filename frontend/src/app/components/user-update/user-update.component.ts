@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatTab } from '@angular/material/tabs';
 import { Router } from '@angular/router';
 import { hospitalObj } from 'src/app/hospitalClass';
 import { HosplistService } from 'src/app/services/hosplist.service';
