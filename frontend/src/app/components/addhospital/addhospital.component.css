@@ -14,4 +14,9 @@
 
 #table-bg{
     background-position-x: center;
+    background-size: 100px;
+    background-position-y: bottom;
+}
+.field{
+    margin-top: 50px;
 }
