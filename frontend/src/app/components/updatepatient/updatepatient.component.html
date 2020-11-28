@@ -93,7 +93,7 @@
                     </mat-form-field>
                     <br>
                     <div>
-                        <h3>Co-Morbidities:</h3>
+                        <h3 class="heading">Co-Morbidities:</h3>
                         <mat-checkbox labelPosition="before" [checked]="cMorbDM" (change)="cMorbDM = !cMorbDM">Diabetes
                             Mellitus</mat-checkbox>
                         <br>
@@ -115,6 +115,13 @@
                                 #coMorbidityOther>
                         </mat-form-field>
                     </div>
+                    <h3 class="heading">Surgical History:</h3>
+                    <mat-form-field class="inputfield">
+                        <input matInput formControlName="surgHist1" #surgHist1>
+                    </mat-form-field>
+                    <mat-form-field class="inputfield">
+                        <input matInput formControlName="surgHist2" #surgHist1>
+                    </mat-form-field>
                     <br>
                     <mat-form-field class="inputfield">
                         <mat-select name="previousTr" placeholder="Previous Transplantation"

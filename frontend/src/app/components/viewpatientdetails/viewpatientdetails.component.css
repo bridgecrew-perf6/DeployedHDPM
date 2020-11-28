@@ -59,3 +59,9 @@
      text-decoration: underline;
      font-weight: bold;
  }
+ .heading-margin{
+     margin-top: 15px;
+ }
+ .max-width{
+     max-width: 800px;
+ }
