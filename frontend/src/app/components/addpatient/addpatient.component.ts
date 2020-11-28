@@ -319,7 +319,7 @@ export class AddpatientComponent implements OnInit {
     this.createForm.controls.oKidneyDisease.setValue("Unknown");
     this.createForm.controls.previousTr.setValue("No");
     this.createForm.controls.fitForTr.setValue("Yes");
-    this.createForm.controls.currentAccess.setValue("AVF/Side/Rt.");
+    this.createForm.controls.currentAccess1.setValue("RT.");
     this.createForm.controls.antiCoag.setValue("No");
     this.SelectedCMorbOther = false;
     this.cMorbDM = false;
