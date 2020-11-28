@@ -20,6 +20,7 @@ router.post('/register', (req, res) => {
         email: req.body.email,
         password: req.body.password,
         Hospital: req.body.Hospital,
+        n_ID: req.body.n_ID,
         contactInfo: req.body.contactInfo,
         isAdmin: req.body.isAdmin
 
