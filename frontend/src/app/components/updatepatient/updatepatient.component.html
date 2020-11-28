@@ -92,14 +92,6 @@
                         <input matInput placeholder="Specified Disease" formControlName="otherKD" #otherKD>
                     </mat-form-field>
                     <br>
-                    <h3>Surgical History:</h3>
-                    <br>
-                    <mat-form-field class="inputfield">
-                        <input matInput formControlName="surgHist1" #surgHist1>
-                    </mat-form-field>
-                    <mat-form-field class="inputfield">
-                        <input matInput formControlName="surgHist2" #surgHist1>
-                    </mat-form-field>
                     <div>
                         <h3>Co-Morbidities:</h3>
                         <mat-checkbox labelPosition="before" [checked]="cMorbDM" (change)="cMorbDM = !cMorbDM">Diabetes
@@ -189,7 +181,7 @@
                                 <mat-option
                                     *ngIf="this.updateForm.controls.currentAccess2.value=='AVF' || this.updateForm.controls.currentAccess2.value=='AVG'"
                                     value="Radio-cephalic">Radio-cephalic</mat-option>
-                                <mat-option value="Phemoral">Phemoral</mat-option>
+                                <mat-option value="Femoral">Femoral</mat-option>
                                 <mat-option
                                     *ngIf="this.updateForm.controls.currentAccess2.value =='Permcath' || this.updateForm.controls.currentAccess2.value == 'Temp.cath'"
                                     value="Int. Jugular">Int. Jugular</mat-option>

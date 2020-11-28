@@ -153,6 +153,7 @@ export class UpdatepatientComponent implements OnInit {
       HepBVDate: [''],
       InfV: [''],
       InfVDate: [''],
+      otherVAC: [''],
       progNotes: [''],
       consNotes: ['']
 
