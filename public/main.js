@@ -830,7 +830,7 @@ function ViewpatientdetailsComponent_div_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "mat-divider");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "br");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "h2");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Coagulation:");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Coagulation Profile:");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 11);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "h3");
@@ -5614,7 +5614,7 @@ function UpdatepatientComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](446, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](447, "h3");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](448, "Coagulation:");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](448, "Coagulation Profile:");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](449, "br");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](450, "mat-form-field", 7);
