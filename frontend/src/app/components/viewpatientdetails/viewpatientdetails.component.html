@@ -222,10 +222,10 @@
             <mat-card id="profileform-bg" class=" info-box shadow">
                 <h1 class="bigger d-flex justify-content-center">Lab Results (Date: {{this.dofLab}})</h1>
                 <h2>CBC:</h2>
-                <div class="d-flex flex-row justify-content-between">
-                    <h3>HB:</h3>
+                <div class="d-flex justify-content-between">
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
+                            <h3>HB:</h3>
                             <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.cbcHB}}
                             </mat-label>
                         </div>
@@ -237,9 +237,9 @@
                             </mat-label>
                         </div>
                     </div>
-                    <h3>Platelets:</h3>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
+                            <h3>Platelets:</h3>
                             <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.cbcPlatelets}}
                             </mat-label>
                         </div>
@@ -249,9 +249,9 @@
                 <br>
                 <h2>Coagulation Profile:</h2>
                 <div class="d-flex flex-row justify-content-between">
-                    <h3>PT:</h3>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
+                            <h3>PT:</h3>
                             <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.coagPT}} sec
                             </mat-label>
                         </div>
@@ -263,9 +263,9 @@
                             </mat-label>
                         </div>
                     </div>
-                    <h3>INR:</h3>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
+                            <h3>INR:</h3>
                             <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.coagINR}}
                             </mat-label>
                         </div>
@@ -518,21 +518,21 @@
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h2>Hepatitus&nbsp;B&nbsp;Vaccination:</h2>
-                            <mat-label class=" p-6 input-border">{{this.currPatient.HepBV}}</mat-label>
+                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.HepBV}}</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h2>Vaccination&nbsp;Date:</h2>
-                            <mat-label class=" p-6 input-border">{{this.dOfHepBV}}</mat-label>
+                            <mat-label class="margin-left-field p-6 input-border">{{this.dOfHepBV}}</mat-label>
                         </div>
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h2>Influenza&nbsp;Vaccination:</h2>
-                            <mat-label class=" p-6 input-border">{{this.currPatient.InfV}}</mat-label>
+                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.InfV}}</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h2>Vaccination&nbsp;Date:</h2>
-                            <mat-label class=" p-6 input-border">{{this.dOfInfV}}</mat-label>
+                            <mat-label class="margin-left-field p-6 input-border">{{this.dOfInfV}}</mat-label>
                         </div>
                     </div>
                 </div>
