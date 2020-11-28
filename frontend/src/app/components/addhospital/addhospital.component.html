@@ -3,26 +3,30 @@
         <mat-tab-group mat-align-tabs="center">
             <mat-tab label="Add a hospital">
                 <form [formGroup]="hospAddForm" class="form-margins">
-                    <mat-form-field class="field input-border">
-                        <input matInput formControlName="hospName" placeholder="Hospital Name" #hospName>
-                    </mat-form-field>
-                    <button mat-button type="submit" class="main-btn" (click)="addHosp()"
-                        [disabled]="hospAddForm.pristine || hospAddForm.invalid">
-                        Add</button>
+                    <div class="d-flex justify-content-center">
+                        <mat-form-field class="field input-border">
+                            <input matInput formControlName="hospName" placeholder="Hospital Name" #hospName>
+                        </mat-form-field>
+                        <button mat-button type="submit" class="main-btn" (click)="addHosp()"
+                            [disabled]="hospAddForm.pristine || hospAddForm.invalid">
+                            Add</button>
+                    </div>
                 </form>
             </mat-tab>
             <mat-tab label="Remove a hospital">
                 <form [formGroup]="hospRemoveForm" class="form-margins">
-                    <mat-form-field class="field input-border">
-                        <mat-select placeholder="Hospital Name" formControlName="hospName" #hospName>
-                            <mat-option *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">
-                                {{hospital.hospitalName}}
-                            </mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                    <button mat-button type="submit" class="main-btn" (click)="removeHosp()"
-                        [disabled]="hospRemoveForm.pristine || hospRemoveForm.invalid">
-                        Remove</button>
+                    <div class="d-flex justify-content-center">
+                        <mat-form-field class="field input-border">
+                            <mat-select placeholder="Hospital Name" formControlName="hospName" #hospName>
+                                <mat-option *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">
+                                    {{hospital.hospitalName}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <button mat-button type="submit" class="main-btn" (click)="removeHosp()"
+                            [disabled]="hospRemoveForm.pristine || hospRemoveForm.invalid">
+                            Remove</button>
+                    </div>
                 </form>
             </mat-tab>
         </mat-tab-group>
