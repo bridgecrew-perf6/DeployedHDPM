@@ -29,3 +29,11 @@
     width: 30%;
     font-size: large;
 }
+.heading{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.higher{
+    height: 1000px;
+}

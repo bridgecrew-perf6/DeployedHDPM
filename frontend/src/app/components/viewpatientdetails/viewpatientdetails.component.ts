@@ -72,6 +72,7 @@ export class ViewpatientdetailsComponent implements OnInit {
         this.pagePreviousDisabled = false;
       }
     }
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
   prevPage() {
     if (this.page == 2) {
@@ -85,6 +86,7 @@ export class ViewpatientdetailsComponent implements OnInit {
         this.pageNextDisabled = false;
       }
     }
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
   reverseDate(str: String) {
     return str.split("-").reverse().join("-");

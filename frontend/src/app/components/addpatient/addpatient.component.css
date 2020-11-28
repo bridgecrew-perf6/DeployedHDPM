@@ -25,3 +25,12 @@
     margin-top: 50px;
     margin-right: 40px;
 }
+.heading{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.higher{
+    height: 1000px;
+}
