@@ -31,7 +31,6 @@ export class PatientObj {
         this.currentAccess1 = "";
         this.currentAccess2 = "";
         this.currentAccess3 = "";
-        this.cAOther = "";
         this.dOfAccessCreation = "";
         this.compInsuf = false;
         this.compInf = false;
@@ -152,7 +151,6 @@ export class PatientObj {
     currentAccess1: String;
     currentAccess2: String;
     currentAccess3: String;
-    cAOther: String;
     dOfAccessCreation: String;
     compInsuf: boolean;
     compInf: boolean;

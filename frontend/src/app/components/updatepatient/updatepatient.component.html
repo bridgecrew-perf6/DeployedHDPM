@@ -146,7 +146,7 @@
                     </mat-form-field>
                     <br>
                     <mat-form-field class="inputfield">
-                        <mat-select name="potentialRDonors" placeholder="Potiential Relative Donors"
+                        <mat-select name="potentialRDonors" placeholder="Potential Relative Donors"
                             formControlName="potentialRDonors" #potentialRDonors>
                             <mat-option value="Yes">Yes</mat-option>
                             <mat-option value="No">No</mat-option>
@@ -172,7 +172,7 @@
                                 <mat-option value="Other">Other</mat-option>
                             </mat-select>
                         </mat-form-field>
-                        <mat-form-field *ngIf="this.updateForm.controls.currentAccess1.value !== 'Other'"  class="currentAcc">
+                        <mat-form-field class="currentAcc">
                             <mat-select name="currentAccess2" formControlName="currentAccess2" #currentAccess2>
                                 <mat-option value="AVF">AVF</mat-option>
                                 <mat-option value="AVG">AVG</mat-option>
@@ -180,7 +180,7 @@
                                 <mat-option value="Temp.cath">Temp.cath</mat-option>
                             </mat-select>
                         </mat-form-field>
-                        <mat-form-field class="currentAcc" *ngIf="this.updateForm.controls.currentAccess2.value && this.updateForm.controls.currentAccess1.value !== 'Other' ">
+                        <mat-form-field class="currentAcc" *ngIf="this.updateForm.controls.currentAccess2.value">
                             <mat-select name="currentAccess3" formControlName="currentAccess3" #currentAccess3>
                                 <mat-option
                                     *ngIf="this.updateForm.controls.currentAccess2.value=='AVF' || this.updateForm.controls.currentAccess2.value=='AVG'"
@@ -201,9 +201,6 @@
                             </mat-select>
                         </mat-form-field>
                     </div>
-                    <mat-form-field *ngIf="this.updateForm.controls.currentAccess1.value =='Other'" class="inputfield">
-                        <input matInput placeholder="Specified Access" formControlName="cAOther" #cAOther>
-                    </mat-form-field>
                     <br>
                     <mat-form-field appearance="fill">
                         <mat-label>Date of Access Creation</mat-label>

@@ -77,7 +77,6 @@ export class AddpatientComponent implements OnInit {
       currentAccess1: ['', Validators.required],
       currentAccess2: [''],
       currentAccess3: [''],
-      cAOther: [''],
       dOfAccessCreation: ['', Validators.required],
       ComplicationOther: [''],
       previousAccess1: [''],
@@ -210,7 +209,6 @@ export class AddpatientComponent implements OnInit {
         this.currP.currentAccess1 = this.createForm.controls.currentAccess1.value;
         this.currP.currentAccess2 = this.createForm.controls.currentAccess2.value;
         this.currP.currentAccess3 = this.createForm.controls.currentAccess3.value;
-        this.currP.cAOther = this.createForm.controls.cAOther.value;
         this.currP.dOfAccessCreation = this.createForm.controls.dOfAccessCreation.value;
         this.currP.compInsuf = this.CompIns;
         this.currP.compInf = this.CompInf;

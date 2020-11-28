@@ -110,9 +110,6 @@ let  patientSchema = new Schema({
     currentAccess3:{
         type: String
     },
-    cAOther:{
-        type: String
-    },
     dOfAccessCreation:{
         type: String
     },
