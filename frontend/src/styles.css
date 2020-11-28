@@ -97,14 +97,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin-right: 8.5%;
 }
 .txtlogo{
-    max-width: 400px;
-    min-width: 300px;
-    font-size: 22px;
+    max-width: 500px;
+    min-width: 400px;
+    font-size: 18px;
     text-align: center;
     font-weight: bold;
     color: #04462f;
     margin:auto;
-    margin-right: 0.3%;
+    margin-right: -1%;
     margin-bottom: 2%;
 }
 .center-text{
