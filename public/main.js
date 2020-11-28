@@ -5794,7 +5794,6 @@ function UpdatepatientComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const _r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](73);
-    const _r27 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](152);
     const _r31 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](169);
     const _r53 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](321);
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
@@ -5831,7 +5830,7 @@ function UpdatepatientComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](31);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.updateForm.controls.currentAccess1.value !== "Other");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.updateForm.currentAccess2.value && _r27.value !== "Other");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.updateForm.controls.currentAccess2.value && ctx_r0.updateForm.controls.currentAccess1.value !== "Other");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.updateForm.controls.currentAccess1.value == "Other");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);

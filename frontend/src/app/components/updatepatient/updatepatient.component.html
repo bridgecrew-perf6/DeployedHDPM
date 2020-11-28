@@ -173,7 +173,7 @@
                                 <mat-option value="Temp.cath">Temp.cath</mat-option>
                             </mat-select>
                         </mat-form-field>
-                        <mat-form-field class="currentAcc" *ngIf="this.updateForm.currentAccess2.value && this.currentAccess1.value !== 'Other' ">
+                        <mat-form-field class="currentAcc" *ngIf="this.updateForm.controls.currentAccess2.value && this.updateForm.controls.currentAccess1.value !== 'Other' ">
                             <mat-select name="currentAccess3" formControlName="currentAccess3" #currentAccess3>
                                 <mat-option
                                     *ngIf="this.updateForm.controls.currentAccess2.value=='AVF' || this.updateForm.controls.currentAccess2.value=='AVG'"
