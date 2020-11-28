@@ -171,7 +171,7 @@
                                 <mat-option value="Other">Other</mat-option>
                             </mat-select>
                         </mat-form-field>
-                        <mat-form-field class="currentAcc">
+                        <mat-form-field *ngIf="this.updateForm.controls.currentAccess1.value !== 'Other'"  class="currentAcc">
                             <mat-select name="currentAccess2" formControlName="currentAccess2" #currentAccess2>
                                 <mat-option value="AVF">AVF</mat-option>
                                 <mat-option value="AVG">AVG</mat-option>
@@ -179,28 +179,28 @@
                                 <mat-option value="Temp.cath">Temp.cath</mat-option>
                             </mat-select>
                         </mat-form-field>
-                        <mat-form-field class="currentAcc" *ngIf="this.currentAccess2">
+                        <mat-form-field class="currentAcc" *ngIf="this.updateForm.currentAccess2.value && this.currentAccess1.value !== 'Other' ">
                             <mat-select name="currentAccess3" formControlName="currentAccess3" #currentAccess3>
                                 <mat-option
-                                    *ngIf="this.createForm.controls.currentAccess2.value=='AVF' || this.createForm.controls.currentAccess2.value=='AVG'"
+                                    *ngIf="this.updateForm.controls.currentAccess2.value=='AVF' || this.updateForm.controls.currentAccess2.value=='AVG'"
                                     value="Radio-ulnar">Radio-ulnar</mat-option>
                                 <mat-option
-                                    *ngIf="this.createForm.controls.currentAccess2.value=='AVF' || this.createForm.controls.currentAccess2.value=='AVG'"
+                                    *ngIf="this.updateForm.controls.currentAccess2.value=='AVF' || this.updateForm.controls.currentAccess2.value=='AVG'"
                                     value="Radio-cephalic">Radio-cephalic</mat-option>
                                 <mat-option value="Phemoral">Phemoral</mat-option>
                                 <mat-option
-                                    *ngIf="this.createForm.controls.currentAccess2.value =='Permcath' || this.createForm.controls.currentAccess2.value == 'Temp.cath'"
+                                    *ngIf="this.updateForm.controls.currentAccess2.value =='Permcath' || this.updateForm.controls.currentAccess2.value == 'Temp.cath'"
                                     value="Int. Jugular">Int. Jugular</mat-option>
                                 <mat-option
-                                    *ngIf="this.createForm.controls.currentAccess2.value=='Permcath' || this.createForm.controls.currentAccess2.value=='Temp.cath'"
+                                    *ngIf="this.updateForm.controls.currentAccess2.value=='Permcath' || this.updateForm.controls.currentAccess2.value=='Temp.cath'"
                                     value="Subclavian">Subclavian</mat-option>
                                 <mat-option
-                                    *ngIf="this.createForm.controls.currentAccess2.value=='Permcath' || this.createForm.controls.currentAccess2.value=='Temp.cath'"
+                                    *ngIf="this.updateForm.controls.currentAccess2.value=='Permcath' || this.updateForm.controls.currentAccess2.value=='Temp.cath'"
                                     value="Transhepatic">Transhepatic</mat-option>
                             </mat-select>
                         </mat-form-field>
                     </div>
-                    <mat-form-field *ngIf="this.createForm.controls.currentAccess1.value =='Other'" class="inputfield">
+                    <mat-form-field *ngIf="this.updateForm.controls.currentAccess1.value =='Other'" class="inputfield">
                         <input matInput placeholder="Specified Access" formControlName="cAOther" #cAOther>
                     </mat-form-field>
                     <br>
