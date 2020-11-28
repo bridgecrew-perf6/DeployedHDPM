@@ -32,7 +32,7 @@ export class UserUpdateComponent implements OnInit {
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       email: ['', [Validators.email, Validators.required]],
-      n_ID: ['', [Validators.required]],
+      n_ID: ['', Validators.required],
       contactInfo: ['', [Validators.max(9999999999), Validators.required]]
 
     });
