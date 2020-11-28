@@ -93,8 +93,7 @@
                         <input matInput placeholder="Specified Disease" formControlName="otherKD" #otherKD>
                     </mat-form-field>
                     <br>
-                    <h4>Surgical History</h4>
-                    <br>
+                    <h3>Surgical History</h3>
                     <mat-form-field class="inputfield">
                         <input matInput formControlName="surgHist1" #surgHist1>
                     </mat-form-field>
@@ -102,7 +101,7 @@
                         <input matInput formControlName="surgHist2" #surgHist1>
                     </mat-form-field>
                     <div>
-                        <h4>Co-Morbidities:</h4>
+                        <h3>Co-Morbidities:</h3>
                         <mat-checkbox labelPosition="before" [checked]="cMorbDM" (change)="cMorbDM = !cMorbDM">Diabetes
                             Mellitus</mat-checkbox>
                         <br>
@@ -163,7 +162,7 @@
                 </mat-step>
                 <mat-step>
                     <ng-template matStepLabel>Vascular Access</ng-template>
-                    <h4>Current Access:</h4>
+                    <h3>Current Access:</h3>
                     <div class="d-flex justify-content-between">
                         <mat-form-field class="currentAcc">
                             <mat-select name="currentAccess1" formControlName="currentAccess1" #currentAccess1>
@@ -213,7 +212,7 @@
                     </mat-form-field>
                     <br>
                     <div>
-                        <h4>Complications:</h4>
+                        <h3>Complications:</h3>
                         <mat-checkbox labelPosition="before" [checked]="CompIns" (change)="CompIns = !CompIns">
                             Insufficiency</mat-checkbox>
                         <br>
@@ -235,7 +234,7 @@
                         </mat-form-field>
                     </div>
                     <br>
-                    <h4>Previous Access(es):</h4>
+                    <h3>Previous Access(es):</h3>
                     <mat-divider></mat-divider>
                     <mat-form-field class="inputfield">
                         <input matInput formControlName="previousAccess1" #previousAccess1>
@@ -315,7 +314,7 @@
                     </mat-form-field>
                     <br><br>
                     <div>
-                        <h4>Dialysis Complications:</h4>
+                        <h3>Dialysis Complications:</h3>
                         <mat-checkbox labelPosition="before" [checked]="DCHA" (change)="DCHA = !DCHA">Headache
                         </mat-checkbox>
                         <br>
@@ -370,7 +369,7 @@
                             <mat-datepicker-toggle matSuffix [for]="labDate"></mat-datepicker-toggle>
                             <mat-datepicker #labDate></mat-datepicker>
                         </mat-form-field>
-                        <h4>CBC:</h4>
+                        <h3>CBC:</h3>
                         <br>
                         <mat-form-field class="inputfield">
                             <input matInput placeholder="HB (g/dl)" formControlName="cbcHB" #cbcHB>
@@ -386,7 +385,7 @@
                         <br>
                     </div>
                     <div>
-                        <h4>Chemistry:</h4>
+                        <h3>Chemistry:</h3>
                         <br>
                         <mat-form-field class="inputfield">
                             <input matInput placeholder="S. Creatinine (mg%)" formControlName="chemCre" #chemCre>
@@ -436,7 +435,7 @@
                         </mat-form-field>
                     </div>
                     <div>
-                        <h4>Serology:</h4>
+                        <h3>Serology:</h3>
                         <br>
                         <mat-form-field class="inputfield">
                             <mat-select name="hbsAg" placeholder="HBs Ag" formControlName="hbsAg" #hbsAg>
@@ -467,7 +466,7 @@
                         </mat-form-field>
                     </div>
                     <div>
-                        <h4>Iron Profile:</h4>
+                        <h3>Iron Profile:</h3>
                         <br>
                         <mat-form-field class="inputfield">
                             <input matInput placeholder="S. Iron (umol/L)" formControlName="Siron" #Siron>
@@ -485,7 +484,7 @@
                         </mat-form-field>
                     </div>
                     <div>
-                        <h4>Coagulation Profile:</h4>
+                        <h3>Coagulation Profile:</h3>
                         <br>
                         <mat-form-field class="inputfield">
                             <input matInput placeholder="PT (sec)" formControlName="coagPT" #coagPT>
@@ -501,7 +500,7 @@
                         <br>
                     </div>
                     <div>
-                        <h4>Hormones:</h4>
+                        <h3>Hormones:</h3>
                         <br>
                         <mat-form-field class="inputfield">
                             <input matInput placeholder="PTH (Pmol/L)" formControlName="hormPTH" #hormPTH>
