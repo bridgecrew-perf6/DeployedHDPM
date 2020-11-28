@@ -59,10 +59,10 @@
                     <mat-label class=" p-6 input-border">{{this.currPatient.otherKD}}</mat-label>
                 </div>
                 <h2>Surgical History</h2>
-                <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">
+                <div class="d-flex justify-content-between">
+                    <mat-label class="shorter p-6 input-border">
                         {{this.currPatient.surgHist1}}</mat-label>
-                    <mat-label class=" p-6 input-border">{{this.currPatient.surgHist2}}</mat-label>
+                    <mat-label class="shorter p-6 input-border">{{this.currPatient.surgHist2}}</mat-label>
                 </div>
                 <h2>Co-Moribidities</h2>
                 <div class="d-flex justify-content-center">
@@ -103,7 +103,7 @@
                 <h2>Current Access</h2>
                 <div class="d-flex justify-content-center">
                     <mat-label *ngIf="this.currPatient.currentAccess1 != 'Other'" class=" p-6 input-border">
-                        {{this.currPatient.currentAccess}} {{this.currPatient.currentAccess2}}
+                        {{this.currPatient.currentAccess1}} {{this.currPatient.currentAccess2}}
                         {{this.currPatient.currentAccess3}}</mat-label>
                     <mat-label class=" p-6 input-border">{{this.currPatient.cAOther}}</mat-label>
                 </div>
@@ -373,7 +373,7 @@
                 <div class="d-flex justify-content-center">
                     <h1>Current Medication</h1>
                 </div>
-                <div class="d-flex justify-content-around">
+                <div class="d-flex justify-content-between">
                     <div *ngIf="this.currPatient.cMD1">
                         <h2>Medication 1</h2>
                         <div class="d-flex justify-content-center">
