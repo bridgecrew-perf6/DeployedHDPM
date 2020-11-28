@@ -68,10 +68,16 @@
                 <div class="d-flex justify-content-center">
                     <div class="p-6 input-border">
                         <mat-label *ngIf="this.currPatient.morbHype">Hypertension</mat-label>
-                        <mat-label *ngIf="this.currPatient.morbDM"> <br><br> Diabetes Mellitus</mat-label>
-                        <mat-label *ngIf="this.currPatient.morbEpi"> <br><br> Epilepsy</mat-label>
-                        <mat-label *ngIf="this.currPatient.coMorbOther"> <br><br> {{this.currPatient.coMorbOther}}
-                        </mat-label>
+                        <div *ngIf="this.currPatient.morbDM">
+                            <mat-label> <br><br> Diabetes Mellitus</mat-label>
+                        </div>
+                        <div *ngIf="this.currPatient.morbEpi">
+                            <mat-label> <br><br> Epilepsy</mat-label>
+                        </div>
+                        <div *ngIf="this.currPatient.coMorbOther">
+                            <mat-label> <br><br> {{this.currPatient.coMorbOther}}
+                            </mat-label>
+                        </div>
                     </div>
                 </div>
                 <h2>Previous Transplantation</h2>
@@ -113,11 +119,20 @@
                 <h2>Complications</h2>
                 <div class="d-flex justify-content-center">
                     <div class="p-6 input-border">
-                        <mat-label *ngIf="this.currPatient.compInsuf">Insufficiency </mat-label>
-                        <mat-label *ngIf="this.currPatient.compInf"> <br><br> Infection </mat-label>
-                        <mat-label *ngIf="this.currPatient.compAD"> <br><br> Aneurysmal Dilatation </mat-label>
-                        <mat-label *ngIf="this.currPatient.compDC"> <br><br> Difficult Cannulation</mat-label>
-                        <mat-label *ngIf="this.currPatient.compDC"> <br><br> {{this.currPatient.compOther}}</mat-label>
+                        <div *ngIf="this.currPatient.compInsuf">
+                            <mat-label>Insufficiency </mat-label>
+                        </div>
+                        <div *ngIf="this.currPatient.compInf">
+                            <mat-label> <br><br> Infection </mat-label>
+                        </div>
+                        <div *ngIf="this.currPatient.compAD">
+                            <mat-label> <br><br> Aneurysmal Dilatation </mat-label>
+                        </div>
+                        <div *ngIf="this.currPatient.compDC">
+                            <mat-label> <br><br> Difficult Cannulation</mat-label>
+                        </div>
+                        <mat-label *ngIf="this.currPatient.compOther"> <br><br> {{this.currPatient.compOther}}
+                        </mat-label>
                     </div>
                 </div>
                 <h2>Previous Access(es)</h2>
@@ -242,62 +257,61 @@
                 <br>
                 <h2>Chemistry:</h2>
                 <div class="d-flex flex-row justify-content-between">
-                    <h3>S. Creatinine:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.chemCre}} mg%</mat-label>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <h3>S. Creatinine:</h3>
+                            <mat-label class=" p-6 input-border">{{this.currPatient.chemCre}} mg%</mat-label>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h3>S. Potassium:</h3>
+                            <mat-label class=" p-6 input-border">{{this.currPatient.chemPot}} mmoL/L</mat-label>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h3>S. Magnesium:</h3>
+                            <mat-label class=" p-6 input-border">{{this.currPatient.chemMag}} mg%</mat-label>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h3>ALT:</h3>
+                            <mat-label class=" p-6 input-border">{{this.currPatient.chemALT}} U/L</mat-label>
+                        </div>
                     </div>
-                    <h3>S. Urea:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.chemUrea}} mg%</mat-label>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <h3>S. Urea:</h3>
+                            <!--2nd column start-->
+                            <mat-label class=" p-6 input-border">{{this.currPatient.chemUrea}} mg%</mat-label>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h3>S. Calcium:</h3>
+                            <mat-label class=" p-6 input-border">{{this.currPatient.chemCal}} mg%</mat-label>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h3>S. Albumin:</h3>
+                            <mat-label class=" p-6 input-border">{{this.currPatient.chemAlb}} mg%</mat-label>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h3>Alk. Phosphatase:</h3>
+                            <mat-label class=" p-6 input-border">{{this.currPatient.chemPhos}} U/L</mat-label>
+                        </div>
                     </div>
-                    <h3>S. Sodium:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.chemSod}} mmoL/L</mat-label>
-                    </div>
-                </div>
-                <br>
-                <div class="d-flex flex-row justify-content-between">
-                    <h3>S. Potassium:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.chemPot}} mmoL/L</mat-label>
-                    </div>
-                    <h3>S. Calcium:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.chemCal}} mg%</mat-label>
-                    </div>
-                    <h3>S. Phosphorus:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.chemPhos}} mg%</mat-label>
-                    </div>
-                </div>
-                <br>
-                <div class="d-flex flex-row justify-content-between">
-                    <h3>S. Magnesium:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.chemMag}} mg%</mat-label>
-                    </div>
-                    <h3>S. Albumin:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.chemAlb}} mg%</mat-label>
-                    </div>
-                    <h3>AST:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.chemAST}} U/L</mat-label>
-                    </div>
-                </div>
-                <br>
-                <div class="d-flex flex-row justify-content-between">
-                    <h3>ALT:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.chemALT}} U/L</mat-label>
-                    </div>
-                    <h3>Alk. Phosphatase:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.chemPhos}} U/L</mat-label>
-                    </div>
-                    <h3>Other:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.chemOther}}</mat-label>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <h3>S. Sodium:</h3>
+                            <!---3rd column start-->
+                            <mat-label class=" p-6 input-border">{{this.currPatient.chemSod}} mmoL/L</mat-label>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h3>S. Phosphorus:</h3>
+                            <mat-label class=" p-6 input-border">{{this.currPatient.chemPhos}} mg%</mat-label>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h3>AST:</h3>
+                            <mat-label class=" p-6 input-border">{{this.currPatient.chemAST}} U/L</mat-label>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h3>Other:</h3>
+                            <mat-label class=" p-6 input-border">{{this.currPatient.chemOther}}</mat-label>
+                        </div>
                     </div>
                 </div>
                 <mat-divider></mat-divider>
@@ -335,7 +349,7 @@
                     </div>
                     <h3>Other:</h3>
                     <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.hormOther}} ng/L</mat-label>
+                        <mat-label class=" p-6 input-border">{{this.currPatient.hormOther}}</mat-label>
                     </div>
                 </div>
                 <mat-divider></mat-divider>
@@ -370,7 +384,7 @@
         <div *ngIf="this.page==6" class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
                 <div class="d-flex justify-content-center">
-                    <h1 class="bigger" >Current Medication</h1>
+                    <h1 class="bigger">Current Medication</h1>
                 </div>
                 <div class="d-flex justify-content-around">
                     <div *ngIf="this.currPatient.cMD1">
