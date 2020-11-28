@@ -224,33 +224,48 @@
                 <h2>CBC:</h2>
                 <div class="d-flex flex-row justify-content-between">
                     <h3>HB:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class="p-6 input-border">{{this.currPatient.cbcHB}}</mat-label>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.cbcHB}}
+                            </mat-label>
+                        </div>
                     </div>
-                    <h3>WBC:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class="p-6 input-border">{{this.currPatient.cbcWBC}}</mat-label>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <h3>WBC:</h3>
+                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.cbcWBC}}
+                            </mat-label>
+                        </div>
                     </div>
                     <h3>Platelets:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class="p-6 input-border">{{this.currPatient.cbcPlatelets}}</mat-label>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.cbcPlatelets}}
+                            </mat-label>
+                        </div>
                     </div>
                 </div>
                 <mat-divider></mat-divider>
                 <br>
                 <h2>Coagulation Profile:</h2>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex flex-row justify-content-between">
                     <h3>PT:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.coagPT}} sec</mat-label>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.coagPT}} sec</mat-label>
+                        </div>
                     </div>
-                    <h3>PPT:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.coagPPT}} sec</mat-label>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <h3>PPT:</h3>
+                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.coagPPT}} sec</mat-label>
+                        </div>
                     </div>
                     <h3>INR:</h3>
-                    <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.coagINR}}</mat-label>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.coagINR}}</mat-label>
+                        </div>
                     </div>
                 </div>
                 <mat-divider></mat-divider>
@@ -259,58 +274,70 @@
                 <div class="d-flex flex-row justify-content-between">
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
-                            <h3 class="lab-headings">S.&nbsp;Creatinine:</h3>
-                            <mat-label class="margin-left-field p-6 input-border lab-fields">{{this.currPatient.chemCre}} mg%</mat-label>
+                            <h3 class="lab-headings margin-left-field">S.&nbsp;Creatinine:</h3>
+                            <mat-label class="margin-left-field p-6 input-border lab-fields">
+                                {{this.currPatient.chemCre}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
-                            <h3 class="lab-headings">S.&nbsp;Potassium:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">{{this.currPatient.chemPot}} mmoL/L</mat-label>
+                            <h3 class=" margin-left-field lab-headings">S.&nbsp;Potassium:</h3>
+                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                                {{this.currPatient.chemPot}} mmoL/L</mat-label>
                         </div>
                         <div class="d-flex flex-row">
-                            <h3 class="lab-headings">S.&nbsp;Magnesium:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">{{this.currPatient.chemMag}} mg%</mat-label>
+                            <h3 class=" margin-left-field lab-headings">S.&nbsp;Magnesium:</h3>
+                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                                {{this.currPatient.chemMag}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
-                            <h3 class="lab-headings">ALT:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">{{this.currPatient.chemALT}} U/L</mat-label>
+                            <h3 class=" margin-left-field lab-headings">ALT:</h3>
+                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                                {{this.currPatient.chemALT}} U/L</mat-label>
                         </div>
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
-                            <h3 class="lab-headings">S.&nbsp;Urea:</h3>
+                            <h3 class=" margin-left-field lab-headings">S.&nbsp;Urea:</h3>
                             <!--2nd column start-->
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">{{this.currPatient.chemUrea}} mg%</mat-label>
+                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                                {{this.currPatient.chemUrea}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
-                            <h3 class="lab-headings">S.&nbsp;Calcium:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">{{this.currPatient.chemCal}} mg%</mat-label>
+                            <h3 class=" margin-left-field lab-headings">S.&nbsp;Calcium:</h3>
+                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                                {{this.currPatient.chemCal}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
-                            <h3 class="lab-headings">S.&nbsp;Albumin:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">{{this.currPatient.chemAlb}} mg%</mat-label>
+                            <h3 class=" margin-left-field lab-headings">S.&nbsp;Albumin:</h3>
+                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                                {{this.currPatient.chemAlb}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
-                            <h3 class="lab-headings">Alk.&nbsp;Phosphatase:</h3>
-                            <mat-label class="margin-left-field  p-6 input-border lab-fields">{{this.currPatient.chemPhos}} U/L</mat-label>
+                            <h3 class=" margin-left-field lab-headings">Alk.&nbsp;Phosphatase:</h3>
+                            <mat-label class="margin-left-field  p-6 input-border lab-fields">
+                                {{this.currPatient.chemPhos}} U/L</mat-label>
                         </div>
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3 class="lab-headings">S.&nbsp;Sodium:</h3>
                             <!---3rd column start-->
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">{{this.currPatient.chemSod}} mmoL/L</mat-label>
+                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                                {{this.currPatient.chemSod}} mmoL/L</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class="lab-headings">S.&nbsp;Phosphorus:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">{{this.currPatient.chemPhos}} mg%</mat-label>
+                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                                {{this.currPatient.chemPhos}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class="lab-headings">AST:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">{{this.currPatient.chemAST}} U/L</mat-label>
+                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                                {{this.currPatient.chemAST}} U/L</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class="lab-headings">Other:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">{{this.currPatient.chemOther}}</mat-label>
+                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                                {{this.currPatient.chemOther}}</mat-label>
                         </div>
                     </div>
                 </div>
