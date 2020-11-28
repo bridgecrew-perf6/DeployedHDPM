@@ -8,25 +8,13 @@ export class AuthGuard implements CanActivate {
 
     }
     canActivate() {
-        if (this.authService.loggedIn()) {
-            return true;
-        }
-        else {
+        if (this.authService.loggedIn() == false) {
             this.router.navigate(['/login']);
             return false;
         }
-    }
-}
-export class RoleGuard implements CanActivate {
-    constructor(private authService: UserService, private router: Router) {
-
-    }
-    canActivate() {
-        if (this.authService.isAdminAuthorized) {
-            return true;
-        }
         else {
-            return false;
+
+            return true;
         }
     }
 }

@@ -58,6 +58,12 @@
                         {{this.currPatient.oKidneyDisease}}</mat-label>
                     <mat-label class=" p-6 input-border">{{this.currPatient.otherKD}}</mat-label>
                 </div>
+                <h2>Surgical History</h2>
+                <div class="d-flex justify-content-center">
+                    <mat-label class=" p-6 input-border">
+                        {{this.currPatient.surgHist1}}</mat-label>
+                    <mat-label class=" p-6 input-border">{{this.currPatient.surgHist2}}</mat-label>
+                </div>
                 <h2>Co-Moribidities</h2>
                 <div class="d-flex justify-content-center">
                     <div class="p-6 input-border">
@@ -97,7 +103,8 @@
                 <h2>Current Access</h2>
                 <div class="d-flex justify-content-center">
                     <mat-label *ngIf="this.currPatient.currentAccess1 != 'Other'" class=" p-6 input-border">
-                        {{this.currPatient.currentAccess}} {{this.currPatient.currentAccess2}} {{this.currPatient.currentAccess3}}</mat-label>
+                        {{this.currPatient.currentAccess}} {{this.currPatient.currentAccess2}}
+                        {{this.currPatient.currentAccess3}}</mat-label>
                     <mat-label class=" p-6 input-border">{{this.currPatient.cAOther}}</mat-label>
                 </div>
                 <h2>Date of Access Creation</h2>
@@ -161,13 +168,21 @@
                             {{this.currPatient.hInit}}</mat-label>
                     </div>
                 </div>
+                <h2>Dry Weight</h2>
+                <div class="d-flex justify-content-center">
+                    <mat-label class=" p-6 input-border">{{this.currPatient.dryWt}} kg</mat-label>
+                </div>
                 <h2>Average Weight Gain</h2>
                 <div class="d-flex justify-content-center">
                     <mat-label class=" p-6 input-border">{{this.currPatient.avgWtGain}} (between sessions)</mat-label>
                 </div>
-                <h2>Dry Weight</h2>
+                <h2>Average Blood Pressure</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.dryWt}} kg</mat-label>
+                    <mat-label class=" p-6 input-border">{{this.currPatient.avgBP}}</mat-label>
+                </div>
+                <h2>Average Pulse</h2>
+                <div class="d-flex justify-content-center">
+                    <mat-label class=" p-6 input-border">{{this.currPatient.avgBP}}</mat-label>
                 </div>
                 <h2>Dialysis Complications</h2>
                 <div class="d-flex justify-content-center">
@@ -318,6 +333,10 @@
                     <h3>Vitamin D:</h3>
                     <div class="d-flex justify-content-center">
                         <mat-label class=" p-6 input-border">{{this.currPatient.hormVITD}} ng/L</mat-label>
+                    </div>
+                    <h3>Other:</h3>
+                    <div class="d-flex justify-content-center">
+                        <mat-label class=" p-6 input-border">{{this.currPatient.hormOther}} ng/L</mat-label>
                     </div>
                 </div>
                 <mat-divider></mat-divider>
@@ -492,6 +511,26 @@
                             <mat-label class=" p-6 input-border">{{this.dOfInfV}}</mat-label>
                         </div>
                     </div>
+                </div>
+                <h2>Other Vaccination:</h2>
+                <div class="d-flex justify-content-center">
+                    <mat-label class=" p-6 input-border">{{this.currPatient.otherVAC}}</mat-label>
+                </div>
+            </mat-card>
+        </div>
+        <div *ngIf="this.page==7" class="d-flex justify-content-center">
+            <mat-card id="profileform-bg" class=" info-box shadow">
+                <h2>Dr Progress Notes</h2>
+                <div class="d-flex justify-content-center">
+                    <mat-label class=" p-6 input-border">{{this.currPatient.progNotes}}</mat-label>
+                </div>
+            </mat-card>
+        </div>
+        <div *ngIf="this.page==8" class="d-flex justify-content-center">
+            <mat-card id="profileform-bg" class=" info-box shadow">
+                <h2>Consultant Notes</h2>
+                <div class="d-flex justify-content-center">
+                    <mat-label class=" p-6 input-border">{{this.currPatient.consNotes}}</mat-label>
                 </div>
             </mat-card>
         </div>
