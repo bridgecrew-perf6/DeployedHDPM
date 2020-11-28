@@ -5,6 +5,7 @@ export interface userInt {
     email: String;
     password: String;
     Hospital: String;
+    n_ID: String;
     contactInfo: String;
     isAdmin: boolean;
 

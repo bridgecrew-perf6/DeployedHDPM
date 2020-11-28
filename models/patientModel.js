@@ -65,6 +65,12 @@ let  patientSchema = new Schema({
     otherKD: {
         type: String
     },
+    surgHist1: {
+        type: String
+    },
+    surgHist2: {
+        type: String
+    },
     morbHype: {
         type: Boolean
     },
@@ -95,7 +101,13 @@ let  patientSchema = new Schema({
     potentialRDonors: {
         type: String
     },
-    currentAccess:{
+    currentAccess1:{
+        type: String
+    },
+    currentAccess2:{
+        type: String
+    },
+    currentAccess3:{
         type: String
     },
     cAOther:{
@@ -166,6 +178,12 @@ let  patientSchema = new Schema({
         type: Number
     },
     avgWtGain: {
+        type: Number
+    },
+    avgBP: {
+        type: Number
+    },
+    avgPulse: {
         type: Number
     },
     dialAdeq :{
@@ -355,6 +373,15 @@ let  patientSchema = new Schema({
         type: String
     },
     InfVDate: {
+        type: String
+    },
+    otherVC: {
+        type: String
+    },
+    progNotes: {
+        type: String
+    },
+    consNotes: {
         type: String
     }
 

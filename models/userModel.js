@@ -23,6 +23,10 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    n_ID: {
+        type: String,
+        required: true
+    },
     contactInfo: {
         type: Number,
         min: 0,

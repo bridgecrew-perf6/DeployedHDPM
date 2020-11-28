@@ -4,6 +4,7 @@ export class userObj {
     email: String;
     password: String;
     Hospital: String;
+    n_ID: String;
     contactInfo: String;
     isAdmin: Boolean;
 }

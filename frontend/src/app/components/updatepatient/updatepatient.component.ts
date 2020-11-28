@@ -70,13 +70,17 @@ export class UpdatepatientComponent implements OnInit {
       dosDialysis: ['', Validators.required],
       oKidneyDisease: ['', Validators.required],
       otherKD : [''],
+      surgHist1: [''],
+      surgHist2: [''],
       coMorbidityOther: [''],
       previousTr: ['', Validators.required],
       prevTrGS :[''],
       fitForTr: [''],
       fitForTrReason: [''],
       potentialRDonors: ['', Validators.required],
-      currentAccess: ['', Validators.required],
+      currentAccess1: ['', Validators.required],
+      currentAccess2: [''],
+      currentAccess3: [''],
       cAOther: [''],
       dOfAccessCreation: ['', Validators.required],
       ComplicationOther: [''],
@@ -94,6 +98,8 @@ export class UpdatepatientComponent implements OnInit {
       antiCoReason: [''],
       dryWt: ['', Validators.required],
       avgWtGain: ['', Validators.required],
+      avgBP: ['', Validators.required],
+      avgPulse: ['', Validators.required],
       dialAdeq: ['', Validators.required],
       dCompOther: [''],
       labDate: ['', Validators.required],
@@ -146,7 +152,9 @@ export class UpdatepatientComponent implements OnInit {
       HepBV: [''],
       HepBVDate: [''],
       InfV: [''],
-      InfVDate: ['']
+      InfVDate: [''],
+      progNotes: [''],
+      consNotes: ['']
 
     });
    }
@@ -209,6 +217,8 @@ export class UpdatepatientComponent implements OnInit {
     this.updateForm.get('dosDialysis').setValue(this.currPatient.dosDialysis);
     this.updateForm.get('oKidneyDisease').setValue(this.currPatient.oKidneyDisease);
     this.updateForm.get('otherKD').setValue(this.currPatient.otherKD);
+    this.updateForm.get('surgHist1').setValue(this.currPatient.surgHist1);
+    this.updateForm.get('surgHist2').setValue(this.currPatient.surgHist2);
     this.cMorbHyp = this.currPatient.morbHype;
     this.cMorbDM = this.currPatient.morbDM;
     this.cMorbE = this.currPatient.morbEpi;
@@ -223,7 +233,9 @@ export class UpdatepatientComponent implements OnInit {
     this.updateForm.get('fitForTr').setValue(this.currPatient.fitForTr);
     this.updateForm.get('fitForTrReason').setValue(this.currPatient.fitForTrReason);
     this.updateForm.get('potentialRDonors').setValue(this.currPatient.potentialRDonors);
-    this.updateForm.get('currentAccess').setValue(this.currPatient.currentAccess);
+    this.updateForm.get('currentAccess1').setValue(this.currPatient.currentAccess1);
+    this.updateForm.get('currentAccess2').setValue(this.currPatient.currentAccess2);
+    this.updateForm.get('currentAccess3').setValue(this.currPatient.currentAccess3);
     this.updateForm.get('cAOther').setValue(this.currPatient.cAOther);
     this.updateForm.get('dOfAccessCreation').setValue(this.currPatient.dOfAccessCreation);
     this.CompIns = this.currPatient.compInsuf;
@@ -249,6 +261,8 @@ export class UpdatepatientComponent implements OnInit {
     this.updateForm.get('antiCoReason').setValue(this.currPatient.antiCoReason);
     this.updateForm.get('dryWt').setValue(this.currPatient.dryWt);
     this.updateForm.get('avgWtGain').setValue(this.currPatient.avgWtGain);
+    this.updateForm.get('avgBP').setValue(this.currPatient.avgBP);
+    this.updateForm.get('avgPulse').setValue(this.currPatient.avgPulse);
     this.updateForm.get('dialAdeq').setValue(this.currPatient.dialAdeq);
     this.DCHA = this.currPatient.dCompHead;
     this.DCHypot = this.currPatient.dCompHOT;
@@ -316,6 +330,9 @@ export class UpdatepatientComponent implements OnInit {
     this.updateForm.get('HepBVDate').setValue(this.currPatient.HepBVDate);
     this.updateForm.get('InfV').setValue(this.currPatient.InfV);
     this.updateForm.get('InfVDate').setValue(this.currPatient.InfVDate);
+    this.updateForm.get('otherVAC').setValue(this.currPatient.otherVAC);
+    this.updateForm.get('progNotes').setValue(this.currPatient.progNotes);
+    this.updateForm.get('consNotes').setValue(this.currPatient.consNotes);
   }
 
   updateP()
@@ -352,6 +369,8 @@ export class UpdatepatientComponent implements OnInit {
     this.updatedP.dosDialysis = this.updateForm.controls.dosDialysis.value;
     this.updatedP.oKidneyDisease = this.updateForm.controls.oKidneyDisease.value;
     this.updatedP.otherKD = this.updateForm.controls.otherKD.value;
+    this.updatedP.surgHist1 = this.updateForm.controls.surgHist2.value;
+    this.updatedP.surgHist2 = this.updateForm.controls.surgHist2.value;
     this.updatedP.morbHype = this.cMorbHyp;
     this.updatedP.morbDM = this.cMorbDM;
     this.updatedP.morbEpi = this.cMorbE;
@@ -365,7 +384,9 @@ export class UpdatepatientComponent implements OnInit {
     this.updatedP.fitForTr = this.updateForm.controls.fitForTr.value;
     this.updatedP.fitForTrReason = this.updateForm.controls.fitForTrReason.value;
     this.updatedP.potentialRDonors = this.updateForm.controls.potentialRDonors.value;
-    this.updatedP.currentAccess = this.updateForm.controls.currentAccess.value;
+    this.updatedP.currentAccess1 = this.updateForm.controls.currentAccess1.value;
+    this.updatedP.currentAccess2 = this.updateForm.controls.currentAccess2.value;
+    this.updatedP.currentAccess3 = this.updateForm.controls.currentAccess3.value;
     this.updatedP.cAOther = this.updateForm.controls.cAOther.value;
     this.updatedP.dOfAccessCreation = this.updateForm.controls.dOfAccessCreation.value;
     this.updatedP.compInsuf = this.CompIns;
@@ -390,6 +411,8 @@ export class UpdatepatientComponent implements OnInit {
     this.updatedP.antiCoReason = this.updateForm.controls.antiCoReason.value;
     this.updatedP.dryWt = this.updateForm.controls.dryWt.value;
     this.updatedP.avgWtGain = this.updateForm.controls.avgWtGain.value;
+    this.updatedP.avgBP = this.updateForm.controls.avgBP.value;
+    this.updatedP.avgPulse = this.updateForm.controls.avgPulse.value;
     this.updatedP.dialAdeq = this.updateForm.controls.dialAdeq.value;
     this.updatedP.dCompHead = this.DCHA;
     this.updatedP.dCompHOT = this.DCHypot;
@@ -456,6 +479,9 @@ export class UpdatepatientComponent implements OnInit {
     this.updatedP.HepBVDate = this.updateForm.controls.HepBVDate.value;
     this.updatedP.InfV = this.updateForm.controls.InfV.value;
     this.updatedP.InfVDate = this.updateForm.controls.InfVDate.value;
+    this.updatedP.otherVAC = this.updateForm.controls.otherVAC.value;
+    this.updatedP.progNotes = this.updateForm.controls.progNotes.value;
+    this.updatedP.consNotes = this.updateForm.controls.consNotes.value;
     this._snackBar.open("Medical record updated successfully","",{ duration: 4000, panelClass: ['green-snackbar']
     });
     this.pService.updatePatient(this.id, this.updatedP).subscribe(res => console.log(res));

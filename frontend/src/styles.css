@@ -153,3 +153,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-position-y: top;
     background-size: 170px;
 }
+
+.ex-font{
+    font-family: 'Tajawal', sans-serif;
+}

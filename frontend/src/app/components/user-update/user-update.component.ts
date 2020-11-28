@@ -58,6 +58,7 @@ export class UserUpdateComponent implements OnInit {
     this.updatedUserForm.get('firstName').setValue(this.currUser.firstName);
     this.updatedUserForm.get('lastName').setValue(this.currUser.lastName);
     this.updatedUserForm.get('email').setValue(this.currUser.email);
+    this.updatedUserForm.get('n_ID').setValue(this.currUser.n_ID);
     this.updatedUserForm.get('contactInfo').setValue(this.currUser.contactInfo);
     this.selectedHosp = this.currUser.Hospital;
   }
@@ -81,6 +82,7 @@ export class UserUpdateComponent implements OnInit {
           this.updatedUser.lastName = this.updatedUserForm.controls.lastName.value;
           this.updatedUser.email = this.updatedUserForm.controls.email.value;
           this.updatedUser.email = this.updatedUser.email.toLowerCase();
+          this.updatedUser.n_ID = this.updatedUserForm.controls.n_ID.value;
           this.updatedUser.contactInfo = this.updatedUserForm.controls.contactInfo.value;
           this.updatedUser.Hospital = this.selectedHosp;
           this.authService.updateUserbyId(this.userId, this.updatedUser).subscribe(res => console.log(""));

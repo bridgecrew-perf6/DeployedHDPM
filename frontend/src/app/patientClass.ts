@@ -16,6 +16,8 @@ export class PatientObj {
         this.dosDialysis = "";
         this.oKidneyDisease = "";
         this.otherKD = "";
+        this.surgHist1 = "";
+        this.surgHist2 = "";
         this.morbHype = false;
         this.morbDM = false;
         this.morbIHD = false;
@@ -26,7 +28,9 @@ export class PatientObj {
         this.fitForTr = "";
         this.fitForTrReason = "";
         this.potentialRDonors = "";
-        this.currentAccess = "";
+        this.currentAccess1 = "";
+        this.currentAccess2 = "";
+        this.currentAccess3 = "";
         this.cAOther = "";
         this.dOfAccessCreation = "";
         this.compInsuf = false;
@@ -48,6 +52,8 @@ export class PatientObj {
         this.antiCoReason = "";
         this.dryWt = new Number;
         this.avgWtGain = new Number;
+        this.avgBP = new Number;
+        this.avgPulse = new Number;
         this.dialAdeq = "";
         this.dCompHead = false;
         this.dCompHG = false;
@@ -109,6 +115,9 @@ export class PatientObj {
         this.HepBVDate = "";
         this.InfV = "";
         this.InfVDate = "";
+        this.otherVAC = "";
+        this.progNotes = "";
+        this.consNotes = "";
     }
 
 
@@ -128,6 +137,8 @@ export class PatientObj {
     dosDialysis: String;
     oKidneyDisease: String;
     otherKD: String;
+    surgHist1: String;
+    surgHist2: String;
     morbHype: boolean;
     morbDM: boolean;
     morbIHD: boolean;
@@ -138,7 +149,9 @@ export class PatientObj {
     fitForTr: String;
     fitForTrReason: String;
     potentialRDonors: String;
-    currentAccess: String;
+    currentAccess1: String;
+    currentAccess2: String;
+    currentAccess3: String;
     cAOther: String;
     dOfAccessCreation: String;
     compInsuf: boolean;
@@ -160,6 +173,8 @@ export class PatientObj {
     antiCoReason: String;
     dryWt: Number;
     avgWtGain: Number;
+    avgBP: Number;
+    avgPulse: Number;
     dialAdeq: String;
     dCompHead: boolean;
     dCompHG: boolean;
@@ -223,6 +238,9 @@ export class PatientObj {
     HepBVDate: String;
     InfV: String;
     InfVDate: String;
+    otherVAC: String;
+    progNotes: String;
+    consNotes: String;
 
 
 }

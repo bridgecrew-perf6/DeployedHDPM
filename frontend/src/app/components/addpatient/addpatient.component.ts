@@ -66,13 +66,17 @@ export class AddpatientComponent implements OnInit {
       dosDialysis: ['', Validators.required],
       oKidneyDisease: ['', Validators.required],
       otherKD: [''],
+      surgHist1: [''],
+      surgHist2: [''],
       coMorbidityOther: [''],
       previousTr: ['', Validators.required],
       prevTrGS: [''],
       fitForTr: [''],
       fitForTrReason: [''],
       potentialRDonors: ['', Validators.required],
-      currentAccess: ['', Validators.required],
+      currentAccess1: ['', Validators.required],
+      currentAccess2: [''],
+      currentAccess3: [''],
       cAOther: [''],
       dOfAccessCreation: ['', Validators.required],
       ComplicationOther: [''],
@@ -90,6 +94,8 @@ export class AddpatientComponent implements OnInit {
       antiCoReason: [''],
       dryWt: ['', Validators.required],
       avgWtGain: ['', Validators.required],
+      avgBP: ['', Validators.required],
+      avgPulse: ['', Validators.required],
       dialAdeq: ['', Validators.required],
       dCompOther: [''],
       labDate: ['', Validators.required],
@@ -143,6 +149,9 @@ export class AddpatientComponent implements OnInit {
       HepBVDate: [''],
       InfV: [''],
       InfVDate: [''],
+      otherVAC: [''],
+      progNotes: [''],
+      consNotes: ['']
 
     });
   }
@@ -184,6 +193,8 @@ export class AddpatientComponent implements OnInit {
         this.currP.dosDialysis = this.createForm.controls.dosDialysis.value;
         this.currP.oKidneyDisease = this.createForm.controls.oKidneyDisease.value;
         this.currP.otherKD = this.createForm.controls.otherKD.value;
+        this.currP.surgHist1 = this.createForm.controls.surgHist1.value;
+        this.currP.surgHist2 = this.createForm.controls.surgHist2.value;
         this.currP.morbHype = this.cMorbHyp;
         this.currP.morbDM = this.cMorbDM;
         this.currP.morbEpi = this.cMorbE;
@@ -196,7 +207,9 @@ export class AddpatientComponent implements OnInit {
         this.currP.fitForTr = this.createForm.controls.fitForTr.value;
         this.currP.fitForTrReason = this.createForm.controls.fitForTrReason.value;
         this.currP.potentialRDonors = this.createForm.controls.potentialRDonors.value;
-        this.currP.currentAccess = this.createForm.controls.currentAccess.value;
+        this.currP.currentAccess1 = this.createForm.controls.currentAccess1.value;
+        this.currP.currentAccess2 = this.createForm.controls.currentAccess2.value;
+        this.currP.currentAccess3 = this.createForm.controls.currentAccess3.value;
         this.currP.cAOther = this.createForm.controls.cAOther.value;
         this.currP.dOfAccessCreation = this.createForm.controls.dOfAccessCreation.value;
         this.currP.compInsuf = this.CompIns;
@@ -220,6 +233,8 @@ export class AddpatientComponent implements OnInit {
         this.currP.antiCoReason = this.createForm.controls.antiCoReason.value;
         this.currP.dryWt = this.createForm.controls.dryWt.value;
         this.currP.avgWtGain = this.createForm.controls.avgWtGain.value;
+        this.currP.avgBP = this.createForm.controls.avgBP.value;
+        this.currP.avgPulse = this.createForm.controls.avgPulse.value;
         this.currP.dialAdeq = this.createForm.controls.dialAdeq.value;
         this.currP.dCompHead = this.DCHA;
         this.currP.dCompHOT = this.DCHypot;
@@ -287,6 +302,9 @@ export class AddpatientComponent implements OnInit {
         this.currP.HepBVDate = this.createForm.controls.HepBVDate.value;
         this.currP.InfV = this.createForm.controls.InfV.value;
         this.currP.InfVDate = this.createForm.controls.InfVDate.value;
+        this.currP.otherVAC = this.createForm.controls.otherVAC.value;
+        this.currP.progNotes = this.createForm.controls.progNotes.value;
+        this.currP.consNotes = this.createForm.controls.consNotes.value;
         this._snackBar.open("Medical record added successfully", "", {
           duration: 3000, panelClass: ['green-snackbar']
         });

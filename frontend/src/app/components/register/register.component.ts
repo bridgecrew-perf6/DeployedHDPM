@@ -33,6 +33,7 @@ export class RegisterComponent implements OnInit {
       email: ['', [Validators.email, Validators.required]],
       emailconfirm: ['', [Validators.email, Validators.required]],
       password: ['', [Validators.required, Validators.min(8)]],
+      n_ID: ['', [Validators.required]],
       contactInfo: ['', Validators.required],
     });
   }
@@ -86,6 +87,7 @@ export class RegisterComponent implements OnInit {
           this.user.lastName = this.registerForm.controls.lastName.value;
           this.user.email = this.registerForm.controls.email.value;
           this.user.password = this.registerForm.controls.password.value;
+          this.user.n_ID = this.registerForm.controls.n_ID.value;
           this.user.contactInfo = this.registerForm.controls.contactInfo.value;
           this.user.email = this.user.email.toLowerCase();
           this.userService.regUser(this.user).subscribe(res => console.log(""));
