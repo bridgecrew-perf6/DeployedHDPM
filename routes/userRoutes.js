@@ -58,6 +58,7 @@ router.post('/authenticate', (req, res) => {
                             lastName: user.lastName,
                             email: user.email,
                             Hospital: user.Hospital,
+                            n_ID: user.n_ID,
                             contactInfo: user.contactInfo,
                             isAdmin: user.isAdmin
                         }
