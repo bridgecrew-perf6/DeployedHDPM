@@ -2242,6 +2242,7 @@ class AddpatientComponent {
         this.createForm.controls.previousTr.setValue("No");
         this.createForm.controls.fitForTr.setValue("Yes");
         this.createForm.controls.currentAccess1.setValue("RT.");
+        this.createForm.controls.currentAccess2.setValue("AVF");
         this.createForm.controls.antiCoag.setValue("No");
         this.SelectedCMorbOther = false;
         this.cMorbDM = false;
