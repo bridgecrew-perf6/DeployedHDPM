@@ -887,7 +887,7 @@ function ViewpatientdetailsComponent_div_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "h3");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](60, "S. Magnesium:");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "mat-label", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "mat-label", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -895,7 +895,7 @@ function ViewpatientdetailsComponent_div_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "h3");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](65, "ALT:");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "mat-label", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "mat-label", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](67);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -905,7 +905,7 @@ function ViewpatientdetailsComponent_div_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "h3");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](71, "S. Urea:");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "mat-label", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "mat-label", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -913,7 +913,7 @@ function ViewpatientdetailsComponent_div_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "h3");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "S. Calcium:");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "mat-label", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "mat-label", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](78);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -921,7 +921,7 @@ function ViewpatientdetailsComponent_div_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "h3");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](81, "S. Albumin:");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "mat-label", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "mat-label", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](83);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -929,7 +929,7 @@ function ViewpatientdetailsComponent_div_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "h3");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](86, "Alk. Phosphatase:");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "mat-label", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "mat-label", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -939,7 +939,7 @@ function ViewpatientdetailsComponent_div_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "h3");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, "S. Sodium:");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "mat-label", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "mat-label", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -947,7 +947,7 @@ function ViewpatientdetailsComponent_div_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "h3");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](97, "S. Phosphorus:");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "mat-label", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "mat-label", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](99);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -955,7 +955,7 @@ function ViewpatientdetailsComponent_div_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "h3");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](102, "AST:");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "mat-label", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "mat-label", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](104);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -963,7 +963,7 @@ function ViewpatientdetailsComponent_div_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "h3");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](107, "Other:");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "mat-label", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "mat-label", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](109);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1693,7 +1693,7 @@ ViewpatientdetailsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.page);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.pageNextDisabled);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButton"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_7__["MatIcon"], _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCard"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__["MatLabel"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_10__["MatDivider"]], styles: [".info-box[_ngcontent-%COMP%]{\r\n    width: 98%;\r\n\r\n}\r\n.shorter[_ngcontent-%COMP%]{\r\n    width: 40%;\r\n}\r\n.input-border[_ngcontent-%COMP%]{\r\n    font-size: 18px;\r\n}\r\n.h1[_ngcontent-%COMP%]{\r\n    font-size: 60px;\r\n}\r\n.h3[_ngcontent-%COMP%]{\r\n    font-size: 20px;\r\n}\r\n.view-pagination[_ngcontent-%COMP%]{\r\n    margin-top: 220px;\r\n}\r\n.page-num[_ngcontent-%COMP%]{\r\n    margin-left: 30px;\r\n    margin-right: 30px;\r\n    font-size: 20px;\r\n}\r\n.nav-btn[_ngcontent-%COMP%]{\r\n    text-align: center;\r\n}\r\n.nav-btn[_ngcontent-%COMP%]:focus{\r\n    border: none;\r\n    outline: none;\r\n}\r\n.width-shrink[_ngcontent-%COMP%]{\r\n    width: 10%;\r\n\r\n}\r\n#footer[_ngcontent-%COMP%] {\r\n    position:absolute;\r\n    bottom:0;\r\n    width:100%;\r\n    height: 370px;\r\n }\r\n#con[_ngcontent-%COMP%] {\r\n    min-height:100%;\r\n    position:relative;\r\n }\r\n#content[_ngcontent-%COMP%] {\r\n    height: 1600px; \r\n    padding-bottom:50px;\r\n }\r\nbody[_ngcontent-%COMP%] {\r\n    margin:0;\r\n    padding:0;\r\n    height:100%;\r\n }\r\n.bigger[_ngcontent-%COMP%]{\r\n     font-size: 22px;\r\n     text-decoration: underline;\r\n     font-weight: bold;\r\n }\r\n.heading-margin[_ngcontent-%COMP%]{\r\n     margin-top: 15px;\r\n }\r\n.max-width[_ngcontent-%COMP%]{\r\n     max-width: 1200px;\r\n }\r\n.margin-left-field[_ngcontent-%COMP%]{\r\n     margin-left: 30px;\r\n }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy92aWV3cGF0aWVudGRldGFpbHMvdmlld3BhdGllbnRkZXRhaWxzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVOztBQUVkO0FBQ0E7SUFDSSxVQUFVO0FBQ2Q7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLFlBQVk7SUFDWixhQUFhO0FBQ2pCO0FBRUE7SUFDSSxVQUFVOztBQUVkO0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsUUFBUTtJQUNSLFVBQVU7SUFDVixhQUFhO0NBQ2hCO0FBRUE7SUFDRyxlQUFlO0lBQ2YsaUJBQWlCO0NBQ3BCO0FBQ0E7SUFDRyxjQUFjLEVBQUUsd0JBQXdCO0lBQ3hDLG1CQUFtQjtDQUN0QjtBQUNBO0lBQ0csUUFBUTtJQUNSLFNBQVM7SUFDVCxXQUFXO0NBQ2Q7QUFDQTtLQUNJLGVBQWU7S0FDZiwwQkFBMEI7S0FDMUIsaUJBQWlCO0NBQ3JCO0FBQ0E7S0FDSSxnQkFBZ0I7Q0FDcEI7QUFDQTtLQUNJLGlCQUFpQjtDQUNyQjtBQUNBO0tBQ0ksaUJBQWlCO0NBQ3JCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy92aWV3cGF0aWVudGRldGFpbHMvdmlld3BhdGllbnRkZXRhaWxzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW5mby1ib3h7XHJcbiAgICB3aWR0aDogOTglO1xyXG5cclxufVxyXG4uc2hvcnRlcntcclxuICAgIHdpZHRoOiA0MCU7XHJcbn1cclxuLmlucHV0LWJvcmRlcntcclxuICAgIGZvbnQtc2l6ZTogMThweDtcclxufVxyXG4uaDF7XHJcbiAgICBmb250LXNpemU6IDYwcHg7XHJcbn1cclxuLmgze1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG59XHJcbi52aWV3LXBhZ2luYXRpb257XHJcbiAgICBtYXJnaW4tdG9wOiAyMjBweDtcclxufVxyXG4ucGFnZS1udW17XHJcbiAgICBtYXJnaW4tbGVmdDogMzBweDtcclxuICAgIG1hcmdpbi1yaWdodDogMzBweDtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxufVxyXG4ubmF2LWJ0bntcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG4ubmF2LWJ0bjpmb2N1c3tcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIG91dGxpbmU6IG5vbmU7XHJcbn1cclxuXHJcbi53aWR0aC1zaHJpbmt7XHJcbiAgICB3aWR0aDogMTAlO1xyXG5cclxufVxyXG4jZm9vdGVyIHtcclxuICAgIHBvc2l0aW9uOmFic29sdXRlO1xyXG4gICAgYm90dG9tOjA7XHJcbiAgICB3aWR0aDoxMDAlO1xyXG4gICAgaGVpZ2h0OiAzNzBweDtcclxuIH1cclxuXHJcbiAjY29uIHtcclxuICAgIG1pbi1oZWlnaHQ6MTAwJTtcclxuICAgIHBvc2l0aW9uOnJlbGF0aXZlO1xyXG4gfVxyXG4gI2NvbnRlbnQge1xyXG4gICAgaGVpZ2h0OiAxNjAwcHg7IC8qIENoYW5nZWQgdGhpcyBoZWlnaHQgKi9cclxuICAgIHBhZGRpbmctYm90dG9tOjUwcHg7XHJcbiB9XHJcbiBib2R5IHtcclxuICAgIG1hcmdpbjowO1xyXG4gICAgcGFkZGluZzowO1xyXG4gICAgaGVpZ2h0OjEwMCU7XHJcbiB9XHJcbiAuYmlnZ2Vye1xyXG4gICAgIGZvbnQtc2l6ZTogMjJweDtcclxuICAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcclxuICAgICBmb250LXdlaWdodDogYm9sZDtcclxuIH1cclxuIC5oZWFkaW5nLW1hcmdpbntcclxuICAgICBtYXJnaW4tdG9wOiAxNXB4O1xyXG4gfVxyXG4gLm1heC13aWR0aHtcclxuICAgICBtYXgtd2lkdGg6IDEyMDBweDtcclxuIH1cclxuIC5tYXJnaW4tbGVmdC1maWVsZHtcclxuICAgICBtYXJnaW4tbGVmdDogMzBweDtcclxuIH0iXX0= */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButton"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_7__["MatIcon"], _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCard"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__["MatLabel"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_10__["MatDivider"]], styles: [".info-box[_ngcontent-%COMP%]{\r\n    width: 98%;\r\n\r\n}\r\n.shorter[_ngcontent-%COMP%]{\r\n    width: 40%;\r\n}\r\n.input-border[_ngcontent-%COMP%]{\r\n    font-size: 18px;\r\n}\r\n.h1[_ngcontent-%COMP%]{\r\n    font-size: 60px;\r\n}\r\n.h3[_ngcontent-%COMP%]{\r\n    font-size: 20px;\r\n}\r\n.view-pagination[_ngcontent-%COMP%]{\r\n    margin-top: 220px;\r\n}\r\n.page-num[_ngcontent-%COMP%]{\r\n    margin-left: 30px;\r\n    margin-right: 30px;\r\n    font-size: 20px;\r\n}\r\n.nav-btn[_ngcontent-%COMP%]{\r\n    text-align: center;\r\n}\r\n.nav-btn[_ngcontent-%COMP%]:focus{\r\n    border: none;\r\n    outline: none;\r\n}\r\n.width-shrink[_ngcontent-%COMP%]{\r\n    width: 10%;\r\n\r\n}\r\n#footer[_ngcontent-%COMP%] {\r\n    position:absolute;\r\n    bottom:0;\r\n    width:100%;\r\n    height: 370px;\r\n }\r\n#con[_ngcontent-%COMP%] {\r\n    min-height:100%;\r\n    position:relative;\r\n }\r\n#content[_ngcontent-%COMP%] {\r\n    height: 1600px; \r\n    padding-bottom:50px;\r\n }\r\nbody[_ngcontent-%COMP%] {\r\n    margin:0;\r\n    padding:0;\r\n    height:100%;\r\n }\r\n.bigger[_ngcontent-%COMP%]{\r\n     font-size: 22px;\r\n     text-decoration: underline;\r\n     font-weight: bold;\r\n }\r\n.heading-margin[_ngcontent-%COMP%]{\r\n     margin-top: 15px;\r\n }\r\n.max-width[_ngcontent-%COMP%]{\r\n     max-width: 1200px;\r\n }\r\n.margin-left-field[_ngcontent-%COMP%]{\r\n     margin-left: 50px;\r\n }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy92aWV3cGF0aWVudGRldGFpbHMvdmlld3BhdGllbnRkZXRhaWxzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVOztBQUVkO0FBQ0E7SUFDSSxVQUFVO0FBQ2Q7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLFlBQVk7SUFDWixhQUFhO0FBQ2pCO0FBRUE7SUFDSSxVQUFVOztBQUVkO0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsUUFBUTtJQUNSLFVBQVU7SUFDVixhQUFhO0NBQ2hCO0FBRUE7SUFDRyxlQUFlO0lBQ2YsaUJBQWlCO0NBQ3BCO0FBQ0E7SUFDRyxjQUFjLEVBQUUsd0JBQXdCO0lBQ3hDLG1CQUFtQjtDQUN0QjtBQUNBO0lBQ0csUUFBUTtJQUNSLFNBQVM7SUFDVCxXQUFXO0NBQ2Q7QUFDQTtLQUNJLGVBQWU7S0FDZiwwQkFBMEI7S0FDMUIsaUJBQWlCO0NBQ3JCO0FBQ0E7S0FDSSxnQkFBZ0I7Q0FDcEI7QUFDQTtLQUNJLGlCQUFpQjtDQUNyQjtBQUNBO0tBQ0ksaUJBQWlCO0NBQ3JCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy92aWV3cGF0aWVudGRldGFpbHMvdmlld3BhdGllbnRkZXRhaWxzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW5mby1ib3h7XHJcbiAgICB3aWR0aDogOTglO1xyXG5cclxufVxyXG4uc2hvcnRlcntcclxuICAgIHdpZHRoOiA0MCU7XHJcbn1cclxuLmlucHV0LWJvcmRlcntcclxuICAgIGZvbnQtc2l6ZTogMThweDtcclxufVxyXG4uaDF7XHJcbiAgICBmb250LXNpemU6IDYwcHg7XHJcbn1cclxuLmgze1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG59XHJcbi52aWV3LXBhZ2luYXRpb257XHJcbiAgICBtYXJnaW4tdG9wOiAyMjBweDtcclxufVxyXG4ucGFnZS1udW17XHJcbiAgICBtYXJnaW4tbGVmdDogMzBweDtcclxuICAgIG1hcmdpbi1yaWdodDogMzBweDtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxufVxyXG4ubmF2LWJ0bntcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG4ubmF2LWJ0bjpmb2N1c3tcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIG91dGxpbmU6IG5vbmU7XHJcbn1cclxuXHJcbi53aWR0aC1zaHJpbmt7XHJcbiAgICB3aWR0aDogMTAlO1xyXG5cclxufVxyXG4jZm9vdGVyIHtcclxuICAgIHBvc2l0aW9uOmFic29sdXRlO1xyXG4gICAgYm90dG9tOjA7XHJcbiAgICB3aWR0aDoxMDAlO1xyXG4gICAgaGVpZ2h0OiAzNzBweDtcclxuIH1cclxuXHJcbiAjY29uIHtcclxuICAgIG1pbi1oZWlnaHQ6MTAwJTtcclxuICAgIHBvc2l0aW9uOnJlbGF0aXZlO1xyXG4gfVxyXG4gI2NvbnRlbnQge1xyXG4gICAgaGVpZ2h0OiAxNjAwcHg7IC8qIENoYW5nZWQgdGhpcyBoZWlnaHQgKi9cclxuICAgIHBhZGRpbmctYm90dG9tOjUwcHg7XHJcbiB9XHJcbiBib2R5IHtcclxuICAgIG1hcmdpbjowO1xyXG4gICAgcGFkZGluZzowO1xyXG4gICAgaGVpZ2h0OjEwMCU7XHJcbiB9XHJcbiAuYmlnZ2Vye1xyXG4gICAgIGZvbnQtc2l6ZTogMjJweDtcclxuICAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcclxuICAgICBmb250LXdlaWdodDogYm9sZDtcclxuIH1cclxuIC5oZWFkaW5nLW1hcmdpbntcclxuICAgICBtYXJnaW4tdG9wOiAxNXB4O1xyXG4gfVxyXG4gLm1heC13aWR0aHtcclxuICAgICBtYXgtd2lkdGg6IDEyMDBweDtcclxuIH1cclxuIC5tYXJnaW4tbGVmdC1maWVsZHtcclxuICAgICBtYXJnaW4tbGVmdDogNTBweDtcclxuIH0iXX0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ViewpatientdetailsComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
