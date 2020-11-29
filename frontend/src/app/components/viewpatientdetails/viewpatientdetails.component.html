@@ -1,6 +1,6 @@
-<div id="con">
+<div *ngIf="this.page==1" id="con">
     <div id="content">
-        <div class="d-flex justify-content-center" *ngIf="this.page == 1">
+        <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class="info-box shadow">
                 <h1 class="bigger d-flex justify-content-center">Personal Details</h1>
                 <h2>Hospital</h2>
@@ -45,7 +45,25 @@
                 </div>
             </mat-card>
         </div>
-        <div *ngIf="this.page == 2" class="d-flex justify-content-center">
+    </div>
+    <div id="footer">
+        <div class="d-flex flex-row justify-content-center">
+            <button mat-button class="nav-btn" (click)=prevPage() [disabled]="this.pagePreviousDisabled">
+                <mat-icon>arrow_left</mat-icon>
+            </button>
+            <p class="page-num">{{this.page}}</p>
+            <button mat-button class="nav-btn" (click)=nextPage() [disabled]="this.pageNextDisabled">
+                <mat-icon>arrow_right</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+<div *ngIf="this.page==2" id="con">
+    <div id="content">
+        <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
                 <h1 class="bigger d-flex justify-content-center">Medical and Surgical History</h1>
                 <h2>Start of Dialysis</h2>
@@ -101,9 +119,24 @@
                     <mat-label class=" p-6 input-border">{{this.currPatient.potentialRDonors}}</mat-label>
                 </div>
             </mat-card>
-
         </div>
-        <div *ngIf="this.page == 3" class="d-flex justify-content-center">
+    </div>
+    <div id="footer">
+        <div class="d-flex flex-row justify-content-center">
+            <button mat-button class="nav-btn" (click)=prevPage() [disabled]="this.pagePreviousDisabled">
+                <mat-icon>arrow_left</mat-icon>
+            </button>
+            <p class="page-num">{{this.page}}</p>
+            <button mat-button class="nav-btn" (click)=nextPage() [disabled]="this.pageNextDisabled">
+                <mat-icon>arrow_right</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="this.page==3" id="con">
+    <div id="content">
+        <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
                 <h1 class="bigger d-flex justify-content-center">Vascular Access</h1>
                 <h2>Current Access</h2>
@@ -153,7 +186,22 @@
                 </div>
             </mat-card>
         </div>
-        <div *ngIf="this.page == 4" class="d-flex justify-content-center">
+    </div>
+    <div id="footer">
+        <div class="d-flex flex-row justify-content-center">
+            <button mat-button class="nav-btn" (click)=prevPage() [disabled]="this.pagePreviousDisabled">
+                <mat-icon>arrow_left</mat-icon>
+            </button>
+            <p class="page-num">{{this.page}}</p>
+            <button mat-button class="nav-btn" (click)=nextPage() [disabled]="this.pageNextDisabled">
+                <mat-icon>arrow_right</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
+<div *ngIf="this.page==4" id="con">
+    <div id="content">
+        <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
                 <h1 class="bigger d-flex justify-content-center">Dialysis Prescription</h1>
                 <h2>Frequency</h2>
@@ -218,7 +266,26 @@
                 </div>
             </mat-card>
         </div>
-        <div *ngIf="this.page == 5" class="d-flex justify-content-center">
+    </div>
+    <div id="footer">
+        <div class="d-flex flex-row justify-content-center">
+            <button mat-button class="nav-btn" (click)=prevPage() [disabled]="this.pagePreviousDisabled">
+                <mat-icon>arrow_left</mat-icon>
+            </button>
+            <p class="page-num">{{this.page}}</p>
+            <button mat-button class="nav-btn" (click)=nextPage() [disabled]="this.pageNextDisabled">
+                <mat-icon>arrow_right</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div *ngIf="this.page==5" id="con">
+    <div id="content">
+        <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
                 <h1 class="bigger d-flex justify-content-center">Lab Results (Date: {{this.dofLab}})</h1>
                 <h2>CBC:</h2>
@@ -447,7 +514,28 @@
                 </div>
             </mat-card>
         </div>
-        <div *ngIf="this.page==6" class="d-flex justify-content-center">
+    </div>
+    <div id="footer">
+        <div class="d-flex flex-row justify-content-center">
+            <button mat-button class="nav-btn" (click)=prevPage() [disabled]="this.pagePreviousDisabled">
+                <mat-icon>arrow_left</mat-icon>
+            </button>
+            <p class="page-num">{{this.page}}</p>
+            <button mat-button class="nav-btn" (click)=nextPage() [disabled]="this.pageNextDisabled">
+                <mat-icon>arrow_right</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div *ngIf="this.page==6" id="con">
+    <div id="content">
+        <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
                 <div class="d-flex justify-content-center">
                     <h1 class="bigger">Current Medication</h1>
@@ -555,7 +643,26 @@
                 </div>
             </mat-card>
         </div>
-        <div *ngIf="this.page==7" class="d-flex justify-content-center">
+    </div>
+    <div id="footer">
+        <div class="d-flex flex-row justify-content-center">
+            <button mat-button class="nav-btn" (click)=prevPage() [disabled]="this.pagePreviousDisabled">
+                <mat-icon>arrow_left</mat-icon>
+            </button>
+            <p class="page-num">{{this.page}}</p>
+            <button mat-button class="nav-btn" (click)=nextPage() [disabled]="this.pageNextDisabled">
+                <mat-icon>arrow_right</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div *ngIf="this.page==7" id="con">
+    <div id="content">
+        <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
                 <h2 class="bigger d-flex justify-content-center">Dr Progress Notes</h2>
                 <div class="d-flex justify-content-center">
@@ -563,7 +670,25 @@
                 </div>
             </mat-card>
         </div>
-        <div *ngIf="this.page==8" class="d-flex justify-content-center">
+    </div>
+    <div id="footer">
+        <div class="d-flex flex-row justify-content-center">
+            <button mat-button class="nav-btn" (click)=prevPage() [disabled]="this.pagePreviousDisabled">
+                <mat-icon>arrow_left</mat-icon>
+            </button>
+            <p class="page-num">{{this.page}}</p>
+            <button mat-button class="nav-btn" (click)=nextPage() [disabled]="this.pageNextDisabled">
+                <mat-icon>arrow_right</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+<div *ngIf="this.page==8" id="con">
+    <div id="content">
+        <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
                 <h2 class="bigger d-flex justify-content-center">Consultant Notes</h2>
                 <div class="d-flex justify-content-center">
