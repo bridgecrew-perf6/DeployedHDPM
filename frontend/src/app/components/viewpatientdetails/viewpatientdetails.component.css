@@ -45,7 +45,7 @@
     position:relative;
  }
  #content {
-    height: 1400px; /* Changed this height */
+    height: 1000px; /* Changed this height */
     padding-bottom:50px;
  }
  body {
