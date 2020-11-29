@@ -101,8 +101,10 @@ export class AddpatientComponent implements OnInit {
       cbcHB: ['', Validators.required],
       cbcWBC: ['', Validators.required],
       cbcPlatelets: ['', Validators.required],
-      chemCre: ['', Validators.required],
-      chemUrea: ['', Validators.required],
+      chemCrePre: ['', Validators.required],
+      chemUreaPre: ['', Validators.required],
+      chemCrePost: ['', Validators.required],
+      chemUreaPost: ['', Validators.required],
       chemSod: ['', Validators.required],
       chemPot: ['', Validators.required],
       chemCal: ['', Validators.required],
@@ -251,8 +253,10 @@ export class AddpatientComponent implements OnInit {
         this.currP.cbcHB = this.createForm.controls.cbcHB.value;
         this.currP.cbcWBC = this.createForm.controls.cbcWBC.value;
         this.currP.cbcPlatelets = this.createForm.controls.cbcPlatelets.value;
-        this.currP.chemCre = this.createForm.controls.chemCre.value;
-        this.currP.chemUrea = this.createForm.controls.chemUrea.value;
+        this.currP.chemCrePre = this.createForm.controls.chemCrePre.value;
+        this.currP.chemUreaPre = this.createForm.controls.chemUreaPre.value;
+        this.currP.chemCrePre = this.createForm.controls.chemCrePost.value;
+        this.currP.chemUreaPre = this.createForm.controls.chemUreaPost.value;
         this.currP.chemSod = this.createForm.controls.chemSod.value;
         this.currP.chemPot = this.createForm.controls.chemPot.value;
         this.currP.chemCal = this.createForm.controls.chemCal.value;

@@ -231,10 +231,16 @@ let  patientSchema = new Schema({
     cbcPlatelets: {
         type: Number
     },
-    chemCre: {
+    chemCrePre: {
         type: Number
     },
-    chemUrea: {
+    chemUreaPre: {
+        type: Number
+    },
+    chemCrePost: {
+        type: Number
+    },
+    chemUreaPost: {
         type: Number
     },
     chemSod: {

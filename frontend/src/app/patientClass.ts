@@ -69,8 +69,10 @@ export class PatientObj {
         this.cbcHB = new Number;
         this.cbcWBC = new Number;
         this.cbcPlatelets = new Number;
-        this.chemCre = new Number;
-        this.chemUrea = new Number;
+        this.chemCrePre = new Number;
+        this.chemUreaPre = new Number;
+        this.chemCrePost = new Number;
+        this.chemUreaPost = new Number;
         this.chemSod = new Number;
         this.chemPot = new Number;
         this.chemCal = new Number;
@@ -189,8 +191,10 @@ export class PatientObj {
     cbcHB: Number;
     cbcWBC: Number;
     cbcPlatelets: Number;
-    chemCre: Number;
-    chemUrea: Number;
+    chemCrePre: Number;
+    chemUreaPre: Number;
+    chemCrePost: Number;
+    chemUreaPost: Number;
     chemSod: Number;
     chemPot: Number;
     chemCal: Number;

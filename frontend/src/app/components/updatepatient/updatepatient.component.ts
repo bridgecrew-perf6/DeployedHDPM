@@ -105,8 +105,10 @@ export class UpdatepatientComponent implements OnInit {
       cbcHB: ['', Validators.required],
       cbcWBC: ['', Validators.required],
       cbcPlatelets: ['', Validators.required],
-      chemCre: ['', Validators.required],
-      chemUrea: ['', Validators.required],
+      chemCrePre: ['', Validators.required],
+      chemUreaPre: ['', Validators.required],
+      chemCrePost: ['', Validators.required],
+      chemUreaPost: ['', Validators.required],
       chemSod: ['', Validators.required],
       chemPot: ['', Validators.required],
       chemCal: ['', Validators.required],
@@ -282,8 +284,10 @@ export class UpdatepatientComponent implements OnInit {
     this.updateForm.get('cbcHB').setValue(this.currPatient.cbcHB);
     this.updateForm.get('cbcWBC').setValue(this.currPatient.cbcWBC);
     this.updateForm.get('cbcPlatelets').setValue(this.currPatient.cbcPlatelets);
-    this.updateForm.get('chemCre').setValue(this.currPatient.chemCre);
-    this.updateForm.get('chemUrea').setValue(this.currPatient.chemUrea);
+    this.updateForm.get('chemCrePre').setValue(this.currPatient.chemCrePre);
+    this.updateForm.get('chemUreaPre').setValue(this.currPatient.chemUreaPre);
+    this.updateForm.get('chemCrePost').setValue(this.currPatient.chemCrePost);
+    this.updateForm.get('chemUreaPost').setValue(this.currPatient.chemUreaPost);
     this.updateForm.get('chemSod').setValue(this.currPatient.chemSod);
     this.updateForm.get('chemPot').setValue(this.currPatient.chemPot);
     this.updateForm.get('chemCal').setValue(this.currPatient.chemCal);
@@ -430,8 +434,10 @@ export class UpdatepatientComponent implements OnInit {
     this.updatedP.cbcHB = this.updateForm.controls.cbcHB.value;
     this.updatedP.cbcWBC = this.updateForm.controls.cbcWBC.value;
     this.updatedP.cbcPlatelets = this.updateForm.controls.cbcPlatelets.value;
-    this.updatedP.chemCre = this.updateForm.controls.chemCre.value;
-    this.updatedP.chemUrea = this.updateForm.controls.chemUrea.value;
+    this.updatedP.chemCrePre = this.updateForm.controls.chemCrePre.value;
+    this.updatedP.chemUreaPre = this.updateForm.controls.chemUreaPre.value;
+    this.updatedP.chemCrePost = this.updateForm.controls.chemCrePost.value;
+    this.updatedP.chemUreaPost = this.updateForm.controls.chemUreaPost.value;
     this.updatedP.chemSod = this.updateForm.controls.chemSod.value;
     this.updatedP.chemPot = this.updateForm.controls.chemPot.value;
     this.updatedP.chemCal = this.updateForm.controls.chemCal.value;

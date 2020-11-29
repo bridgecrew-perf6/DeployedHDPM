@@ -277,9 +277,14 @@
                 <div class="d-flex flex-row justify-content-between">
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
-                            <h3 class="lab-headings">S.&nbsp;Creatinine:</h3>
+                            <h3 class="lab-headings">S.&nbsp;Creatinine&nbsp;Pre-HD:</h3>
                             <mat-label class="margin-left-field p-6 input-border lab-fields">
-                                {{this.currPatient.chemCre}} mg%</mat-label>
+                                {{this.currPatient.chemCrePre}} mg%</mat-label>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h3 class="lab-headings">S.&nbsp;Creatinine&nbsp;Post-HD:</h3>
+                            <mat-label class="margin-left-field p-6 input-border lab-fields">
+                                {{this.currPatient.chemCrePost}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class=" lab-headings">S.&nbsp;Potassium:</h3>
@@ -299,10 +304,16 @@
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
-                            <h3 class=" margin-left-field lab-headings">S.&nbsp;Urea:</h3>
+                            <h3 class=" margin-left-field lab-headings">S.&nbsp;Urea&nbsp;Pre-HD:</h3>
                             <!--2nd column start-->
                             <mat-label class=" margin-left-field p-6 input-border lab-fields">
-                                {{this.currPatient.chemUrea}} mg%</mat-label>
+                                {{this.currPatient.chemUreaPre}} mg%</mat-label>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h3 class=" margin-left-field lab-headings">S.&nbsp;Urea&nbsp;Post-HD:</h3>
+                            <!--2nd column start-->
+                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                                {{this.currPatient.chemUreaPost}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class=" margin-left-field lab-headings">S.&nbsp;Calcium:</h3>
