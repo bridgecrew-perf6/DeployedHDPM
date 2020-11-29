@@ -38,14 +38,14 @@
     position:absolute;
     bottom:0;
     width:100%;
-    height: 1500px;
+    height: 1100px;
  }
 
  #con {
     position:relative;
  }
  #content {
-    height: 1250px; /* Changed this height */
+    height: 1300px; /* Changed this height */
     padding-bottom:50px;
  }
  body {
