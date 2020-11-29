@@ -35,9 +35,8 @@
 
 }
 #footer{
-    height: 0px;
     position:absolute;
-    bottom:-15%;
+    bottom:-25%;
     width:100%;
  }
 
