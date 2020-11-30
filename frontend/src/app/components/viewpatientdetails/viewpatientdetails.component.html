@@ -137,7 +137,7 @@
 <div *ngIf="this.page==3" id="con">
     <div id="content">
         <div class="d-flex justify-content-center">
-            <mat-card id="profileform-bg" class=" info-box shadow">
+            <mat-card id="profileform-bg" class="info-box shadow">
                 <h1 class="bigger d-flex justify-content-center ex-font">Vascular Access</h1>
                  <h2 class="ex-font">Current Access</h2>
                 <div class="d-flex justify-content-center">
@@ -153,16 +153,16 @@
                 <div class="d-flex justify-content-center">
                     <div class="input input-border">
                         <div *ngIf="this.currPatient.compInsuf">
-                            <mat-label>Insufficiency </mat-label>
+                            <mat-label>Insufficiency </mat-label> <br><br>
                         </div>
                         <div *ngIf="this.currPatient.compInf">
-                            <mat-label> <br><br> Infection </mat-label>
+                            <mat-label> Infection </mat-label> <br><br>
                         </div>
                         <div *ngIf="this.currPatient.compAD">
-                            <mat-label> <br><br> Aneurysmal Dilatation </mat-label>
+                            <mat-label> Aneurysmal Dilatation </mat-label> <br><br>
                         </div>
                         <div *ngIf="this.currPatient.compDC">
-                            <mat-label> <br><br> Difficult Cannulation</mat-label>
+                            <mat-label> Difficult Cannulation</mat-label>
                         </div>
                         <mat-label *ngIf="this.currPatient.compOther"> <br><br> {{this.currPatient.compOther}}
                         </mat-label>
@@ -202,19 +202,19 @@
 <div *ngIf="this.page==4" id="con">
     <div id="content">
         <div class="d-flex justify-content-center">
-            <mat-card id="profileform-bg" class=" info-box shadow">
+            <mat-card id="profileform-bg" class="info-box shadow">
                 <h1 class="bigger d-flex justify-content-center ex-font">Dialysis Prescription</h1>
                  <h2 class="ex-font">Frequency</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" input input-border">{{this.currPatient.Frequency}} sessions/week</mat-label>
+                    <mat-label class="input input-border">{{this.currPatient.Frequency}} sessions/week</mat-label>
                 </div>
                  <h2 class="ex-font">Duration</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" input input-border">{{this.currPatient.Duration}} hr(s)/session</mat-label>
+                    <mat-label class="input input-border">{{this.currPatient.Duration}} hr(s)/session</mat-label>
                 </div>
                  <h2 class="ex-font">Dialyser</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" input input-border">{{this.currPatient.Dialyser}}</mat-label>
+                    <mat-label class="input input-border">{{this.currPatient.Dialyser}}</mat-label>
                 </div>
                  <h2 class="ex-font">Anticoagulation</h2>
                 <div class="d-flex justify-content-center">
@@ -235,8 +235,8 @@
                     <mat-label class=" input input-border">{{this.currPatient.dryWt}} kg</mat-label>
                 </div>
                  <h2 class="ex-font">Average Weight Gain</h2>
-                <div class="d-flex justify-content-center">
-                    <mat-label class=" input input-border">{{this.currPatient.avgWtGain}} (between sessions)</mat-label>
+                <div class="input d-flex justify-content-center">
+                    <mat-label class="input-border">{{this.currPatient.avgWtGain}} (between sessions)</mat-label>
                 </div>
                  <h2 class="ex-font">Average Blood Pressure</h2>
                 <div class="d-flex justify-content-center">
