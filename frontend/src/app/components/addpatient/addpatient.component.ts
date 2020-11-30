@@ -309,9 +309,9 @@ export class AddpatientComponent implements OnInit {
         this._snackBar.open("Medical record added successfully", "", {
           duration: 3000, panelClass: ['green-snackbar']
         });
-        this.patientService.addPatient(this.currP).subscribe((res => console.log(res))); //=> {
-        //this.router.navigate(['/list']);
-        // });
+        this.patientService.addPatient(this.currP).subscribe(() => {
+          this.router.navigate(['/list']);
+        });
       }
     });
   }
