@@ -176,7 +176,7 @@ let  patientSchema = new Schema({
         type: Number
     },
     avgBP: {
-        type: Number
+        type: String
     },
     avgPulse: {
         type: Number
