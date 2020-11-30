@@ -5,43 +5,43 @@
                 <h1 class="bigger d-flex justify-content-center">Personal Details</h1>
                 <h2>Hospital</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.Hospital}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.Hospital}}</mat-label>
                 </div>
                 <h2>First Name</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.fullName}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.fullName}}</mat-label>
                 </div>
                 <h2>Age</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.Age}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.Age}}</mat-label>
                 </div>
                 <h2>Gender</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.Gender}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.Gender}}</mat-label>
                 </div>
                 <h2>Nationality</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.Nationality}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.Nationality}}</mat-label>
                 </div>
                 <h2>National ID</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.n_ID}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.n_ID}}</mat-label>
                 </div>
                 <h2>Contact Number</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.contactInfo}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.contactInfo}}</mat-label>
                 </div>
                 <h2>Height</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.Height}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.Height}}</mat-label>
                 </div>
                 <h2>Blood Group</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.bldGrp}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.bldGrp}}</mat-label>
                 </div>
                 <h2>Known Allergies</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.kAllergies}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.kAllergies}}</mat-label>
                 </div>
             </mat-card>
         </div>
@@ -68,23 +68,23 @@
                 <h1 class="bigger d-flex justify-content-center">Medical and Surgical History</h1>
                 <h2>Start of Dialysis</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.dofDialysis}}</mat-label>
+                    <mat-label class="   input-border">{{this.dofDialysis}}</mat-label>
                 </div>
                 <h2>Original Kidney Disease</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label *ngIf="this.currPatient.oKidneyDisease != 'Other'" class=" p-6 input-border">
+                    <mat-label *ngIf="this.currPatient.oKidneyDisease != 'Other'" class="   input-border">
                         {{this.currPatient.oKidneyDisease}}</mat-label>
-                    <mat-label class=" p-6 input-border">{{this.currPatient.otherKD}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.otherKD}}</mat-label>
                 </div>
                 <h2>Surgical History</h2>
                 <div class="d-flex justify-content-between">
-                    <mat-label class="shorter p-6 input-border">
+                    <mat-label class="shorter   input-border">
                         {{this.currPatient.surgHist1}}</mat-label>
-                    <mat-label class="shorter p-6 input-border">{{this.currPatient.surgHist2}}</mat-label>
+                    <mat-label class="shorter   input-border">{{this.currPatient.surgHist2}}</mat-label>
                 </div>
                 <h2>Co-Moribidities</h2>
                 <div class="d-flex justify-content-center">
-                    <div class="p-6 input-border">
+                    <div class="  input-border">
                         <mat-label *ngIf="this.currPatient.morbHype">Hypertension</mat-label>
                         <div *ngIf="this.currPatient.morbDM">
                             <mat-label> <br><br> Diabetes Mellitus</mat-label>
@@ -100,7 +100,7 @@
                 </div>
                 <h2>Previous Transplantation</h2>
                 <div class="d-flex justify-content-center">
-                    <div class="p-6 input-border">
+                    <div class="  input-border">
                         <mat-label>{{this.currPatient.previousTr}}</mat-label>
                         <mat-label *ngIf="this.currPatient.previousTr=='Yes'">, &nbsp; {{this.currPatient.prevTrGS}}
                         </mat-label>
@@ -108,7 +108,7 @@
                 </div>
                 <h2>Fit For Transplantation</h2>
                 <div class="d-flex justify-content-center">
-                    <div class="p-6 input-border">
+                    <div class="  input-border">
                         <mat-label>{{this.currPatient.fitForTr}}</mat-label>
                         <mat-label *ngIf="this.currPatient.fitForTr=='No'">, &nbsp; {{this.currPatient.fitForTrReason}}
                         </mat-label>
@@ -116,7 +116,7 @@
                 </div>
                 <h2>Potential Relative Donors</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.potentialRDonors}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.potentialRDonors}}</mat-label>
                 </div>
             </mat-card>
         </div>
@@ -141,17 +141,17 @@
                 <h1 class="bigger d-flex justify-content-center">Vascular Access</h1>
                 <h2>Current Access</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">
+                    <mat-label class="   input-border">
                         {{this.currPatient.currentAccess1}} {{this.currPatient.currentAccess2}}
                         {{this.currPatient.currentAccess3}}</mat-label>
                 </div>
                 <h2>Date of Access Creation</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.dofAC}}</mat-label>
+                    <mat-label class="   input-border">{{this.dofAC}}</mat-label>
                 </div>
                 <h2>Complications</h2>
                 <div class="d-flex justify-content-center">
-                    <div class="p-6 input-border">
+                    <div class="  input-border">
                         <div *ngIf="this.currPatient.compInsuf">
                             <mat-label>Insufficiency </mat-label>
                         </div>
@@ -170,7 +170,7 @@
                 </div>
                 <h2>Previous Access(es)</h2>
                 <div class="d-flex justify-content-center">
-                    <div class="p-6 input-border">
+                    <div class="  input-border">
                         <mat-label *ngIf="this.currPatient.previousAccess1"> 1 - {{this.currPatient.previousAccess1}}
                         </mat-label>
                         <mat-label *ngIf="this.currPatient.previousAccess2"> <br> <br> 2 -
@@ -206,19 +206,19 @@
                 <h1 class="bigger d-flex justify-content-center">Dialysis Prescription</h1>
                 <h2>Frequency</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.Frequency}} sessions/week</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.Frequency}} sessions/week</mat-label>
                 </div>
                 <h2>Duration</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.Duration}} hr(s)/session</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.Duration}} hr(s)/session</mat-label>
                 </div>
                 <h2>Dialyser</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.Dialyser}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.Dialyser}}</mat-label>
                 </div>
                 <h2>Anticoagulation</h2>
                 <div class="d-flex justify-content-center">
-                    <div class="p-6 input-border">
+                    <div class="  input-border">
                         <mat-label>{{this.currPatient.antiCoagulation}}</mat-label>
                         <mat-label *ngIf="this.currPatient.antiCoagulation=='Heparin'"> <br><br> Initial:
                             {{this.currPatient.hInit}}</mat-label>
@@ -232,23 +232,23 @@
                 </div>
                 <h2>Dry Weight</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.dryWt}} kg</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.dryWt}} kg</mat-label>
                 </div>
                 <h2>Average Weight Gain</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.avgWtGain}} (between sessions)</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.avgWtGain}} (between sessions)</mat-label>
                 </div>
                 <h2>Average Blood Pressure</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.avgBP}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.avgBP}}</mat-label>
                 </div>
                 <h2>Average Pulse</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class=" p-6 input-border">{{this.currPatient.avgBP}}</mat-label>
+                    <mat-label class="   input-border">{{this.currPatient.avgBP}}</mat-label>
                 </div>
                 <h2>Dialysis Complications</h2>
                 <div class="d-flex justify-content-center">
-                    <div class="p-6 input-border">
+                    <div class="  input-border">
                         <mat-label *ngIf="this.currPatient.dCompHead"> - Headache</mat-label>
                         <mat-label *ngIf="this.currPatient.dCompHG"> &nbsp;&nbsp; - Hypoglycemia</mat-label>
                         <mat-label *ngIf="this.currPatient.dCompHOT"> &nbsp;&nbsp; - Hypotension</mat-label>
@@ -293,21 +293,21 @@
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3>HB:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.cbcHB}}
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.cbcHB}}
                             </mat-label>
                         </div>
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3>WBC:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.cbcWBC}}
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.cbcWBC}}
                             </mat-label>
                         </div>
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3>Platelets:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.cbcPlatelets}}
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.cbcPlatelets}}
                             </mat-label>
                         </div>
                     </div>
@@ -319,21 +319,21 @@
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3>PT:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.coagPT}} sec
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.coagPT}} sec
                             </mat-label>
                         </div>
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3>PTT:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.coagPPT}} sec
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.coagPPT}} sec
                             </mat-label>
                         </div>
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3>INR:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.coagINR}}
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.coagINR}}
                             </mat-label>
                         </div>
                     </div>
@@ -345,27 +345,27 @@
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3 class="lab-headings">S.&nbsp;Creatinine&nbsp;Pre-HD:</h3>
-                            <mat-label class="margin-left-field p-6 input-border lab-fields">
+                            <mat-label class="margin-left-field   input-border lab-fields">
                                 {{this.currPatient.chemCrePre}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class="lab-headings">S.&nbsp;Creatinine&nbsp;Post-HD:</h3>
-                            <mat-label class="margin-left-field p-6 input-border lab-fields">
+                            <mat-label class="margin-left-field   input-border lab-fields">
                                 {{this.currPatient.chemCrePost}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class=" lab-headings">S.&nbsp;Potassium:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                            <mat-label class=" margin-left-field   input-border lab-fields">
                                 {{this.currPatient.chemPot}} mmoL/L</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class=" lab-headings">S.&nbsp;Magnesium:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                            <mat-label class=" margin-left-field   input-border lab-fields">
                                 {{this.currPatient.chemMag}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class="lab-headings">ALT:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                            <mat-label class=" margin-left-field   input-border lab-fields">
                                 {{this.currPatient.chemALT}} U/L</mat-label>
                         </div>
                     </div>
@@ -373,28 +373,28 @@
                         <div class="d-flex flex-row">
                             <h3 class=" margin-left-field lab-headings">S.&nbsp;Urea&nbsp;Pre-HD:</h3>
                             <!--2nd column start-->
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                            <mat-label class=" margin-left-field   input-border lab-fields">
                                 {{this.currPatient.chemUreaPre}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class=" margin-left-field lab-headings">S.&nbsp;Urea&nbsp;Post-HD:</h3>
                             <!--2nd column start-->
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                            <mat-label class=" margin-left-field   input-border lab-fields">
                                 {{this.currPatient.chemUreaPost}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class=" margin-left-field lab-headings">S.&nbsp;Calcium:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                            <mat-label class=" margin-left-field   input-border lab-fields">
                                 {{this.currPatient.chemCal}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class=" margin-left-field lab-headings">S.&nbsp;Albumin:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                            <mat-label class=" margin-left-field   input-border lab-fields">
                                 {{this.currPatient.chemAlb}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class=" margin-left-field lab-headings">Alk.&nbsp;Phosphatase:</h3>
-                            <mat-label class="margin-left-field  p-6 input-border lab-fields">
+                            <mat-label class="margin-left-field    input-border lab-fields">
                                 {{this.currPatient.chemPhos}} U/L</mat-label>
                         </div>
                     </div>
@@ -402,22 +402,22 @@
                         <div class="d-flex flex-row">
                             <h3 class=" margin-left-field lab-headings">S.&nbsp;Sodium:</h3>
                             <!---3rd column start-->
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                            <mat-label class=" margin-left-field   input-border lab-fields">
                                 {{this.currPatient.chemSod}} mmoL/L</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class="margin-left-field lab-headings">S.&nbsp;Phosphorus:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                            <mat-label class=" margin-left-field   input-border lab-fields">
                                 {{this.currPatient.chemPhos}} mg%</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class="margin-left-field lab-headings">AST:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                            <mat-label class=" margin-left-field   input-border lab-fields">
                                 {{this.currPatient.chemAST}} U/L</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3 class="margin-left-field lab-headings">Other:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border lab-fields">
+                            <mat-label class=" margin-left-field   input-border lab-fields">
                                 {{this.currPatient.chemOther}}</mat-label>
                         </div>
                     </div>
@@ -429,24 +429,24 @@
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3>S.&nbsp;Iron:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.Siron}} umol/L
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.Siron}} umol/L
                             </mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3>TIBC:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.TIBC}} umol/L
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.TIBC}} umol/L
                             </mat-label>
                         </div>
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3>S.&nbsp;Ferritin:</h3>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.Sferitin}} ng/mL
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.Sferitin}} ng/mL
                             </mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3>TSAT:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.TSAT}} %
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.TSAT}} %
                             </mat-label>
                         </div>
                     </div>
@@ -458,14 +458,14 @@
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3>PTH:</h3>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.hormPTH}} Pmol/L
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.hormPTH}} Pmol/L
                             </mat-label>
                         </div>
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3>Vitamin&nbsp;D:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.hormVITD}}
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.hormVITD}}
                                 ng/L
                             </mat-label>
                         </div>
@@ -473,7 +473,7 @@
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3>Other:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.hormOther}}
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.hormOther}}
                             </mat-label>
                         </div>
                     </div>
@@ -485,29 +485,29 @@
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3>HBs&nbsp;Ag:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.hbsAg}}
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.hbsAg}}
                             </mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3>HCV&nbsp;Ab:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.hcvAb}}
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.hcvAb}}
                             </mat-label>
                         </div>
                         <div *ngIf="this.currPatient.hcvAb=='Positive'" class="d-flex flex-row">
                             <h3>HCV&nbsp;RNA&nbsp;PCR:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.hcvPCR}}
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.hcvPCR}}
                             </mat-label>
                         </div>
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h3>HIV&nbsp;I&nbsp;&&nbsp;II:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.hivI_II}}
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.hivI_II}}
                             </mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h3>Other:</h3>
-                            <mat-label class=" margin-left-field p-6 input-border">{{this.currPatient.othrSer}}
+                            <mat-label class=" margin-left-field   input-border">{{this.currPatient.othrSer}}
                             </mat-label>
                         </div>
                     </div>
@@ -544,69 +544,69 @@
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD1">
                             <h2 class="heading-margin">Medication&nbsp;1</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD1}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD1}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD3">
                             <h2 class="heading-margin">Medication&nbsp;3</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD3}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD3}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD5">
                             <h2 class="heading-margin">Medication&nbsp;5</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD5}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD5}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD7">
                             <h2 class="heading-margin">Medication&nbsp;7</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD7}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD7}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD9">
                             <h2 class="heading-margin">Medication&nbsp;9</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD9}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD9}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD11">
                             <h2 class="heading-margin">Medication&nbsp;11</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD11}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD11}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD13">
                             <h2 class="heading-margin">Medication&nbsp;13</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD13}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD13}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD15">
                             <h2 class="heading-margin">Medication&nbsp;15</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD15}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD15}}</mat-label>
                         </div>
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD2">
                             <h2 class="heading-margin">Medication&nbsp;2</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD2}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD2}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD4">
                             <h2 class="heading-margin">Medication&nbsp;4</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD4}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD4}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD6">
                             <h2 class="heading-margin">Medication&nbsp;6</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD6}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD6}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD8">
                             <h2 class="heading-margin">Medication&nbsp;8</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD8}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD8}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD10">
                             <h2 class="heading-margin">Medication&nbsp;10</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD10}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD10}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD12">
                             <h2 class="heading-margin">Medication&nbsp;12</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD12}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD12}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD14">
                             <h2 class="heading-margin">Medication&nbsp;14</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD14}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD14}}</mat-label>
                         </div>
                         <div class="d-flex flex-row" *ngIf="this.currPatient.cMD16">
                             <h2 class="heading-margin">Medication&nbsp;16</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.cMD16}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.cMD16}}</mat-label>
                         </div>
                     </div>
                 </div>
@@ -617,28 +617,28 @@
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h2>Hepatitus&nbsp;B&nbsp;Vaccination:</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.HepBV}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.HepBV}}</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h2>Vaccination&nbsp;Date:</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.dOfHepBV}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.dOfHepBV}}</mat-label>
                         </div>
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
                             <h2>Influenza&nbsp;Vaccination:</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.currPatient.InfV}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.currPatient.InfV}}</mat-label>
                         </div>
                         <div class="d-flex flex-row">
                             <h2>Vaccination&nbsp;Date:</h2>
-                            <mat-label class="margin-left-field p-6 input-border">{{this.dOfInfV}}</mat-label>
+                            <mat-label class="margin-left-field   input-border">{{this.dOfInfV}}</mat-label>
                         </div>
                     </div>
                 </div>
                 <div *ngIf="this.currPatient.otherVAC">
                     <h2>Other Vaccination:</h2>
                     <div class="d-flex justify-content-center">
-                        <mat-label class=" p-6 input-border">{{this.currPatient.otherVAC}}</mat-label>
+                        <mat-label class="   input-border">{{this.currPatient.otherVAC}}</mat-label>
                     </div>
                 </div>
             </mat-card>
@@ -666,7 +666,7 @@
             <mat-card id="profileform-bg" class=" info-box shadow">
                 <h2 class="bigger d-flex justify-content-center">Dr Progress Notes</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class="notes p-6 input-border max-width">{{this.currPatient.progNotes}}</mat-label>
+                    <mat-label class="notes   input-border max-width">{{this.currPatient.progNotes}}</mat-label>
                 </div>
             </mat-card>
         </div>
@@ -692,7 +692,7 @@
             <mat-card id="profileform-bg" class=" info-box shadow">
                 <h2 class="bigger d-flex justify-content-center">Consultant Notes</h2>
                 <div class="d-flex justify-content-center">
-                    <mat-label class="notes p-6 input-border max-width">{{this.currPatient.consNotes}}</mat-label>
+                    <mat-label class="notes   input-border max-width">{{this.currPatient.consNotes}}</mat-label>
                 </div>
             </mat-card>
         </div>
