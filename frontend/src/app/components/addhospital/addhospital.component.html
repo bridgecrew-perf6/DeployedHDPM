@@ -1,7 +1,7 @@
 <div class="d-flex justify-content-center">
     <mat-card id="table-bg" class="shadow card-width">
         <mat-tab-group mat-align-tabs="center">
-            <mat-tab label="Add a hospital">
+            <mat-tab class="ex-font" label="Add a hospital">
                 <form [formGroup]="hospAddForm" class="form-margins">
                     <div class="d-flex flex-column justify-content-center">
                         <mat-form-field class="field input-border">
@@ -17,8 +17,8 @@
                 <form [formGroup]="hospRemoveForm" class="form-margins">
                     <div class="d-flex flex-column justify-content-center">
                         <mat-form-field class="field input-border">
-                            <mat-select placeholder="Hospital Name" formControlName="hospName" #hospName>
-                                <mat-option *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">
+                            <mat-select class="ex-font" placeholder="Hospital Name" formControlName="hospName" #hospName>
+                                <mat-option class="ex-font" *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">
                                     {{hospital.hospitalName}}
                                 </mat-option>
                             </mat-select>

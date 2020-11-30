@@ -8,7 +8,7 @@
                     <mat-divider></mat-divider>
                     <br>
                     <mat-form-field class="inputfield ex-font" *ngIf="this.currUser.isAdmin">
-                        <mat-select placeholder="Hospital" formControlName="Hospital" #Hospital>
+                        <mat-select class="ex-font"  placeholder="Hospital" formControlName="Hospital" #Hospital>
                             <mat-option *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">
                                 {{hospital.hospitalName}}
                             </mat-option>
@@ -24,7 +24,7 @@
                     </mat-form-field>
                     <br>
                     <mat-form-field class="inputfield ex-font">
-                        <mat-select placeholder="Gender" formControlName="Gender" #Gender>
+                        <mat-select class="ex-font"  placeholder="Gender" formControlName="Gender" #Gender>
                             <mat-option value="Male">Male</mat-option>
                             <mat-option value="Female">Female</mat-option>
                         </mat-select>
@@ -35,7 +35,7 @@
                     </mat-form-field>
                     <br>
                     <mat-form-field class="inputfield ex-font">
-                        <mat-select placeholder="Nationality" formControlName="Nationality" #Nationality>
+                        <mat-select class="ex-font"  placeholder="Nationality" formControlName="Nationality" #Nationality>
                             <mat-option *ngFor="let country of countryList" value="{{country}}">{{country}}</mat-option>
                         </mat-select>
                     </mat-form-field>
@@ -80,7 +80,7 @@
                     </mat-form-field>
                     <br>
                     <mat-form-field class="inputfield ex-font">
-                        <mat-select name="oKidneyDisease" placeholder="Original Kidney Disease"
+                        <mat-select class="ex-font"  name="oKidneyDisease" placeholder="Original Kidney Disease"
                             formControlName="oKidneyDisease" #oKidneyDisease>
                             <mat-option value="Unknown">Unknown</mat-option>
                             <mat-option value="Hypertensive Nephrosclerosis">Hypertensive Nephrosclerosis</mat-option>
@@ -97,19 +97,19 @@
                     <br>
                     <div>
                         <h3 class="heading ex-font">Co-Morbidities:</h3>
-                        <mat-checkbox labelPosition="before" [checked]="cMorbDM" (change)="cMorbDM = !cMorbDM">Diabetes
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="cMorbDM" (change)="cMorbDM = !cMorbDM">Diabetes
                             Mellitus</mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="cMorbHyp" (change)="cMorbHyp = !cMorbHyp">
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="cMorbHyp" (change)="cMorbHyp = !cMorbHyp">
                             Hypertension</mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="cMorbIHD" (change)="cMorbIHD = !cMorbIHD">IHD
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="cMorbIHD" (change)="cMorbIHD = !cMorbIHD">IHD
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="cMorbE" (change)="cMorbE = !cMorbE">Epilepsy
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="cMorbE" (change)="cMorbE = !cMorbE">Epilepsy
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="SelectedCMorbOther"
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="SelectedCMorbOther"
                             (change)="SelectedCMorbOther = !SelectedCMorbOther">Other
                         </mat-checkbox>
                         <br>
@@ -127,7 +127,7 @@
                     </mat-form-field>
                     <br>
                     <mat-form-field class="inputfield ex-font">
-                        <mat-select name="previousTr" placeholder="Previous Transplantation"
+                        <mat-select class="ex-font"  name="previousTr" placeholder="Previous Transplantation"
                             formControlName="previousTr" #previousTr>
                             <mat-option value="No">No</mat-option>
                             <mat-option value="Yes">Yes (Graft Survival)</mat-option>
@@ -138,7 +138,7 @@
                     </mat-form-field>
                     <br>
                     <mat-form-field class="inputfield ex-font">
-                        <mat-select name="fitForTr" placeholder="Fit for Transplantation" formControlName="fitForTr"
+                        <mat-select class="ex-font"  name="fitForTr" placeholder="Fit for Transplantation" formControlName="fitForTr"
                             #fitForTr>
                             <mat-option value="Yes">Yes</mat-option>
                             <mat-option value="No">No</mat-option>
@@ -149,7 +149,7 @@
                     </mat-form-field>
                     <br>
                     <mat-form-field class="inputfield ex-font">
-                        <mat-select name="potentialRDonors" placeholder="Potential Relative Donors"
+                        <mat-select class="ex-font"  name="potentialRDonors" placeholder="Potential Relative Donors"
                             formControlName="potentialRDonors" #potentialRDonors>
                             <mat-option value="Yes">Yes</mat-option>
                             <mat-option value="No">No</mat-option>
@@ -168,22 +168,22 @@
                     <br>
                     <h3 class="heading ex-font">Current Access:</h3>
                     <div class="d-flex justify-content-between">
-                        <mat-form-field class="currentAcc">
-                            <mat-select name="currentAccess1" formControlName="currentAccess1" #currentAccess1>
+                        <mat-form-field class="currentAcc ex-font">
+                            <mat-select class="ex-font"  name="currentAccess1" formControlName="currentAccess1" #currentAccess1>
                                 <mat-option value="RT.">RT.</mat-option>
                                 <mat-option value="LT.">LT.</mat-option>
                             </mat-select>
                         </mat-form-field>
-                        <mat-form-field class="currentAcc">
-                            <mat-select name="currentAccess2" formControlName="currentAccess2" #currentAccess2>
+                        <mat-form-field class="currentAcc ex-font">
+                            <mat-select class="ex-font"  name="currentAccess2" formControlName="currentAccess2" #currentAccess2>
                                 <mat-option value="AVF">AVF</mat-option>
                                 <mat-option value="AVG">AVG</mat-option>
                                 <mat-option value="Permcath">Permcath</mat-option>
                                 <mat-option value="Temp.cath">Temp.cath</mat-option>
                             </mat-select>
                         </mat-form-field>
-                        <mat-form-field class="currentAcc" *ngIf="this.createForm.controls.currentAccess2.value">
-                            <mat-select name="currentAccess3" formControlName="currentAccess3" #currentAccess3>
+                        <mat-form-field class="currentAcc ex-font" *ngIf="this.createForm.controls.currentAccess2.value">
+                            <mat-select class="ex-font"  name="currentAccess3" formControlName="currentAccess3" #currentAccess3>
                                 <mat-option
                                     *ngIf="this.createForm.controls.currentAccess2.value=='AVF' || this.createForm.controls.currentAccess2.value=='AVG'"
                                     value="Radio-ulnar">Radio-ulnar</mat-option>
@@ -205,7 +205,7 @@
                     </div>
                     <br>
                     <mat-form-field appearance="fill">
-                        <mat-label>Date of Access Creation</mat-label>
+                        <mat-label class="ex-font">Date of Access Creation</mat-label>
                         <input matInput [matDatepicker]="dOfAccessCreation" formControlName="dOfAccessCreation">
                         <mat-datepicker-toggle matSuffix [for]="dOfAccessCreation"></mat-datepicker-toggle>
                         <mat-datepicker #dOfAccessCreation></mat-datepicker>
@@ -213,19 +213,19 @@
                     <br>
                     <div>
                         <h3 class="heading ex-font">Complications:</h3>
-                        <mat-checkbox labelPosition="before" [checked]="CompIns" (change)="CompIns = !CompIns">
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="CompIns" (change)="CompIns = !CompIns">
                             Insufficiency</mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="CompInf" (change)="CompInf = !CompInf">Infection
+                        <mat-checkbox class="ex-font"  labelPosition="before" [checked]="CompInf" (change)="CompInf = !CompInf">Infection
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="CompAD" (change)="CompAD = !CompAD">Aneurysmal
+                        <mat-checkbox class="ex-font"  labelPosition="before" [checked]="CompAD" (change)="CompAD = !CompAD">Aneurysmal
                             Dilatation</mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="CompDC" (change)="CompDC = !CompDC">Difficult
+                        <mat-checkbox class="ex-font"  labelPosition="before" [checked]="CompDC" (change)="CompDC = !CompDC">Difficult
                             Cannulation</mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="SelectedCompOther"
+                        <mat-checkbox class="ex-font"  labelPosition="before" [checked]="SelectedCompOther"
                             (change)="SelectedCompOther = !SelectedCompOther">Other</mat-checkbox>
                         <br>
                         <mat-form-field *ngIf="SelectedCompOther">
@@ -274,7 +274,7 @@
                     </mat-form-field>
                     <br>
                     <mat-form-field class="inputfield ex-font">
-                        <mat-select name="antiCoagulation" placeholder="Anticoagulation" formControlName="antiCoag"
+                        <mat-select class="ex-font"  name="antiCoagulation" placeholder="Anticoagulation" formControlName="antiCoag"
                             #antiCoag>
                             <mat-option value="Heparin">Yes (Heparin)</mat-option>
                             <mat-option value="LMWH">Yes (LMWH)</mat-option>
@@ -315,37 +315,37 @@
                     <br><br>
                     <div>
                         <h3 class="heading ex-font">Dialysis Complications:</h3>
-                        <mat-checkbox labelPosition="before" [checked]="DCHA" (change)="DCHA = !DCHA">Headache
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="DCHA" (change)="DCHA = !DCHA">Headache
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="DCHypot" (change)="DCHypot = !DCHypot">
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="DCHypot" (change)="DCHypot = !DCHypot">
                             Hypotension</mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="DCHypog" (change)="DCHypog = !DCHypog">
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="DCHypog" (change)="DCHypog = !DCHypog">
                             Hypoglycemia</mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="DCHyper" (change)="DCHyper = !DCHyper">
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="DCHyper" (change)="DCHyper = !DCHyper">
                             Hypertension</mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="DCMC" (change)="DCMC = !DCMC">Muscle Cramps
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="DCMC" (change)="DCMC = !DCMC">Muscle Cramps
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="DCAC" (change)="DCAC = !DCAC">Abdominal Colic
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="DCAC" (change)="DCAC = !DCAC">Abdominal Colic
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="DCV" (change)="DCV = !DCV">Vomiting
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="DCV" (change)="DCV = !DCV">Vomiting
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="DCSZ" (change)="DCSZ = !DCSZ">Seizure
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="DCSZ" (change)="DCSZ = !DCSZ">Seizure
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="DCHS" (change)="DCHS = !DCHS">Hypersensitivity
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="DCHS" (change)="DCHS = !DCHS">Hypersensitivity
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="DCIH" (change)="DCIH = !DCIH">Itching
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="DCIH" (change)="DCIH = !DCIH">Itching
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox labelPosition="before" [checked]="SelectedDCOther"
+                        <mat-checkbox class="ex-font" labelPosition="before" [checked]="SelectedDCOther"
                             (change)="SelectedDCOther = !SelectedDCOther">
                             Other</mat-checkbox>
                         <br>
@@ -448,14 +448,14 @@
                         <h3 class="heading ex-font">Serology:</h3>
                         <br>
                         <mat-form-field class="inputfield ex-font">
-                            <mat-select name="hbsAg" placeholder="HBs Ag" formControlName="hbsAg" #hbsAg>
+                            <mat-select class="ex-font"  name="hbsAg" placeholder="HBs Ag" formControlName="hbsAg" #hbsAg>
                                 <mat-option value="Positive">Positive</mat-option>
                                 <mat-option value="Negative">Negative</mat-option>
                             </mat-select>
                         </mat-form-field>
                         <br>
                         <mat-form-field class="inputfield ex-font">
-                            <mat-select name="hcvAb" placeholder="HCV Ab" formControlName="hcvAb" #hcvAb>
+                            <mat-select class="ex-font"  name="hcvAb" placeholder="HCV Ab" formControlName="hcvAb" #hcvAb>
                                 <mat-option value="Positive">Positive</mat-option>
                                 <mat-option value="Negative">Negative</mat-option>
                             </mat-select>
@@ -465,7 +465,7 @@
                         </mat-form-field>
                         <br>
                         <mat-form-field class="inputfield ex-font">
-                            <mat-select name="hivI_II" placeholder="HIV I & II" formControlName="hivI_II" #hivI_II>
+                            <mat-select class="ex-font"  name="hivI_II" placeholder="HIV I & II" formControlName="hivI_II" #hivI_II>
                                 <mat-option value="Positive">Positive</mat-option>
                                 <mat-option value="Negative">Negative</mat-option>
                             </mat-select>
@@ -596,7 +596,7 @@
                         <input matInput placeholder="Medication 16" formControlName="cMD16" #cMD15>
                     </mat-form-field>
                     <mat-form-field class="inputfield ex-font">
-                        <mat-select name="HepBV" placeholder="Hep. B Vaccination" formControlName="HepBV" #HepBV>
+                        <mat-select class="ex-font"  name="HepBV" placeholder="Hep. B Vaccination" formControlName="HepBV" #HepBV>
                             <mat-option value="Yes">Yes</mat-option>
                             <mat-option value="No">No</mat-option>
                         </mat-select>
@@ -608,7 +608,7 @@
                         <mat-datepicker #HepBVDate></mat-datepicker>
                     </mat-form-field>
                     <mat-form-field class="inputfield ex-font">
-                        <mat-select name="InfV" placeholder="Influenza Vaccination" formControlName="InfV" #InfV>
+                        <mat-select class="ex-font"  name="InfV" placeholder="Influenza Vaccination" formControlName="InfV" #InfV>
                             <mat-option value="Yes">Yes</mat-option>
                             <mat-option value="No">No</mat-option>
                         </mat-select>

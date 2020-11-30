@@ -2,7 +2,7 @@
     <br>
     <mat-card id="usertable-bg" class="shadow">
         <mat-form-field class="mat-select-width">
-            <mat-select (selectionChange)="onHospChange($event)" placeholder="Hospital Criteria" [(value)]="selectedHosp">
+            <mat-select class="ex-font" (selectionChange)="onHospChange($event)" placeholder="Hospital Criteria" [(value)]="selectedHosp">
                 <mat-option value="All">All</mat-option>
                 <mat-option *ngFor="let hospital of hospList " value="{{hospital.hospitalName}}">{{hospital.hospitalName}}</mat-option>
             </mat-select>
@@ -10,19 +10,19 @@
         <table class="table table-sm table-light">
             <thead>
                 <tr class="table-primary">
-                    <th class=th-primary scope="col">Full Name</th>
-                    <th class=th-primary scope="col">Email</th>
-                    <th class=th-primary scope="col">Contact Number</th>
-                    <th class=th-primary scope="col">Role</th>
-                    <th class=th-primary scope="col">Actions</th>
+                    <th class="ex-font th-primary" scope="col">Full Name</th>
+                    <th class="ex-font th-primary" scope="col">Email</th>
+                    <th class="ex-font th-primary" scope="col">Contact Number</th>
+                    <th class="ex-font th-primary" scope="col">Role</th>
+                    <th class="ex-font th-primary" scope="col">Actions</th>
                 </tr>
             </thead>
             <tbody *ngIf="this.users && this.users.length > 1">
                 <tr *ngFor="let user of users  | paginate: { itemsPerPage: 10, currentPage: p }">
-                    <td class="table-element" *ngIf="user">{{user.firstName}} {{user.lastName}}</td>
-                    <td class="table-element" *ngIf="user">{{user.email}}</td>
-                    <td class="table-element" *ngIf="user">{{user.contactInfo}}</td>
-                    <td class="table-element" *ngIf="user">{{user.isAdmin? 'Administrator' : 'User'}}</td>
+                    <td class="ex-font table-element" *ngIf="user">{{user.firstName}} {{user.lastName}}</td>
+                    <td class="ex-font table-element" *ngIf="user">{{user.email}}</td>
+                    <td class="ex-font table-element" *ngIf="user">{{user.contactInfo}}</td>
+                    <td class="ex-font table-element" *ngIf="user">{{user.isAdmin? 'Administrator' : 'User'}}</td>
                     <td class="table-element" *ngIf="user">
                         <button mat-button class="option-button p-1" [disabled]="user.isAdmin || this.currUser.email == this.user.email" (click)="deleteUser(user._id)">Remove</button>
                         <button mat-button class="option-button p-1" [disabled]="this.currUser.email == this.user.email" (click)="changeUserRole(user)">Change to {{!user.isAdmin? 'Administrator' : 'User' }}</button>
@@ -32,10 +32,10 @@
             </tbody>
             <tbody *ngIf="this.singleUser">
                 <tr>
-                    <td class="table-element">{{singleUser.firstName}} {{singleUser.lastName}}</td>
-                    <td class="table-element">{{singleUser.email}}</td>
-                    <td class="table-element">{{singleUser.contactInfo}}</td>
-                    <td class="table-element">{{singleUser.isAdmin? 'Administrator' : 'User'}}</td>
+                    <td class="ex-font table-element">{{singleUser.firstName}} {{singleUser.lastName}}</td>
+                    <td class="ex-font table-element">{{singleUser.email}}</td>
+                    <td class="ex-font table-element">{{singleUser.contactInfo}}</td>
+                    <td class="ex-font table-element">{{singleUser.isAdmin? 'Administrator' : 'User'}}</td>
                     <td class="table-element">
                         <button mat-button class="option-button p-1" [disabled]="singleUser.isAdmin || this.currUser.email == this.singleUser.email" (click)="deleteUser(singleUser._id)">Remove</button>
                         <button mat-button class="option-button p-1" [disabled]="this.currUser.email == this.singleUser.email" (click)="changeUserRole(singleUser)">Change to {{!singleUser.isAdmin? 'Administrator' : 'User' }}</button>
