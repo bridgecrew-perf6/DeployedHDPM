@@ -32,9 +32,7 @@ let  patientSchema = new Schema({
     },
     contactInfo: {
         type: Number,
-        required: true,
-        min: 0,
-        max: 999999999
+        required: true
     },
     Gender: {
         type: String,

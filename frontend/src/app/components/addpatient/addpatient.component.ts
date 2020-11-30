@@ -156,18 +156,17 @@ export class AddpatientComponent implements OnInit {
 
     });
   }
-  getAllHospitals()
-  {
+  getAllHospitals() {
     this.hosplistService.getHospitals().subscribe((data: hospitalObj[]) => {
       this.hospList = data
-      
+
     });
   }
   addp() {
     this.patientService.getPatientbynID(this.createForm.controls.n_ID.value).subscribe((data: userObj) => {
       if (data) {
         this._snackBar.open("Error: Medical record with matching National ID already exists", "", {
-          duration: 4000, panelClass: ['red-snackbar'] 
+          duration: 4000, panelClass: ['red-snackbar']
         });
       }
       else {
@@ -310,9 +309,9 @@ export class AddpatientComponent implements OnInit {
         this._snackBar.open("Medical record added successfully", "", {
           duration: 3000, panelClass: ['green-snackbar']
         });
-        this.patientService.addPatient(this.currP).subscribe(() => {
-          this.router.navigate(['/list']);
-        });
+        this.patientService.addPatient(this.currP).subscribe((res => console.log(res))); //=> {
+        //this.router.navigate(['/list']);
+        // });
       }
     });
   }
@@ -324,6 +323,7 @@ export class AddpatientComponent implements OnInit {
     this.createForm.controls.currentAccess1.setValue("RT.");
     this.createForm.controls.currentAccess2.setValue("AVF");
     this.createForm.controls.antiCoag.setValue("No");
+    this.createForm.controls.submittedBy.setValue("Dr " + this.currUser.firstName + " " + this.currUser.lastName);
     this.SelectedCMorbOther = false;
     this.cMorbDM = false;
     this.cMorbE = false;
