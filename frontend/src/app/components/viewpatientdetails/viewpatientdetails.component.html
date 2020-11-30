@@ -65,7 +65,7 @@
     <div id="content">
         <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
-                <h1 class="bigger d-flex justify-content-center ex-font">Medical and Surgical History</h1>
+                <h1 class="bigger d-flex justify-content-center ex-font ex-font">Medical and Surgical History</h1>
                  <h2 class="ex-font">Start of Dialysis</h2>
                 <div class="d-flex justify-content-center">
                     <mat-label class=" input input-border">{{this.dofDialysis}}</mat-label>
@@ -235,8 +235,8 @@
                     <mat-label class=" input input-border">{{this.currPatient.dryWt}} kg</mat-label>
                 </div>
                  <h2 class="ex-font">Average Weight Gain</h2>
-                <div class="input d-flex justify-content-center">
-                    <mat-label class="input-border">{{this.currPatient.avgWtGain}} (between sessions)</mat-label>
+                <div class="d-flex justify-content-center">
+                    <mat-label class=" input input-border">{{this.currPatient.avgWtGain}} (between sessions)</mat-label>
                 </div>
                  <h2 class="ex-font">Average Blood Pressure</h2>
                 <div class="d-flex justify-content-center">
@@ -538,7 +538,7 @@
         <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
                 <div class="d-flex justify-content-center">
-                    <h1 class="bigger">Current Medication</h1>
+                    <h1 class="ex-font bigger">Current Medication</h1>
                 </div>
                 <div class="d-flex justify-content-around">
                     <div class="d-flex flex-column">
@@ -664,7 +664,7 @@
     <div id="content">
         <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
-                <h2 class="bigger d-flex justify-content-center">Dr Progress Notes</h2>
+                <h1 class="bigger d-flex justify-content-center ex-font">Dr Progress Notes</h1>
                 <div class="d-flex justify-content-center">
                     <mat-label class="notes   input input-border max-width">{{this.currPatient.progNotes}}</mat-label>
                 </div>
@@ -690,7 +690,7 @@
     <div id="content">
         <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
-                <h2 class="bigger d-flex justify-content-center">Consultant Notes</h2>
+                <h1 class="bigger d-flex justify-content-center ex-font">Consultant Notes</h1>
                 <div class="d-flex justify-content-center">
                     <mat-label class="notes   input input-border max-width">{{this.currPatient.consNotes}}</mat-label>
                 </div>
