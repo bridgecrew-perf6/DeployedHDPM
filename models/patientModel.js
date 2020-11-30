@@ -11,11 +11,11 @@ let  patientSchema = new Schema({
         type: String
     },
     Age: {
-        type: Number,
+        type: String,
         required:true,
     },
     Height: {
-        type: Number,
+        type: String,
         required: true
     },
     bldGrp: {
@@ -31,7 +31,7 @@ let  patientSchema = new Schema({
         required: true,
     },
     contactInfo: {
-        type: Number,
+        type: String,
         required: true
     },
     Gender: {
@@ -143,10 +143,10 @@ let  patientSchema = new Schema({
         Default: 'None'
     },
     Frequency:{
-        type: Number
+        type: String
     },
     Duration:{
-        type: Number
+        type: String
     },
     Dialyser:{
         type: String
@@ -170,19 +170,19 @@ let  patientSchema = new Schema({
         type: String
     },
     dryWt: {
-        type: Number
+        type: String
     },
     avgWtGain: {
-        type: Number
+        type: String
     },
     avgBP: {
         type: String
     },
     avgPulse: {
-        type: Number
+        type: String
     },
     dialAdeq :{
-        type: Number
+        type: String
     },
     dCompHead: {
         type: Boolean
@@ -221,73 +221,73 @@ let  patientSchema = new Schema({
         type: String
     },
     cbcHB: {
-        type: Number
+        type: String
     },
     cbcWBC: {
-        type: Number
+        type: String
     },
     cbcPlatelets: {
-        type: Number
+        type: String
     },
     chemCrePre: {
-        type: Number
+        type: String
     },
     chemUreaPre: {
-        type: Number
+        type: String
     },
     chemCrePost: {
-        type: Number
+        type: String
     },
     chemUreaPost: {
-        type: Number
+        type: String
     },
     chemSod: {
-        type: Number
+        type: String
     },
     chemPot: {
-        type: Number
+        type: String
     },
     chemCal: {
-        type: Number
+        type: String
     },
     chemPhos: {
-        type: Number
+        type: String
     },
     chemAST: {
-        type: Number
+        type: String
     },
     chemALT: {
-        type: Number
+        type: String
     },
     chemMag:{
-        type: Number
+        type: String
     },
     chemAlb: {
-        type: Number
+        type: String
     },
     chemAlph: {
-        type: Number
+        type: String
     },
     chemOther: {
         type: String,
     },
     Siron: {
-        type: Number
+        type: String
     },
     TIBC: {
-        type: Number
+        type: String
     },
     Sferitin: {
-        type: Number
+        type: String
     },
     TSAT: {
-        type: Number
+        type: String
     },
     hormPTH: {
-        type: Number
+        type: String
     },
     hormVITD: {
-        type: Number
+        type: String
     },
     hormOther: {
         type: String
@@ -308,13 +308,13 @@ let  patientSchema = new Schema({
         type: String
     },
     coagPT: {
-        type: Number
+        type: String
     },
     coagPPT: {
-        type: Number
+        type: String
     },
     coagINR: {
-        type: Number
+        type: String
     },
     cMD1: {
         type: String
