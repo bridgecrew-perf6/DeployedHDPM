@@ -1,7 +1,7 @@
 <div class="d-flex justify-content-center">
   <div id="loginform-bg" class="shadow rounded login-container">
     <form [formGroup]="loginForm" class="form">
-      <div *ngIf="this.alert" class="ex-font alert alert-danger alert-dismissible fade show alert-pop" role="alert">
+      <div *ngIf="this.alert" class="ex-font alert alert-danger alert-dismissible fade show alert-pop d-flex justify-content-center" role="alert">
         Wrong credentials or user does not exist
         <button type="button" class="close" (click)="dismissAlert()" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
