@@ -6,6 +6,10 @@
     width:100%;
     font-size: 22px;
 }
+
+.checkbox-font{
+    font-size: 22px;
+}
 .update-btn {
     width: 20%;
     height: 70px;
