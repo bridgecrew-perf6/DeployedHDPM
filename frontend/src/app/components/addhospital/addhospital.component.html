@@ -7,9 +7,11 @@
                         <mat-form-field class="field input-border">
                             <input matInput formControlName="hospName" placeholder="Hospital Name" #hospName>
                         </mat-form-field>
-                        <button mat-button type="submit" class="main-btn" (click)="addHosp()"
-                            [disabled]="hospAddForm.pristine || hospAddForm.invalid">
-                            Add</button>
+                        <div class="d-flex justify-content-center">
+                            <button mat-button type="submit" class="main-btn" (click)="addHosp()"
+                                [disabled]="hospAddForm.pristine || hospAddForm.invalid">
+                                Add</button>
+                        </div>
                     </div>
                 </form>
             </mat-tab>
@@ -17,15 +19,19 @@
                 <form [formGroup]="hospRemoveForm" class="form-margins">
                     <div class="d-flex flex-column justify-content-center">
                         <mat-form-field class="field input-border">
-                            <mat-select class="ex-font" placeholder="Hospital Name" formControlName="hospName" #hospName>
-                                <mat-option class="ex-font" *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">
+                            <mat-select class="ex-font" placeholder="Hospital Name" formControlName="hospName"
+                                #hospName>
+                                <mat-option class="ex-font" *ngFor="let hospital of hospList"
+                                    value="{{hospital.hospitalName}}">
                                     {{hospital.hospitalName}}
                                 </mat-option>
                             </mat-select>
                         </mat-form-field>
-                        <button mat-button type="submit" class="main-btn" (click)="removeHosp()"
-                            [disabled]="hospRemoveForm.pristine || hospRemoveForm.invalid">
-                            Remove</button>
+                        <div class="d-flex justify-content-center">
+                            <button mat-button type="submit" class="main-btn" (click)="removeHosp()"
+                                [disabled]="hospRemoveForm.pristine || hospRemoveForm.invalid">
+                                Remove</button>
+                        </div>
                     </div>
                 </form>
             </mat-tab>

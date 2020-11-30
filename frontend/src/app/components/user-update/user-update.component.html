@@ -17,7 +17,7 @@
                     <br>
                     <mat-form-field class="input-border p-3" *ngIf="this.currUser.isAdmin">
                         <mat-select placeholder="Hospital" [(value)]="selectedHosp">
-                            <mat-option *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">
+                            <mat-option class="ex-font" *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">
                                 {{hospital.hospitalName}}
                             </mat-option>
                         </mat-select>

@@ -3,8 +3,8 @@
     <mat-card id="usertable-bg" class="shadow">
         <mat-form-field class="mat-select-width">
             <mat-select class="ex-font" (selectionChange)="onHospChange($event)" placeholder="Hospital Criteria" [(value)]="selectedHosp">
-                <mat-option value="All">All</mat-option>
-                <mat-option *ngFor="let hospital of hospList " value="{{hospital.hospitalName}}">{{hospital.hospitalName}}</mat-option>
+                <mat-option class="ex-font" value="All">All</mat-option>
+                <mat-option class="ex-font" *ngFor="let hospital of hospList " value="{{hospital.hospitalName}}">{{hospital.hospitalName}}</mat-option>
             </mat-select>
         </mat-form-field>
         <table class="table table-sm table-light">

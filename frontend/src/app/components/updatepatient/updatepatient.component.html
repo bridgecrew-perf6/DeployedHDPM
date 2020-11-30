@@ -9,7 +9,7 @@
                     <br>
                     <mat-form-field class="inputfield ex-font" *ngIf="this.currUser.isAdmin">
                         <mat-select placeholder="Hospital" formControlName="Hospital" #Hospital>
-                            <mat-option *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">
+                            <mat-option class="ex-font" *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">
                                 {{hospital.hospitalName}}
                             </mat-option>
                         </mat-select>
@@ -25,8 +25,8 @@
                     <br>
                     <mat-form-field class="inputfield ex-font">
                         <mat-select placeholder="Gender" formControlName="Gender" #Gender>
-                            <mat-option value="Male">Male</mat-option>
-                            <mat-option value="Female">Female</mat-option>
+                            <mat-option class="ex-font" value="Male">Male</mat-option>
+                            <mat-option class="ex-font" value="Female">Female</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <br>
@@ -36,7 +36,7 @@
                     <br>
                     <mat-form-field class="inputfield ex-font">
                         <mat-select placeholder="Nationality" formControlName="Nationality" #Nationality>
-                            <mat-option *ngFor="let country of countryList" value="{{country}}">{{country}}</mat-option>
+                            <mat-option class="ex-font" *ngFor="let country of countryList" value="{{country}}">{{country}}</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <br>
@@ -80,12 +80,12 @@
                     <mat-form-field class="inputfield ex-font">
                         <mat-select class="ex-font" name="oKidneyDisease" placeholder="Original Kidney Disease"
                             formControlName="oKidneyDisease" #oKidneyDisease>
-                            <mat-option value="Unknown">Unknown</mat-option>
-                            <mat-option value="Hypertensive Nephrosclerosis">Hypertensive Nephrosclerosis</mat-option>
-                            <mat-option value="Diabetic Nephropathy">Diabetic Nephropathy</mat-option>
-                            <mat-option value="Obstructive Nephropathy">Obstructive Nephropathy</mat-option>
-                            <mat-option value="ADPKD">ADPKD</mat-option>
-                            <mat-option value="Other">Other</mat-option>
+                            <mat-option class="ex-font" value="Unknown">Unknown</mat-option>
+                            <mat-option class="ex-font" value="Hypertensive Nephrosclerosis">Hypertensive Nephrosclerosis</mat-option>
+                            <mat-option class="ex-font" value="Diabetic Nephropathy">Diabetic Nephropathy</mat-option>
+                            <mat-option class="ex-font" value="Obstructive Nephropathy">Obstructive Nephropathy</mat-option>
+                            <mat-option class="ex-font" value="ADPKD">ADPKD</mat-option>
+                            <mat-option class="ex-font" value="Other">Other</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field *ngIf="this.updateForm.controls.oKidneyDisease.value == 'Other'" class="inputfield ex-font">
@@ -126,8 +126,8 @@
                     <mat-form-field class="inputfield ex-font">
                         <mat-select name="previousTr" placeholder="Previous Transplantation"
                             formControlName="previousTr" #previousTr>
-                            <mat-option value="No">No</mat-option>
-                            <mat-option value="Yes">Yes (Graft Survival)</mat-option>
+                            <mat-option class="ex-font" value="No">No</mat-option>
+                            <mat-option class="ex-font" value="Yes">Yes (Graft Survival)</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field *ngIf="this.updateForm.controls.previousTr.value == 'Yes'">
@@ -137,8 +137,8 @@
                     <mat-form-field class="inputfield ex-font">
                         <mat-select name="fitForTr" placeholder="Fit for Transplantation" formControlName="fitForTr"
                             #fitForTr>
-                            <mat-option value="Yes">Yes</mat-option>
-                            <mat-option value="No">No</mat-option>
+                            <mat-option class="ex-font" value="Yes">Yes</mat-option>
+                            <mat-option class="ex-font" value="No">No</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field *ngIf="this.updateForm.controls.fitForTr.value == 'No'" class="hiddeninputfield ex-font">
@@ -148,8 +148,8 @@
                     <mat-form-field class="inputfield ex-font">
                         <mat-select name="potentialRDonors" placeholder="Potential Relative Donors"
                             formControlName="potentialRDonors" #potentialRDonors>
-                            <mat-option value="Yes">Yes</mat-option>
-                            <mat-option value="No">No</mat-option>
+                            <mat-option class="ex-font" value="Yes">Yes</mat-option>
+                            <mat-option class="ex-font" value="No">No</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <br>
@@ -167,34 +167,34 @@
                     <div class="d-flex justify-content-between">
                         <mat-form-field class="currentAcc">
                             <mat-select name="currentAccess1" formControlName="currentAccess1" #currentAccess1>
-                                <mat-option value="RT.">RT.</mat-option>
-                                <mat-option value="LT.">LT.</mat-option>
+                                <mat-option class="ex-font" value="RT.">RT.</mat-option>
+                                <mat-option class="ex-font" value="LT.">LT.</mat-option>
                             </mat-select>
                         </mat-form-field>
                         <mat-form-field class="currentAcc">
                             <mat-select name="currentAccess2" formControlName="currentAccess2" #currentAccess2>
-                                <mat-option value="AVF">AVF</mat-option>
-                                <mat-option value="AVG">AVG</mat-option>
-                                <mat-option value="Permcath">Permcath</mat-option>
-                                <mat-option value="Temp.cath">Temp.cath</mat-option>
+                                <mat-option class="ex-font" value="AVF">AVF</mat-option>
+                                <mat-option class="ex-font" value="AVG">AVG</mat-option>
+                                <mat-option class="ex-font" value="Permcath">Permcath</mat-option>
+                                <mat-option class="ex-font" value="Temp.cath">Temp.cath</mat-option>
                             </mat-select>
                         </mat-form-field>
                         <mat-form-field class="currentAcc" *ngIf="this.updateForm.controls.currentAccess2.value">
                             <mat-select name="currentAccess3" formControlName="currentAccess3" #currentAccess3>
-                                <mat-option
+                                <mat-option class="ex-font"
                                     *ngIf="this.updateForm.controls.currentAccess2.value=='AVF' || this.updateForm.controls.currentAccess2.value=='AVG'"
                                     value="Radio-ulnar">Radio-ulnar</mat-option>
-                                <mat-option
+                                <mat-option class="ex-font"
                                     *ngIf="this.updateForm.controls.currentAccess2.value=='AVF' || this.updateForm.controls.currentAccess2.value=='AVG'"
                                     value="Radio-cephalic">Radio-cephalic</mat-option>
-                                <mat-option value="Femoral">Femoral</mat-option>
-                                <mat-option
+                                <mat-option class="ex-font" value="Femoral">Femoral</mat-option>
+                                <mat-option class="ex-font"
                                     *ngIf="this.updateForm.controls.currentAccess2.value =='Permcath' || this.updateForm.controls.currentAccess2.value == 'Temp.cath'"
                                     value="Int. Jugular">Int. Jugular</mat-option>
-                                <mat-option
+                                <mat-option class="ex-font"
                                     *ngIf="this.updateForm.controls.currentAccess2.value=='Permcath' || this.updateForm.controls.currentAccess2.value=='Temp.cath'"
                                     value="Subclavian">Subclavian</mat-option>
-                                <mat-option
+                                <mat-option class="ex-font"
                                     *ngIf="this.updateForm.controls.currentAccess2.value=='Permcath' || this.updateForm.controls.currentAccess2.value=='Temp.cath'"
                                     value="Transhepatic">Transhepatic</mat-option>
                             </mat-select>
@@ -273,9 +273,9 @@
                     <mat-form-field class="inputfield ex-font">
                         <mat-select name="antiCoagulation" placeholder="Anticoagulation" formControlName="antiCoag"
                             #antiCoag>
-                            <mat-option value="Heparin">Yes (Heparin)</mat-option>
-                            <mat-option value="LMWH">Yes (LMWH)</mat-option>
-                            <mat-option value="No">No</mat-option>
+                            <mat-option class="ex-font" value="Heparin">Yes (Heparin)</mat-option>
+                            <mat-option class="ex-font" value="LMWH">Yes (LMWH)</mat-option>
+                            <mat-option class="ex-font" value="No">No</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field class="inputfield ex-font" *ngIf="this.updateForm.controls.antiCoag.value == 'Heparin'">
@@ -448,15 +448,15 @@
                         <br>
                         <mat-form-field class="inputfield ex-font">
                             <mat-select name="hbsAg" placeholder="HBs Ag" formControlName="hbsAg" #hbsAg>
-                                <mat-option value="Positive">Positive</mat-option>
-                                <mat-option value="Negative">Negative</mat-option>
+                                <mat-option class="ex-font" value="Positive">Positive</mat-option>
+                                <mat-option class="ex-font" value="Negative">Negative</mat-option>
                             </mat-select>
                         </mat-form-field>
                         <br>
                         <mat-form-field class="inputfield ex-font">
                             <mat-select name="hcvAb" placeholder="HCV Ab" formControlName="hcvAb" #hcvAb>
-                                <mat-option value="Positive">Positive</mat-option>
-                                <mat-option value="Negative">Negative</mat-option>
+                                <mat-option class="ex-font" value="Positive">Positive</mat-option>
+                                <mat-option class="ex-font" value="Negative">Negative</mat-option>
                             </mat-select>
                         </mat-form-field>
                         <mat-form-field *ngIf="this.updateForm.controls.hcvAb.value=='Positive'" class="inputfield ex-font">
@@ -465,8 +465,8 @@
                         <br>
                         <mat-form-field class="inputfield ex-font">
                             <mat-select name="hivI_II" placeholder="HIV I & II" formControlName="hivI_II" #hivI_II>
-                                <mat-option value="Positive">Positive</mat-option>
-                                <mat-option value="Negative">Negative</mat-option>
+                                <mat-option class="ex-font" value="Positive">Positive</mat-option>
+                                <mat-option class="ex-font" value="Negative">Negative</mat-option>
                             </mat-select>
                         </mat-form-field>
                         <br>
@@ -596,8 +596,8 @@
                     </mat-form-field>
                     <mat-form-field class="inputfield ex-font">
                         <mat-select name="HepBV" placeholder="Hep. B Vaccination" formControlName="HepBV" #HepBV>
-                            <mat-option value="Yes">Yes</mat-option>
-                            <mat-option value="No">No</mat-option>
+                            <mat-option class="ex-font" value="Yes">Yes</mat-option>
+                            <mat-option class="ex-font" value="No">No</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field appearance="fill" *ngIf="this.updateForm.controls.HepBV.value=='Yes'">
@@ -608,8 +608,8 @@
                     </mat-form-field>
                     <mat-form-field class="inputfield ex-font">
                         <mat-select name="InfV" placeholder="Influenza Vaccination" formControlName="InfV" #InfV>
-                            <mat-option value="Yes">Yes</mat-option>
-                            <mat-option value="No">No</mat-option>
+                            <mat-option class="ex-font" value="Yes">Yes</mat-option>
+                            <mat-option class="ex-font" value="No">No</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field appearance="fill" *ngIf="this.updateForm.controls.InfV.value=='Yes'">

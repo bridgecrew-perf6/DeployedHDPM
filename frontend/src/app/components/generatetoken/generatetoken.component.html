@@ -3,7 +3,7 @@
         <div class="d-flex justify-content-center">
             <mat-form-field class="p-1 input-border form-field-width">
                 <mat-select [(value)]="selectedHosp" placeholder="Select Hospital for user" required>
-                    <mat-option *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">{{hospital.hospitalName}}</mat-option>
+                    <mat-option class="ex-font" *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">{{hospital.hospitalName}}</mat-option>
                 </mat-select>
             </mat-form-field>
         </div>
