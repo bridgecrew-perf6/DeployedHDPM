@@ -5,9 +5,9 @@
 .shorter{
     width: 40%;
 }
-.input-border{
-    font-size: 22px;
-    font-weight: bolder;
+.input{
+    font-size: 20px;
+    font-weight: bold;
 }
 .h1{
     font-size: 60px;
