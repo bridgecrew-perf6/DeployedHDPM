@@ -6,14 +6,8 @@
     width: 40%;
 }
 .input{
-    font-size: 20px;
-    font-weight: bold;
-}
-.h1{
-    font-size: 60px;
-}
-.h3{
     font-size: 22px;
+    font-weight: bold;
 }
 .view-pagination{
     margin-top: 220px;
@@ -61,7 +55,7 @@
     height:100%;
  }
  .bigger{
-     font-size: 22px;
+     font-size: 28px;
      text-decoration: underline;
      font-weight: bold;
  }
@@ -90,3 +84,11 @@
      letter-spacing: 0.1em;
 
  }
+ .subtitle{
+     font-size: 26px;
+     font-weight: bold;
+ }
+.subtitle2{
+    font-size: 24px;
+    font-weight: bold;
+}
