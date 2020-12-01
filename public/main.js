@@ -2227,7 +2227,7 @@ function AddpatientComponent_mat_form_field_577_Template(rf, ctx) { if (rf & 1) 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("for", _r134);
 } }
 function AddpatientComponent_ng_template_588_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0, "Dr Progress Notes");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0, "Progress Notes");
 } }
 function AddpatientComponent_ng_template_606_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0, "Consultant Notes");
@@ -5220,7 +5220,7 @@ function UpdatepatientComponent_div_0_mat_form_field_577_Template(rf, ctx) { if 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("for", _r135);
 } }
 function UpdatepatientComponent_div_0_ng_template_588_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0, "Dr Progress Notes");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0, "Progress Notes");
 } }
 function UpdatepatientComponent_div_0_ng_template_604_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0, "Consultant Notes");
