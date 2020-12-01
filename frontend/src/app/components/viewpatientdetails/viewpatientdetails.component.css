@@ -92,3 +92,12 @@
     font-size: 24px;
     font-weight: bold;
 }
+
+.last-column-margin{
+    margin-left: 30px;
+
+}
+.last-column-heading-margin{
+    margin-left: 10px;
+
+}
