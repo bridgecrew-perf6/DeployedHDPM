@@ -61,7 +61,7 @@ export class ViewpatientdetailsComponent implements OnInit {
     });
   }
   nextPage() {
-    if (this.page == 7) {
+    if (this.page == 8) {
       this.pageNextDisabled = true;
       this.page = this.page + 1;
     }
@@ -82,7 +82,7 @@ export class ViewpatientdetailsComponent implements OnInit {
     }
     else {
       this.page = this.page - 1;
-      if (this.page == 7) {
+      if (this.page == 8) {
         this.pageNextDisabled = false;
       }
     }

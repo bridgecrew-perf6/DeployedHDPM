@@ -384,6 +384,9 @@ let  patientSchema = new Schema({
     },
     consNotes: {
         type: String
+    },
+    Referrals: {
+        type: String
     }
 
     

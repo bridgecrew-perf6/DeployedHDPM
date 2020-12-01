@@ -707,3 +707,28 @@
         </div>
     </div>
 </div>
+
+
+<div *ngIf="this.page==9" id="con">
+    <div id="content">
+        <div class="d-flex justify-content-center">
+            <mat-card id="profileform-bg" class=" info-box shadow">
+                <h1 class="bigger d-flex justify-content-center ex-font">Referrals</h1>
+                <div class="d-flex justify-content-center">
+                    <mat-label class="notes   input input-border max-width">{{this.currPatient.Referrals}}</mat-label>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+    <div id="footer-page1">
+        <div class="d-flex flex-row justify-content-center">
+            <button mat-button class="nav-btn" (click)=prevPage() [disabled]="this.pagePreviousDisabled">
+                <mat-icon>arrow_left</mat-icon>
+            </button>
+            <p class="page-num">{{this.page}}</p>
+            <button mat-button class="nav-btn" (click)=nextPage() [disabled]="this.pageNextDisabled">
+                <mat-icon>arrow_right</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>

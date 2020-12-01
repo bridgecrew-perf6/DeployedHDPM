@@ -119,6 +119,7 @@ export class PatientObj {
         this.otherVAC = "";
         this.progNotes = "";
         this.consNotes = "";
+        this.Referrals = "";
     }
 
 
@@ -243,6 +244,7 @@ export class PatientObj {
     otherVAC: String;
     progNotes: String;
     consNotes: String;
+    Referrals: String;
 
 
 }

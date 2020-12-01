@@ -9,7 +9,8 @@
                     <br>
                     <mat-form-field class="inputfield ex-font" *ngIf="this.currUser.isAdmin">
                         <mat-select placeholder="Hospital" formControlName="Hospital" #Hospital>
-                            <mat-option class="ex-font" *ngFor="let hospital of hospList" value="{{hospital.hospitalName}}">
+                            <mat-option class="ex-font" *ngFor="let hospital of hospList"
+                                value="{{hospital.hospitalName}}">
                                 {{hospital.hospitalName}}
                             </mat-option>
                         </mat-select>
@@ -36,7 +37,8 @@
                     <br>
                     <mat-form-field class="inputfield ex-font">
                         <mat-select placeholder="Nationality" formControlName="Nationality" #Nationality>
-                            <mat-option class="ex-font" *ngFor="let country of countryList" value="{{country}}">{{country}}</mat-option>
+                            <mat-option class="ex-font" *ngFor="let country of countryList" value="{{country}}">
+                                {{country}}</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <br>
@@ -81,33 +83,40 @@
                         <mat-select class="ex-font" name="oKidneyDisease" placeholder="Original Kidney Disease"
                             formControlName="oKidneyDisease" #oKidneyDisease>
                             <mat-option class="ex-font" value="Unknown">Unknown</mat-option>
-                            <mat-option class="ex-font" value="Hypertensive Nephrosclerosis">Hypertensive Nephrosclerosis</mat-option>
+                            <mat-option class="ex-font" value="Hypertensive Nephrosclerosis">Hypertensive
+                                Nephrosclerosis</mat-option>
                             <mat-option class="ex-font" value="Diabetic Nephropathy">Diabetic Nephropathy</mat-option>
-                            <mat-option class="ex-font" value="Obstructive Nephropathy">Obstructive Nephropathy</mat-option>
+                            <mat-option class="ex-font" value="Obstructive Nephropathy">Obstructive Nephropathy
+                            </mat-option>
                             <mat-option class="ex-font" value="ADPKD">ADPKD</mat-option>
                             <mat-option class="ex-font" value="Other">Other</mat-option>
                         </mat-select>
                     </mat-form-field>
-                    <mat-form-field *ngIf="this.updateForm.controls.oKidneyDisease.value == 'Other'" class="inputfield ex-font">
+                    <mat-form-field *ngIf="this.updateForm.controls.oKidneyDisease.value == 'Other'"
+                        class="inputfield ex-font">
                         <input matInput placeholder="Specified Disease" formControlName="otherKD" #otherKD>
                     </mat-form-field>
                     <br>
                     <div>
                         <h3 class="heading ex-font">Co-Morbidities:</h3>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="cMorbDM" (change)="cMorbDM = !cMorbDM">Diabetes
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="cMorbDM"
+                            (change)="cMorbDM = !cMorbDM">Diabetes
                             Mellitus</mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="cMorbHyp" (change)="cMorbHyp = !cMorbHyp">
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="cMorbHyp"
+                            (change)="cMorbHyp = !cMorbHyp">
                             Hypertension</mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="cMorbIHD" (change)="cMorbIHD = !cMorbIHD">IHD
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="cMorbIHD"
+                            (change)="cMorbIHD = !cMorbIHD">IHD
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="cMorbE" (change)="cMorbE = !cMorbE">Epilepsy
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="cMorbE"
+                            (change)="cMorbE = !cMorbE">Epilepsy
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="SelectedCMorbOther"
-                            (change)="SelectedCMorbOther = !SelectedCMorbOther">Other
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before"
+                            [checked]="SelectedCMorbOther" (change)="SelectedCMorbOther = !SelectedCMorbOther">Other
                         </mat-checkbox>
                         <br>
                         <mat-form-field class="inputfield ex-font" *ngIf="SelectedCMorbOther">
@@ -141,7 +150,8 @@
                             <mat-option class="ex-font" value="No">No</mat-option>
                         </mat-select>
                     </mat-form-field>
-                    <mat-form-field *ngIf="this.updateForm.controls.fitForTr.value == 'No'" class="hiddeninputfield ex-font">
+                    <mat-form-field *ngIf="this.updateForm.controls.fitForTr.value == 'No'"
+                        class="hiddeninputfield ex-font">
                         <input matInput placeholder="Reason" formControlName="fitForTrReason" #fitForReason>
                     </mat-form-field>
                     <br>
@@ -210,16 +220,20 @@
                     <br>
                     <div>
                         <h3 class="heading ex-font">Complications:</h3>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="CompIns" (change)="CompIns = !CompIns">
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="CompIns"
+                            (change)="CompIns = !CompIns">
                             Insufficiency</mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="CompInf" (change)="CompInf = !CompInf">Infection
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="CompInf"
+                            (change)="CompInf = !CompInf">Infection
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="CompAD" (change)="CompAD = !CompAD">Aneurysmal
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="CompAD"
+                            (change)="CompAD = !CompAD">Aneurysmal
                             Dilatation</mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="CompDC" (change)="CompDC = !CompDC">Difficult
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="CompDC"
+                            (change)="CompDC = !CompDC">Difficult
                             Cannulation</mat-checkbox>
                         <br>
                         <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="SelectedCompOther"
@@ -278,13 +292,16 @@
                             <mat-option class="ex-font" value="No">No</mat-option>
                         </mat-select>
                     </mat-form-field>
-                    <mat-form-field class="inputfield ex-font" *ngIf="this.updateForm.controls.antiCoag.value == 'Heparin'">
+                    <mat-form-field class="inputfield ex-font"
+                        *ngIf="this.updateForm.controls.antiCoag.value == 'Heparin'">
                         <input matInput placeholder="Initial" formControlName="hInit" #hInit>
                     </mat-form-field>
-                    <mat-form-field class="inputfield ex-font" *ngIf="this.updateForm.controls.antiCoag.value == 'Heparin'">
+                    <mat-form-field class="inputfield ex-font"
+                        *ngIf="this.updateForm.controls.antiCoag.value == 'Heparin'">
                         <input matInput placeholder="Maintenance" formControlName="hMaint" #hMaint>
                     </mat-form-field>
-                    <mat-form-field class="inputfield ex-font" *ngIf="this.updateForm.controls.antiCoag.value == 'LMWH'">
+                    <mat-form-field class="inputfield ex-font"
+                        *ngIf="this.updateForm.controls.antiCoag.value == 'LMWH'">
                         <input matInput placeholder="LMWH Dosage" formControlName="LMWHval" #LMWHval>
                     </mat-form-field>
                     <mat-form-field class="inputfield ex-font" *ngIf="this.updateForm.controls.antiCoag.value == 'No'">
@@ -296,8 +313,7 @@
                     </mat-form-field>
                     <br>
                     <mat-form-field class="inputfield ex-font">
-                        <input matInput placeholder="Average Weight Gain (kg)" formControlName="avgWtGain"
-                            #avgWtGain>
+                        <input matInput placeholder="Average Weight Gain (kg)" formControlName="avgWtGain" #avgWtGain>
                     </mat-form-field>
                     <br>
                     <mat-form-field class="inputfield ex-font">
@@ -314,34 +330,44 @@
                     <br><br>
                     <div>
                         <h3 class="heading ex-font">Dialysis Complications:</h3>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCHA" (change)="DCHA = !DCHA">Headache
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCHA"
+                            (change)="DCHA = !DCHA">Headache
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCHypot" (change)="DCHypot = !DCHypot">
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCHypot"
+                            (change)="DCHypot = !DCHypot">
                             Hypotension</mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCHypog" (change)="DCHypog = !DCHypog">
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCHypog"
+                            (change)="DCHypog = !DCHypog">
                             Hypoglycemia</mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCHyper" (change)="DCHyper = !DCHyper">
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCHyper"
+                            (change)="DCHyper = !DCHyper">
                             Hypertension</mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCMC" (change)="DCMC = !DCMC">Muscle Cramps
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCMC"
+                            (change)="DCMC = !DCMC">Muscle Cramps
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCAC" (change)="DCAC = !DCAC">Abdominal Colic
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCAC"
+                            (change)="DCAC = !DCAC">Abdominal Colic
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCV" (change)="DCV = !DCV">Vomiting
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCV"
+                            (change)="DCV = !DCV">Vomiting
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCSZ" (change)="DCSZ = !DCSZ">Seizure
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCSZ"
+                            (change)="DCSZ = !DCSZ">Seizure
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCHS" (change)="DCHS = !DCHS">Hypersensitivity
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCHS"
+                            (change)="DCHS = !DCHS">Hypersensitivity
                         </mat-checkbox>
                         <br>
-                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCIH" (change)="DCIH = !DCIH">Itching
+                        <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="DCIH"
+                            (change)="DCIH = !DCIH">Itching
                         </mat-checkbox>
                         <br>
                         <mat-checkbox class="checkbox-font ex-font" labelPosition="before" [checked]="SelectedDCOther"
@@ -389,19 +415,23 @@
                         <h3 class="heading ex-font">Chemistry:</h3>
                         <br>
                         <mat-form-field class="inputfield ex-font">
-                            <input matInput placeholder="S. Creatinine Pre-HD (mg%)" formControlName="chemCrePre" #chemCrePre>
+                            <input matInput placeholder="S. Creatinine Pre-HD (mg%)" formControlName="chemCrePre"
+                                #chemCrePre>
                         </mat-form-field>
                         <br>
                         <mat-form-field class="inputfield ex-font">
-                            <input matInput placeholder="S. Creatinine Post-HD (mg%)" formControlName="chemCrePost" #chemCrePost>
+                            <input matInput placeholder="S. Creatinine Post-HD (mg%)" formControlName="chemCrePost"
+                                #chemCrePost>
                         </mat-form-field>
                         <br>
                         <mat-form-field class="inputfield ex-font">
-                            <input matInput placeholder="S. Urea Pre-HD (mg%)" formControlName="chemUreaPre" #chemUreaPre>
+                            <input matInput placeholder="S. Urea Pre-HD (mg%)" formControlName="chemUreaPre"
+                                #chemUreaPre>
                         </mat-form-field>
                         <br>
                         <mat-form-field class="inputfield ex-font">
-                            <input matInput placeholder="S. Urea Post-HD (mg%)" formControlName="chemUreaPost" #chemUreaPost>
+                            <input matInput placeholder="S. Urea Post-HD (mg%)" formControlName="chemUreaPost"
+                                #chemUreaPost>
                         </mat-form-field>
                         <br>
                         <mat-form-field class="inputfield ex-font">
@@ -459,7 +489,8 @@
                                 <mat-option class="ex-font" value="Negative">Negative</mat-option>
                             </mat-select>
                         </mat-form-field>
-                        <mat-form-field *ngIf="this.updateForm.controls.hcvAb.value=='Positive'" class="inputfield ex-font">
+                        <mat-form-field *ngIf="this.updateForm.controls.hcvAb.value=='Positive'"
+                            class="inputfield ex-font">
                             <input matInput placeholder="HCV RNA PCR" formControlName="hcvPCR" #hcvPCR>
                         </mat-form-field>
                         <br>
@@ -652,6 +683,21 @@
                             <mat-icon>notes</mat-icon>
                         </mat-label>
                         <textarea matInput class="higher-text" formControlName="consNotes" #consNotes></textarea>
+                    </mat-form-field>
+                    <div>
+                        <button mat-button class="main-btn next-btn" matStepperPrevious>Back</button>
+                        <button mat-button class="main-btn next-btn" matStepperNext>Next</button>
+                    </div>
+                </mat-step>
+                <mat-step>
+                    <ng-template matStepLabel class="ex-font">Referrals</ng-template>
+                    <mat-divider></mat-divider>
+                    <br>
+                    <mat-form-field appearance="fill" class="higher inputfield ex-font">
+                        <mat-label>
+                            (Please include: referral hospital/date of referral/ reason of referral)
+                        </mat-label>
+                        <textarea matInput class="higher-text" formControlName="Referrals" #Referrals></textarea>
                     </mat-form-field>
                     <div class="d-flex justify-content-center">
                         <button class="main-btn update-btn" mat-button type="submit" (click)="updateP()"

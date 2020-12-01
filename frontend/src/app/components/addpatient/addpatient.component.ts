@@ -152,7 +152,9 @@ export class AddpatientComponent implements OnInit {
       InfVDate: [''],
       otherVAC: [''],
       progNotes: [''],
-      consNotes: ['']
+      consNotes: [''],
+      Referrals: ['']
+
 
     });
   }
@@ -306,6 +308,7 @@ export class AddpatientComponent implements OnInit {
         this.currP.otherVAC = this.createForm.controls.otherVAC.value;
         this.currP.progNotes = this.createForm.controls.progNotes.value;
         this.currP.consNotes = this.createForm.controls.consNotes.value;
+        this.currP.Referrals = this.createForm.controls.Referrals.value;
         this._snackBar.open("Medical record added successfully", "", {
           duration: 3000, panelClass: ['green-snackbar']
         });

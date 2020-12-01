@@ -156,7 +156,8 @@ export class UpdatepatientComponent implements OnInit {
       InfVDate: [''],
       otherVAC: [''],
       progNotes: [''],
-      consNotes: ['']
+      consNotes: [''],
+      Referrals: ['']
 
     });
    }
@@ -336,6 +337,7 @@ export class UpdatepatientComponent implements OnInit {
     this.updateForm.get('otherVAC').setValue(this.currPatient.otherVAC);
     this.updateForm.get('progNotes').setValue(this.currPatient.progNotes);
     this.updateForm.get('consNotes').setValue(this.currPatient.consNotes);
+    this.updateForm.get('Referrals').setValue(this.currPatient.Referrals);
   }
 
   updateP()
@@ -486,6 +488,7 @@ export class UpdatepatientComponent implements OnInit {
     this.updatedP.otherVAC = this.updateForm.controls.otherVAC.value;
     this.updatedP.progNotes = this.updateForm.controls.progNotes.value;
     this.updatedP.consNotes = this.updateForm.controls.consNotes.value;
+    this.updatedP.Referrals = this.updateForm.controls.Referrals.value;
     this._snackBar.open("Medical record updated successfully","",{ duration: 4000, panelClass: ['green-snackbar']
     });
     this.pService.updatePatient(this.id, this.updatedP).subscribe(res => console.log(res));

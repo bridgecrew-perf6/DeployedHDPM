@@ -654,6 +654,21 @@
                         </mat-label>
                         <textarea  class="higher-text" matInput formControlName="consNotes" #consNotes></textarea>
                     </mat-form-field>
+                </mat-step>
+                <div>
+                    <button mat-button class="main-btn next-btn" matStepperPrevious>Back</button>
+                    <button mat-button class="main-btn next-btn" matStepperNext>Next</button>
+                </div>
+                <mat-step>
+                    <mat-divider></mat-divider>
+                    <br>
+                    <ng-template matStepLabel class="ex-font">Referrals</ng-template>
+                    <mat-form-field appearance="fill" class="inputfield ex-font higher">
+                        <mat-label>
+                            (Please include: referral hospital/date of referral/ reason of referral)
+                        </mat-label>
+                        <textarea  class="higher-text" matInput formControlName="Referrals" #Referrals></textarea>
+                    </mat-form-field>
                     <div class="d-flex justify-content-center">
                         <button mat-button class="main-btn add-btn" type="submit" (click)="addp()"
                             [disabled]="createForm.pristine || createForm.invalid">Add
