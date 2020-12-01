@@ -2519,7 +2519,7 @@ class AddpatientComponent {
         this.createForm.controls.currentAccess1.setValue("RT.");
         this.createForm.controls.currentAccess2.setValue("AVF");
         this.createForm.controls.antiCoag.setValue("No");
-        this.createForm.controls.submittedBy.setValue("Dr " + this.currUser.firstName + " " + this.currUser.lastName);
+        this.createForm.controls.submittedBy.setValue("Dr " + this.currUser.firstName + " " + this.currUser.lastName + " (" + this.currUser.contactInfo + ")");
         this.SelectedCMorbOther = false;
         this.cMorbDM = false;
         this.cMorbE = false;
