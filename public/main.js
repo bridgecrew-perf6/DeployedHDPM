@@ -3378,7 +3378,7 @@ AddpatientComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](627, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](628, "3-Reason for Referral");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](629, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](630, "4-Referred Dr) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](630, "4-Referring dr. name & mobile number) ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](631, "textarea", 211, 212);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
