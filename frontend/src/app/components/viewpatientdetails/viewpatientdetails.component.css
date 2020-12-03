@@ -53,7 +53,7 @@
     position:relative;
  }
  #content {
-    height: 800px; /* Changed this height */
+    height: 500px; /* Changed this height */
     padding-bottom:50px;
  }
  body {
