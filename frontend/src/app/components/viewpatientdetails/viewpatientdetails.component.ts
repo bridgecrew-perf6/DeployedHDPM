@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { PatientService } from '../../services/patient.service';
 import { PatientObj } from '../../patientClass';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -12,6 +12,10 @@ import { Variable } from '@angular/compiler/src/render3/r3_ast';
   styleUrls: ['./viewpatientdetails.component.css']
 })
 export class ViewpatientdetailsComponent implements OnInit {
+  @HostListener('window:keydown', [`$event`]) spaceEvent(event: any) {
+    console.log(event);
+
+  }
   currPatient = new PatientObj;
   id: String;
   panelOpenState: false;
