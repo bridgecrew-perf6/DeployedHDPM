@@ -44,7 +44,7 @@
 
  #footer-notes{
     position: absolute;
-    bottom: -20%;
+    bottom: -14%;
     width:100%;
    
 }
@@ -111,10 +111,10 @@
 }
 
 .higher{
-    height: 600px;
+    height: 800px;
 }
 .higher-text{
-    height: 500px;
+    height: 700px;
 
 
 }
