@@ -44,7 +44,7 @@
 
  #footer-notes{
     position: absolute;
-    bottom: -23%;
+    bottom: -20%;
     width:100%;
    
 }
@@ -110,6 +110,13 @@
 
 }
 
+.higher{
+    max-height: 700px;
+}
+.higher-text{
+    max-height: 650px;
+
+}
 
 .max-width-form{
     width: 100%;
