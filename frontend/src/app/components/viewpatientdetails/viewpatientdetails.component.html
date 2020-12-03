@@ -653,20 +653,18 @@
     </div>
 </div>
 
-<script>
-    $(function(){
-        var lines = [];
-        $.each($('#data').val().split(/\n/), function(i, line){
-            if(line){
-                lines.push(line);
-            }
-        });
-        console.log(lines);
-    });
-</script>
-
-
 <div *ngIf="this.page==7" id="con">
+    <script>
+        $(function(){
+            var lines = [];
+            $.each($('#data').val().split(/\n/), function(i, line){
+                if(line){
+                    lines.push(line);
+                }
+            });
+            console.log(lines);
+        });
+    </script>
     <div id="content">
         <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
@@ -694,7 +692,18 @@
 
 
 
-<div *ngIf="this.page==8" id="con">
+<div *ngIf="this.page==8" id="con"> 
+    <script>
+        $(function(){
+            var lines = [];
+            $.each($('#data').val().split(/\n/), function(i, line){
+                if(line){
+                    lines.push(line);
+                }
+            });
+            console.log(lines);
+        });
+    </script>
     <div id="content">
         <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
@@ -722,6 +731,17 @@
 
 
 <div *ngIf="this.page==9" id="con">
+    <script>
+        $(function(){
+            var lines = [];
+            $.each($('#data').val().split(/\n/), function(i, line){
+                if(line){
+                    lines.push(line);
+                }
+            });
+            console.log(lines);
+        });
+    </script>
     <div id="content">
         <div class="d-flex justify-content-center">
             <mat-card id="profileform-bg" class=" info-box shadow">
