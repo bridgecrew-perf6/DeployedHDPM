@@ -1880,10 +1880,10 @@ class ViewpatientdetailsComponent {
         this.page = 1;
     }
     spaceEvent(event) {
-        if (event.keyCode == 39) {
+        if (event.keyCode == 39 && this.page != 9) {
             this.nextPage();
         }
-        else if (event.keyCode == 37) {
+        else if (event.keyCode == 37 && this.page != 1) {
             this.prevPage();
         }
     }
