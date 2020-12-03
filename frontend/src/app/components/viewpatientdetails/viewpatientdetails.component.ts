@@ -13,7 +13,14 @@ import { Variable } from '@angular/compiler/src/render3/r3_ast';
 })
 export class ViewpatientdetailsComponent implements OnInit {
   @HostListener('window:keydown', [`$event`]) spaceEvent(event: any) {
-    console.log(event);
+    if(event.keyCode == 39)
+    {
+      this.nextPage();
+    }
+    else if(event.keyCode == 37)
+    {
+      this.prevPage();
+    }
 
   }
   currPatient = new PatientObj;
@@ -50,7 +57,6 @@ export class ViewpatientdetailsComponent implements OnInit {
   getPDetails() {
     this.patientSrvc.getPatientById(this.id).subscribe((data: PatientObj) => {
       this.currPatient = data;
-      console.log(data);
       this.dofDialysis = this.reverseDate(this.currPatient.dosDialysis.substring(0, 10));
       this.dofAC = this.reverseDate(this.currPatient.dOfAccessCreation.substring(0, 10));
       this.dofLab = this.reverseDate(this.currPatient.labDate.substring(0, 10));

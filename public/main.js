@@ -1880,7 +1880,12 @@ class ViewpatientdetailsComponent {
         this.page = 1;
     }
     spaceEvent(event) {
-        console.log(event);
+        if (event.keyCode == 39) {
+            this.nextPage();
+        }
+        else if (event.keyCode == 37) {
+            this.prevPage();
+        }
     }
     ngOnInit() {
         this.nav.show();
@@ -1895,7 +1900,6 @@ class ViewpatientdetailsComponent {
     getPDetails() {
         this.patientSrvc.getPatientById(this.id).subscribe((data) => {
             this.currPatient = data;
-            console.log(data);
             this.dofDialysis = this.reverseDate(this.currPatient.dosDialysis.substring(0, 10));
             this.dofAC = this.reverseDate(this.currPatient.dOfAccessCreation.substring(0, 10));
             this.dofLab = this.reverseDate(this.currPatient.labDate.substring(0, 10));
