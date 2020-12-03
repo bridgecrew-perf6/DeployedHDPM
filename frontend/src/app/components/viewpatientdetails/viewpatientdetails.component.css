@@ -42,6 +42,13 @@
     
  }
 
+ #footer-notes{
+    position: absolute;
+    bottom: -23%;
+    width:100%;
+   
+}
+
  #con {
     position:relative;
  }
@@ -81,7 +88,8 @@
      size: 70px;
  }
  .notes{
-     letter-spacing: 0.1em;
+     letter-spacing: 0.2em;
+     color: black;
 
  }
  .subtitle{
