@@ -666,7 +666,7 @@
                         <mat-label>
                             <mat-icon>notes</mat-icon>
                         </mat-label>
-                        <textarea matInput class="higher-text" formControlName="progNotes" #progNotes></textarea>
+                        <textarea matInput id="data" class="higher-text" formControlName="progNotes" #progNotes></textarea>
                     </mat-form-field>
                     <br>
                     <div>
@@ -682,7 +682,7 @@
                         <mat-label>
                             <mat-icon>notes</mat-icon>
                         </mat-label>
-                        <textarea matInput class="higher-text" formControlName="consNotes" #consNotes></textarea>
+                        <textarea matInput id="data" class="higher-text" formControlName="consNotes" #consNotes></textarea>
                     </mat-form-field>
                     <div>
                         <button mat-button class="main-btn next-btn" matStepperPrevious>Back</button>
@@ -697,13 +697,24 @@
                         <mat-label>
                             (Please include: 1-Referral Hospital&nbsp;&nbsp;2-Date of Referral&nbsp;&nbsp;3-Reason for Referral&nbsp;&nbsp;4-Referring dr. name & mobile number)
                         </mat-label>
-                        <textarea matInput class="higher-text" formControlName="Referrals" #Referrals></textarea>
+                        <textarea matInput id="data" class="higher-text" formControlName="Referrals" #Referrals></textarea>
                     </mat-form-field>
                     <div class="d-flex justify-content-center">
                         <button class="main-btn update-btn" mat-button type="submit" (click)="updateP()"
                             [disabled]="updateForm.pristine || updateForm.invalid">UPDATE MEDICAL RECORD</button>
-                    </div>
+                    </div>           
                 </mat-step>
+                <script>
+                    $(function(){
+                        var lines = [];
+                        $.each($('#data').val().split(/\n/), function(i, line){
+                            if(line){
+                                lines.push(line);
+                            }
+                        });
+                        console.log(lines);
+                    });
+                    </script>
             </mat-horizontal-stepper>
         </form>
     </mat-card>

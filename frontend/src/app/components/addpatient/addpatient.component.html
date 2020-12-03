@@ -636,7 +636,7 @@
                         <mat-label>
                             <mat-icon>notes</mat-icon>
                         </mat-label>
-                        <textarea matInput class="higher-text" formControlName="progNotes" #progNotes></textarea>
+                        <textarea matInput id="data" class="higher-text" formControlName="progNotes" #progNotes></textarea>
                     </mat-form-field>
                     <br>
                     <div>
@@ -652,7 +652,7 @@
                         <mat-label>
                             <mat-icon>notes</mat-icon>
                         </mat-label>
-                        <textarea  class="higher-text" matInput formControlName="consNotes" #consNotes></textarea>
+                        <textarea id="data" class="higher-text" matInput formControlName="consNotes" #consNotes></textarea>
                     </mat-form-field>
                 </mat-step>
                 <div>
@@ -667,7 +667,7 @@
                         <mat-label>
                             (Please include: 1-Referral Hospital&nbsp;&nbsp;2-Date of Referral&nbsp;&nbsp;3-Reason for Referral&nbsp;&nbsp;4-Referring dr. name & mobile number)
                         </mat-label>
-                        <textarea  class="higher-text" matInput formControlName="Referrals" #Referrals></textarea>
+                        <textarea id="data" class="higher-text" matInput formControlName="Referrals" #Referrals></textarea>
                     </mat-form-field>
                     <div class="d-flex justify-content-center">
                         <button mat-button class="main-btn add-btn" type="submit" (click)="addp()"
@@ -677,6 +677,17 @@
                         </button>
                     </div>
                 </mat-step>
+                <script>
+                    $(function(){
+                        var lines = [];
+                        $.each($('#data').val().split(/\n/), function(i, line){
+                            if(line){
+                                lines.push(line);
+                            }
+                        });
+                        console.log(lines);
+                    });
+                    </script>
             </mat-horizontal-stepper>
         </form>
     </mat-card>
