@@ -653,7 +653,17 @@
     </div>
 </div>
 
-
+<script>
+    $(function(){
+        var lines = [];
+        $.each($('#data').val().split(/\n/), function(i, line){
+            if(line){
+                lines.push(line);
+            }
+        });
+        console.log(lines);
+    });
+    </script>
 
 
 <div *ngIf="this.page==7" id="con">
@@ -662,7 +672,9 @@
             <mat-card id="profileform-bg" class=" info-box shadow">
                 <h1 class="bigger d-flex justify-content-center ex-font">Progress Notes</h1>
                 <div class="d-flex justify-content-center">
-                    <mat-label class="notes   input input-border max-width">{{this.currPatient.progNotes}}</mat-label>
+                    <mat-form-field appearance="fill" class="higher input-border ex-font">
+                        <textarea disabled matInput id="data" class="higher-text">{{this.currPatient.progNotes}}</textarea>
+                    </mat-form-field>
                 </div>
             </mat-card>
         </div>
