@@ -112,9 +112,11 @@
 
 .higher{
     max-height: 700px;
+    min-height: auto;
 }
 .higher-text{
     max-height: 650px;
+    min-height: auto;
 
 }
 
