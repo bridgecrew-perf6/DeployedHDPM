@@ -2315,7 +2315,7 @@ class AddpatientComponent {
         this.hosplistService = hosplistService;
         this.nav = nav;
         this.currP = new _patientClass__WEBPACK_IMPORTED_MODULE_2__["PatientObj"]();
-        this.currDate = new Date().toISOString().split('T')[0];
+        this.currDate = this.reverseDate(new Date().toISOString().split('T')[0]);
         this.countryList = [
             "Saudi",
             "Non-Saudi"
