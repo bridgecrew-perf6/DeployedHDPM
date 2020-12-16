@@ -25,13 +25,13 @@ export class ViewpatientdetailsComponent implements OnInit {
   }
   currPatient = new PatientObj;
   id: String;
+  currDate = this.reverseDate(new Date().toISOString().split('T')[0]);
   panelOpenState: false;
   dofDialysis: String;
   dofAC: String;
   dofLab: String;
   dOfHepBV: String;
   dOfInfV: String;
-  currDate: String;
   page: any;
   pageNextDisabled: boolean;
   pagePreviousDisabled: boolean;
@@ -67,7 +67,6 @@ export class ViewpatientdetailsComponent implements OnInit {
       if (this.currPatient.InfVDate) {
         this.dOfInfV = this.reverseDate(this.currPatient.InfVDate.substring(0, 10));
       }
-      this.currDate = this.reverseDate(Date.now.toString().substring(0,10));
 
 
     });
