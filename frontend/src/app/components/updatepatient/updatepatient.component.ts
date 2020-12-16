@@ -20,7 +20,7 @@ export class UpdatepatientComponent implements OnInit {
   updatedP = new PatientObj();
   id: String;
   updateForm: FormGroup;
-  currDate = Date.now.toString().substring(0,10);
+  currDate = this.reverseDate(Date.now.toString().substring(0,10));
   cMorbHyp: boolean;
   cMorbDM: boolean;
   cMorbIHD: boolean;
@@ -339,6 +339,9 @@ export class UpdatepatientComponent implements OnInit {
     this.updateForm.get('progNotes').setValue(this.currPatient.progNotes);
     this.updateForm.get('consNotes').setValue(this.currPatient.consNotes);
     this.updateForm.get('Referrals').setValue(this.currPatient.Referrals);
+  }
+  reverseDate(str: String) {
+    return str.split("-").reverse().join("-");
   }
 
   updateP()

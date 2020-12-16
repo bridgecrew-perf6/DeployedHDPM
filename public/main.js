@@ -2315,7 +2315,7 @@ class AddpatientComponent {
         this.hosplistService = hosplistService;
         this.nav = nav;
         this.currP = new _patientClass__WEBPACK_IMPORTED_MODULE_2__["PatientObj"]();
-        this.currDate = Date.now.toString().substring(0, 10);
+        this.currDate = this.reverseDate(Date.now.toString().substring(0, 10));
         this.countryList = [
             "Saudi",
             "Non-Saudi"
@@ -2431,6 +2431,9 @@ class AddpatientComponent {
         this.hosplistService.getHospitals().subscribe((data) => {
             this.hospList = data;
         });
+    }
+    reverseDate(str) {
+        return str.split("-").reverse().join("-");
     }
     addp() {
         this.patientService.getPatientbynID(this.createForm.controls.n_ID.value).subscribe((data) => {
@@ -6224,7 +6227,7 @@ function UpdatepatientComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.updateForm.controls.InfV.value == "Yes");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("<br> ", ctx_r0.currDate, " <br>");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" <br> ", ctx_r0.currDate, " <br> ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](17);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("<br> ", ctx_r0.currDate, " <br>");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](16);
@@ -6242,7 +6245,7 @@ class UpdatepatientComponent {
         this._snackBar = _snackBar;
         this.currPatient = new _patientClass__WEBPACK_IMPORTED_MODULE_2__["PatientObj"]();
         this.updatedP = new _patientClass__WEBPACK_IMPORTED_MODULE_2__["PatientObj"]();
-        this.currDate = Date.now.toString().substring(0, 10);
+        this.currDate = this.reverseDate(Date.now.toString().substring(0, 10));
         this.countryList = [
             "Saudi",
             "Non-Saudi"
@@ -6514,6 +6517,9 @@ class UpdatepatientComponent {
         this.updateForm.get('progNotes').setValue(this.currPatient.progNotes);
         this.updateForm.get('consNotes').setValue(this.currPatient.consNotes);
         this.updateForm.get('Referrals').setValue(this.currPatient.Referrals);
+    }
+    reverseDate(str) {
+        return str.split("-").reverse().join("-");
     }
     updateP() {
         this.pService.getPatientbynID(this.updateForm.controls.n_ID.value).subscribe((data) => {

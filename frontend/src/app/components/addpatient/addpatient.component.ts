@@ -16,7 +16,7 @@ import { hospitalObj } from 'src/app/hospitalClass';
 })
 export class AddpatientComponent implements OnInit {
   currP = new PatientObj();
-  currDate = Date.now.toString().substring(0,10);
+  currDate = this.reverseDate(Date.now.toString().substring(0,10));
   //Co-Morbidity checks
   cMorbHyp: boolean;
   cMorbDM: boolean;
@@ -164,6 +164,9 @@ export class AddpatientComponent implements OnInit {
       this.hospList = data
 
     });
+  }
+  reverseDate(str: String) {
+    return str.split("-").reverse().join("-");
   }
   addp() {
     this.patientService.getPatientbynID(this.createForm.controls.n_ID.value).subscribe((data: userObj) => {
