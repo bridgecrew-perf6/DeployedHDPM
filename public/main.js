@@ -6239,7 +6239,7 @@ class UpdatepatientComponent {
         this._snackBar = _snackBar;
         this.currPatient = new _patientClass__WEBPACK_IMPORTED_MODULE_2__["PatientObj"]();
         this.updatedP = new _patientClass__WEBPACK_IMPORTED_MODULE_2__["PatientObj"]();
-        this.currDate = this.reverseDate(Date.now.toString().substring(0, 10));
+        this.currDate = this.reverseDate(new Date().toISOString().split('T')[0]);
         this.countryList = [
             "Saudi",
             "Non-Saudi"
@@ -6508,8 +6508,8 @@ class UpdatepatientComponent {
         this.updateForm.get('InfV').setValue(this.currPatient.InfV);
         this.updateForm.get('InfVDate').setValue(this.currPatient.InfVDate);
         this.updateForm.get('otherVAC').setValue(this.currPatient.otherVAC);
-        this.updateForm.get('progNotes').setValue(this.currPatient.progNotes);
-        this.updateForm.get('consNotes').setValue(this.currPatient.consNotes);
+        this.updateForm.get('progNotes').setValue(this.currPatient.progNotes + "\n" + this.currDate);
+        this.updateForm.get('consNotes').setValue(this.currPatient.consNotes + "\n" + this.currDate);
         this.updateForm.get('Referrals').setValue(this.currPatient.Referrals);
     }
     reverseDate(str) {
