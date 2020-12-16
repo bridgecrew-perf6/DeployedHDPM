@@ -2645,6 +2645,7 @@ class AddpatientComponent {
         this.createForm.controls.antiCoag.setValue("No");
         this.createForm.controls.progNotes.setValue(this.currDate);
         this.createForm.controls.consNotes.setValue(this.currDate);
+        this.createForm.controls.Referrals.setValue(this.currDate);
         this.createForm.controls.submittedBy.setValue("Dr " + this.currUser.firstName + " " + this.currUser.lastName + " (" + this.currUser.contactInfo + ")");
         this.SelectedCMorbOther = false;
         this.cMorbDM = false;
@@ -6555,7 +6556,7 @@ class UpdatepatientComponent {
         this.updateForm.get('otherVAC').setValue(this.currPatient.otherVAC);
         this.updateForm.get('progNotes').setValue(this.currPatient.progNotes + "\n" + this.currDate);
         this.updateForm.get('consNotes').setValue(this.currPatient.consNotes + "\n" + this.currDate);
-        this.updateForm.get('Referrals').setValue(this.currPatient.Referrals);
+        this.updateForm.get('Referrals').setValue(this.currPatient.Referrals + "\n" + this.currDate);
     }
     reverseDate(str) {
         return str.split("-").reverse().join("-");

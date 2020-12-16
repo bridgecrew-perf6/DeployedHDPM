@@ -332,6 +332,7 @@ export class AddpatientComponent implements OnInit {
     this.createForm.controls.antiCoag.setValue("No");
     this.createForm.controls.progNotes.setValue(this.currDate);
     this.createForm.controls.consNotes.setValue(this.currDate);
+    this.createForm.controls.Referrals.setValue(this.currDate);
     this.createForm.controls.submittedBy.setValue("Dr " + this.currUser.firstName + " " + this.currUser.lastName + " (" + this.currUser.contactInfo + ")");
     this.SelectedCMorbOther = false;
     this.cMorbDM = false;

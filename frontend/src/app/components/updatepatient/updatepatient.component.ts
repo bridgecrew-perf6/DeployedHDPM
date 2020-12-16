@@ -338,7 +338,7 @@ export class UpdatepatientComponent implements OnInit {
     this.updateForm.get('otherVAC').setValue(this.currPatient.otherVAC);
     this.updateForm.get('progNotes').setValue(this.currPatient.progNotes + "\n" + this.currDate);
     this.updateForm.get('consNotes').setValue(this.currPatient.consNotes + "\n" + this.currDate);
-    this.updateForm.get('Referrals').setValue(this.currPatient.Referrals);
+    this.updateForm.get('Referrals').setValue(this.currPatient.Referrals + "\n" + this.currDate);
   }
   reverseDate(str: String) {
     return str.split("-").reverse().join("-");
