@@ -636,7 +636,7 @@
                         <mat-label>
                             <mat-icon>notes</mat-icon>
                         </mat-label>
-                        <textarea matInput id="data" class="higher-text" formControlName="progNotes" #progNotes></textarea>
+                        <textarea matInput id="data" class="higher-text" formControlName="progNotes" #progNotes>{{this.currDate}}<br></textarea>
                     </mat-form-field>
                     <br>
                     <div>
@@ -652,7 +652,7 @@
                         <mat-label>
                             <mat-icon>notes</mat-icon>
                         </mat-label>
-                        <textarea id="data" class="higher-text" matInput formControlName="consNotes" #consNotes></textarea>
+                        <textarea id="data" class="higher-text" matInput formControlName="consNotes" #consNotes>{{this.currDate}}</textarea>
                     </mat-form-field>
                 </mat-step>
                 <div>

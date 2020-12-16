@@ -16,6 +16,7 @@ import { hospitalObj } from 'src/app/hospitalClass';
 })
 export class AddpatientComponent implements OnInit {
   currP = new PatientObj();
+  currDate = Date.now.toString().substring(0,10);
   //Co-Morbidity checks
   cMorbHyp: boolean;
   cMorbDM: boolean;

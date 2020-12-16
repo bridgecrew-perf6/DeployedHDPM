@@ -20,6 +20,7 @@ export class UpdatepatientComponent implements OnInit {
   updatedP = new PatientObj();
   id: String;
   updateForm: FormGroup;
+  currDate = Date.now.toString().substring(0,10);
   cMorbHyp: boolean;
   cMorbDM: boolean;
   cMorbIHD: boolean;
